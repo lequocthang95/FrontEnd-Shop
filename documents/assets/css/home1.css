@@ -169,6 +169,7 @@ option{
     justify-content: space-between;
     margin: auto;
     border-bottom: 2px solid #3e4755;
+    line-height: 2;
 }
 .infor{
     width: 260px;
@@ -186,4 +187,14 @@ option{
 .footer_end-text{
     display: flex;
     text-align: center;
+}
+.footer_end-items{
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_end-item{
+    width: 44px;
+    height: 30px;
+    background: #c7c7c7;
 }
