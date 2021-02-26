@@ -8,14 +8,6 @@
 a{
     color: #b7bec9;
 }
-ul{
-    list-style: none;
-    margin: auto;
-}
-.grid{
-    width: 1120px;
-    margin: auto;
-}
 .header{
     height: 150px;
     background: #232b37;
@@ -23,7 +15,7 @@ ul{
 }
 .top_nav{
     height: 55px;
-    border: 2px solid #303743;
+    border: 2px solid rgba(255,255,255,0.2);
     display: flex;
 }
 .heading{
@@ -41,7 +33,7 @@ ul{
 }
 .select_top{
     border: 0 !important;
-    background: #232b37;
+    background: rgba(255, 255, 255,0);
     text-indent: -1px;
     color: #b7bec9;
   }
@@ -69,6 +61,8 @@ option{
 .top_header{
     height: 95px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .top_menu{
     display: flex;
@@ -85,13 +79,27 @@ option{
     display: flex;
     justify-content:space-between;
     font: Bold 14px "Poppins";
-    color: #b7bec9;
+    margin: auto;
 }
 .top_menu-icon{
     width: 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.menu_icon-cart{
+    display: flex;
+}
+.menu_icon-cart-number{
+    background: var(--blue-page);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-top: -12px;
+    margin-left: -10px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4px;
 }
 .top_menu-icon1{
     height: 16px;
@@ -102,35 +110,33 @@ option{
 .header_layout{
     height: 700px;
     background: #2b3440;
-    position: relative;
+    display: flex;
 }
-.slogan{
-    position: absolute;
-    top: 205px;
-    font-size: 20px;
+.slider{
+    width:700px;
+    display: flex;
+    flex-wrap: wrap;
     font-weight: normal;
+    margin-top: auto;
 }
 .top_button1{
     width: 240px; 
     height: 60px;
     background-color: #2a9cf5;
-    position: absolute;
-    top: 434px;
     font: bold 12px "Poppins";
     color: #fff;
     border-radius: 7px;
+    margin-top: 30px;
 }
 .top_button2{
     width: 168px; 
-    height: 60px;
-    position: absolute;
-    top: 435px;
-    left: 468px;
+    height: 64px;
     font: bold 12px "Poppins";
     color: #fff;
     border: 2px solid #555d66;
     border-radius: 7px;
     background: #2b3440;
+    margin-top: 28px;
 }
 .product{
     height: 1285px;
@@ -149,7 +155,7 @@ option{
 .product_item{
     width: 255px;
     height: 427px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     border: 2px solid #e2e2e2;
     border-radius: 5px; 
 }
@@ -165,10 +171,10 @@ option{
     align-items: center;
     margin: auto;
     padding: 32px;
+    width: 200px
 }
 .product_item-name{
-    display: flex;
-   
+    display: flex; 
 }
 .product_item-name-left{
     width: 30px;
@@ -342,8 +348,9 @@ option{
 }
 .footer_end{
     display: flex;
-    
     height: 88px;
+    background: #232b37;
+    font-size: 14px;
 }
 .footer_end-group{
     display: flex;

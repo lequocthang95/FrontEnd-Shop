@@ -1,0 +1,16 @@
+.header{
+    background-color: var(--orange-color)
+}
+.connect{
+    display: flex;
+    justify-content: space-between;
+}
+.connect_text{
+    display: flex;
+    justify-content: space-between;
+}
+.connect_text-infor{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}

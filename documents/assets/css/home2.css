@@ -15,3 +15,44 @@
 .top_button1{
     background: #0066ff;
 }
+.product{
+    height: 2500px;
+}
+.product_top-grid{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.product_group{
+    justify-content: space-around;
+    margin-top: 0px;
+}
+.product_top-item{
+    width: 740px;
+    height: 500px;  
+    background: #232b37;
+    display: flex;
+}
+.product_top-item-text{
+    margin-top: auto;
+    height: 385px;
+    width: 355px;
+    color: #fff;
+    margin-left: 70px;
+}
+.logos{
+    height: 232px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #e5e5e5;
+    margin: 30px;
+    align-items: center;
+}
+.footer_end{
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px;
+}

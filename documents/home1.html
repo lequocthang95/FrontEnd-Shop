@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home01</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/home1.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
-    <link rel="stylesheet" href=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
 </head>
 <body class="page-body">
     <div class="header">
@@ -25,11 +26,11 @@
                 <div class="top_list">
                     <span style="color:#2a9cf5">Ordered before 17:30,shipped tocolor:day</span>
                     <div class="group1">
-                        <img src="./assets/image_page/icon-1/01_home_icon1.jpg">
+                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-search.png">
                         <span>Free shipping</span>
                     </div>
                     <div class="group2">
-                        <img src="./assets/image_page/icon-1/01_home-icon2.png" alt="">
+                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-icon2.png" alt="">
                         <span>24/7 Online Support</span>
                     </div>
                 </div>   
@@ -51,27 +52,29 @@
                     <li><a href="#">Login</a></li>
                 </ul>
                 <div class="top_menu-icon">
-                    <img class="top_menu-icon1" src="./assets/image_page/icon-1/01_home-icon3.jpg" alt="">
-                    <img class="top_menu-icon2" src="./assets/image_page/icon-1/01_home-icon4.jpg" alt="">
-                    <img class="top_menu-icon1" src="./assets/image_page/icon-1/01_home-icon5.png" alt="">
+                    <img class="infor-item" src="./assets/image_page/icon-1/01_home-search.png">
+                    <div class="menu_icon-cart">
+                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-cart.png">
+                        <div class="menu_icon-cart-number">10</div>
+                    </div>
+                    <img class="infor-item" src="./assets/image_page/icon-1/01_home-list.png">
                 </div>
             </div>
         </div>
     </div>   
     <div class="header_layout">
         <div class="grid">
-            <div class="slogan">
+            <div class="slider">
                 <p style="color:#2a9cf5">Get 50% Off in summer</p>
-                <p style="font-size:80px; color: #fff;">Seasonal Offers.</p>
-                <p>Stock up on sportswear and limited edition collections on</p>
-                <p>our awesome mid-season sale.</p>
+                <h1 color: #fff;>Seasonal Offers.</h1>
+                <h5>Stock up on sportswear and limited edition collections on our awesome mid-season sale.</h5>
+                <button type="button" class="btn btn-info top_button1">
+                    View Collections
+                </button>
+                <button type="button" class="btn btn-dark top_button2" style="margin-left: 30px;">
+                    Learn More
+                </button>
             </div>
-            <button class="top_button1">
-                View Collections
-            </button>
-            <button class="top_button2">
-                Learn More
-            </button>
         </div>
     </div>
     <div class="product">
@@ -80,48 +83,500 @@
             <p style="font-size: 60px;color: black;">New Collections</p>
         </div>
         <div class="product_group grid">
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SPORTSWEAR
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                    Black Tshirt Brock
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SHOE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Footwear Dark
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$56.00</p>
+                        <p style="text-decoration: line-through;">$78.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            ACCESORIES
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Milo Hoverboard
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5"></p>$78.00</p>
+                        <p style="text-decoration: line-through;">$99.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SHOE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Lobina Perak Shoe
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$78.00</p>
+                        <p style="text-decoration: line-through;">$120.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            HAT
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Red Yello Hat
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$89.00</p>
+                        <p style="text-decoration: line-through;">$156.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            CYCLE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>  
+                        Minimal Cycle                    
+                    <div style="display: flex; justify-content: space-between;width: 150px;">
+                        <p style="color:#2a9cf5">$700.00</p>
+                        <p style="text-decoration: line-through;">$1000.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            BIKE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Dart Moto Bike
+                    <div style="display: flex; justify-content: space-between;width: 160px;">
+                        <p style="color:#2a9cf5">$980.00</p>
+                        <p style="text-decoration: line-through;">$1600.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            ELECTRIC
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Minimal Screw
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$47.00</p>
+                        <p style="text-decoration: line-through;">$99.00</p>
+                    </div> 
+                </div>
+            </div>
         </div>
     </div>
-    <div class="features"></div>
+    <div class="features">
+        <div class="grid" style="display:flex; justify-content: flex-end;">
+            <div class="features_body">
+                <div class="features_body-item"></div>
+                <div class="features_body-item"></div>
+                <div class="features_body-item"></div>
+                <div class="features_body-item"></div>
+               <div class="features_body-text">
+                 <p style="font-size: 28px; color:#2a9cf5">Get 35% Off in summer</p>
+                 <p style="font-size: 78px; color:black">Ladies Cloths</p>
+                 <p style="font-weight: lighter;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+               </div>
+               <button type="button" class="btn btn-primary" style="width: 240px; height: 60px;margin-bottom: 87px;">View Collections</button> 
+            </div>
+        </div>
+    </div>
     <div class="product">
         <div class="product_top grid">
             <p style="color:#2a9cf5">New Products</p>
-            <p style="font-size: 60px; color: black;">New Collections</p>
+            <p style="font-size: 60px;color: black;">New Collections</p>
         </div>
         <div class="product_group grid">
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
-            <div class="product_item"></div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SPORTSWEAR
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                    Black Tshirt Brock
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SHOE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Footwear Dark
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$56.00</p>
+                        <p style="text-decoration: line-through;">$78.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            ACCESORIES
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Milo Hoverboard
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5"></p>$78.00</p>
+                        <p style="text-decoration: line-through;">$99.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            SHOE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Lobina Perak Shoe
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$78.00</p>
+                        <p style="text-decoration: line-through;">$120.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            HAT
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>  
+                        Red Yello Hat                  
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$89.00</p>
+                        <p style="text-decoration: line-through;">$156.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            CYCLE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>  
+                        Minimal Cycle                    
+                    <div style="display: flex; justify-content: space-between;width: 150px;">
+                        <p style="color:#2a9cf5">$700.00</p>
+                        <p style="text-decoration: line-through;">$1000.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            BIKE
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Dart Moto Bike
+                    <div style="display: flex; justify-content: space-between;width: 160px;">
+                        <p style="color:#2a9cf5">$980.00</p>
+                        <p style="text-decoration: line-through;">$1600.00</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item-img">
+                </div>
+                <div class="product_item-text">
+                    <div class="product_item-name">
+                        <div class="product_item-name-left">
+                        </div>
+                        <div class="product_item-name-text">
+                            ELECTRIC
+                        </div>
+                        <div class="product_item-name-right">
+                        </div>
+                    </div>
+                        Minimal Screw
+                    <div style="display: flex; justify-content: space-between;width: 130px;">
+                        <p style="color:#2a9cf5">$47.00</p>
+                        <p style="text-decoration: line-through;">$99.00</p>
+                    </div> 
+                </div>
+            </div>
         </div>
     </div>
-    <div class="call_to_action">        
+    <div class="call_to_action">    
+        <div class="call_to_action grid">
+            <div class="call_to_action-text">
+                <img class="infor-item" src="./assets/image_page/icon-1/01_home-car.png" class="call_to_action-item"style="width:75px; height: 61px;" alt="">
+                <span style="width:345px;">Free Shipping Wordwide.</span>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 170px; height: 60px;">Show Now</button>     
+        </div>
     </div>
     <div class="featured">
-
+        <div class="featured_body grid">
+            <div class="featured_column">
+                <div class="featured_column-text">
+                    <p style="color:#2a9cf5;">Get 45% Off</p>
+                    <p style="font-size:60px;color: black;">Featured</p>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style=" ">
+                            <p>$47.00</p>
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                        <div class="featured_item-text"  style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p> 
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="featured_column">
+                <div class="featured_column-text">
+                    <p style="color:#2a9cf5">Get 45% Off</p>
+                    <p style="font-size:60px;color: black;">Best Seller</p>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="featured_column-item">
+                    <div class="featured_column-item-img"></div>
+                    <div class="featured_column-item-text">
+                       <div class="featured_item-text"><img src="./assets/image_page/icon-1/01_home-Recovered.png" alt=""></div> 
+                       <div class="featured_item-text" style="display:flex;"><p style="color:black; font-size: 18px;">Minimal Screw</p></div> 
+                        <div class="featured_item-text" style="width: 125px; ">
+                            <p>$47.00</p>   
+                            <p style="text-decoration: line-through;">$99.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="featured_column">
+                <div class="featured_column-text">
+                    <p style="color:#2a9cf5">Product intro</p>
+                    <p style="font-size:60px;color: black;">Offer Ad</p>  
+                </div>
+                <div class="featured_column-item-big"></div>
+                <div class="featured_column-item-big"></div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer_body grid">
             <div class="infor">
                 <p style="color:#fff; font-size:30px;">BigEnja.</p>
-                <p>198 West 21th Street, Suite 721,
-                    New York NY 10010</p>
-                <p>youremail@yourdomain.com
-                    example@yourdomain.com</p>
-                <p>+88 (0) 101 0000 000
-                    +99 (989) 101 0000 000</p>
+                <div class="infor1">
+                    <div class="infor1-items">
+                        <img class="infor1-item" src="./assets/image_page/icon-1/01_home-map.png" alt="">
+                        <img class="infor1-item" src="./assets/image_page/icon-1/01_home-mail.png" alt="">
+                        <img class="infor1-item" src="./assets/image_page/icon-1/01_home-call.png" alt="">
+                    </div>
+                    <div class="infor1-text">
+                        <p>198 West 21th Street, Suite 721,
+                                New York NY 10010</p>
+                        <p>youremail@yourdomain.com
+                                example@yourdomain.com</p>
+                        <p>+88 (0) 101 0000 000
+                            +99 (989) 101 0000 000</p>  
+                    </div>    
+                </div>  
             </div>
             <div class="infor">
                 <p style="color:#fff; font-size:30px;">Shopping Guiden</p>
