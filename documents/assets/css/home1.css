@@ -267,6 +267,12 @@
         background: #f4f4f4;
         justify-content: center;
         align-items: center;
+        border-radius: 5px;
+        color: rgba(0,0,0,0.2)
+    }
+    .product_trending-big:hover{
+        color: #fff;
+        background: #2a9cf5;
     }
     .call_to_action{
         height: 300px;
