@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home01</title>
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -11,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="header">
         <div class="top_nav">  
             <div class="heading grid">
@@ -51,30 +51,118 @@
                     <li><a class="top_menu-link" href="#">Element</a></li>
                     <li><a class="top_menu-link" href="#">Login</a></li>
                 </ul>
-                <div class="top_menu-icon">
-                    <a href=""><img class="infor-item" src="./assets/image_page/icon-1/01_home-search.png"></a>
-                    <div class="menu_icon-cart">
-                        <a href=""><img class="infor-item" src="./assets/image_page/icon-1/01_home-cart.png"></a> 
-                        <div class="menu_icon-cart-number">10</div>
+                <ul class="top_menu-icon">
+                    <li class="menu_icon-search" href="">
+                        <img src="./assets/image_page/icon-1/01_home-search.png" alt="">
+                    <li>
+                    <li class="menu_icon-cart">
+                        <img src="./assets/image_page/icon-1/01_home-cart.png">
+                        <div class="menu_icon-cart-number">10</div> 
+                    </li>
+                    <li class="navbar_menu-icon">
+                        <div class="navbar_menu">
+                                <ul class="navbar_menu-list">
+                                    <li><a class="top_menu-link" href="#">Home</a></li>
+                                    <li><a class="top_menu-link" href="#">Pages</a></li>
+                                    <li><a class="top_menu-link" href="#">Postfolio</a></li>
+                                    <li><a class="top_menu-link" href="#">Blog</a></li>
+                                    <li><a class="top_menu-link" href="#">Shop</a></li>
+                                    <li><a class="top_menu-link" href="#">Element</a></li>
+                                    <li><a class="top_menu-link" href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_grid">
+        <div class="search_grid-active"></div>
+        <div class="form_search"> 
+            <input type="text" class="form_search-input" placeholder="Search...">
+            <button type="submit" class="form_search-btn btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="cart_grid grid_overlay">
+        <div class="cart_grid-active"></div>
+        <div class="cart"> 
+            <div class="cart_column-name">
+                <h4 style="color: #fff;">BigEnja.</h4>
+                <div class="cart_close">
+                    <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
+                </div> 
+            </div>
+            <h6 style="color: #fff;font-weight: 500;">Shopping cart</h6>
+            <div class="cart_item">
+                <div class="cart_item-img"></div>
+                <div class="cart_item-infor">
+                    Footwear Dark
+                    <div class="cart_price">
+                        <p style="margin-right: 15px;">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
                     </div>
-                    <a href=""><img class="infor-item" src="./assets/image_page/icon-1/01_home-list.png"></a>
+                    <div class="cart_item-remove">
+                        REMOVE
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grid" style="display: flex; justify-content: flex-end;">
-            <div class="navbar_menu">
-                    <ul class="navbar_menu-list">
-                        <li><a class="top_menu-link" href="#">Home</a></li>
-                        <li><a class="top_menu-link" href="#">Pages</a></li>
-                        <li><a class="top_menu-link" href="#">Postfolio</a></li>
-                        <li><a class="top_menu-link" href="#">Blog</a></li>
-                        <li><a class="top_menu-link" href="#">Shop</a></li>
-                        <li><a class="top_menu-link" href="#">Element</a></li>
-                        <li><a class="top_menu-link" href="#">Login</a></li>
-                    </ul>
+            <div class="cart_item">
+                <div class="cart_item-img"></div>
+                <div class="cart_item-infor">
+                    Footwear Dark
+                    <div class="cart_price">
+                        <p style="margin-right: 15px;">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div>
+                    <div class="cart_item-remove">
+                        REMOVE
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="cart_item">
+                <div class="cart_item-img"></div>
+                <div class="cart_item-infor">
+                    Footwear Dark
+                    <div class="cart_price">
+                        <p style="margin-right: 15px;">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div>
+                    <div class="cart_item-remove">
+                        REMOVE
+                    </div>
+                </div>
+            </div> 
+            <div class="cart_item">
+                <div class="cart_item-img"></div>
+                <div class="cart_item-infor">
+                    Footwear Dark
+                    <div class="cart_price">
+                        <p style="margin-right: 15px;">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div>
+                    <div class="cart_item-remove">
+                        REMOVE
+                    </div>
+                </div>
+            </div> 
+            <div class="cart_item">
+                <div class="cart_item-img"></div>
+                <div class="cart_item-infor">
+                    Footwear Dark
+                    <div class="cart_price">
+                        <p style="margin-right: 15px;">$23.00</p>
+                        <p style="text-decoration: line-through;">$45.00</p>
+                    </div>
+                    <div class="cart_item-remove">
+                        REMOVE
+                    </div>
+                </div>
+            </div>
+            <button class="cart_item-btn button-blue">CHECK OUT</button>      
+        </div> 
     </div>
     <div class="header_layout">
         <div class="grid">
@@ -83,7 +171,7 @@
                 <h1 style="margin-top: -5px">Seasonal Offers.</h1>
                 <h5 style="margin-top: 3px; line-height: 1.63; width: 520px; font-weight: normal;">Stock up on sportswear and limited edition collections on 
                     our awesome mid-season sale.</h5>
-                <button type="button" class="top_button1">
+                <button type="button" class="top_button1 ">
                     VIEW COLLECTIONS
                 </button>
                 <button type="button" class="top_button2" style="margin-left: 30px;">
@@ -287,11 +375,11 @@
             <h2 style="color: black;">Our Best Sellers</h2>
         </div>
         <div class="product_trending grid">
-            <img class="product_trending-small" src="./assets/image_page/icon-1/01_home-left.png" alt="">
-            <div class="product_trending-big">BEST SELLERS</div>
-            <div class="product_trending-big">TRENDING SELLERS</div>
-            <div class="product_trending-big">NEW SELLERS</div>
-            <img class="product_trending-small" src="./assets/image_page/icon-1/01_home-right.png" alt="">
+            <img class="product_icon-left" src="./assets/image_page/icon-1/01_home-left.png" alt="">
+            <div class="product_slide-left">BEST SELLERS</div>
+            <div class="product_slide-between">TRENDING SELLERS</div>
+            <div class="product_slide-right">NEW SELLERS</div>
+            <img class="product_icon-right" src="./assets/image_page/icon-1/01_home-right.png" alt="">
         </div>
         <div class="product_group grid">
             <div class="product_item">
@@ -643,4 +731,5 @@
         </div>
     </div>
 </body>
+<script src="./assets/main.js"></script>
 </html>

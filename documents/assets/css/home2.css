@@ -1,5 +1,11 @@
+a{
+    color:#757e8a;
+}
 .top_header{
     background: #fff;
+}
+.menu_icon-cart-number{
+    align-items: center;
 }
 .top_menu-list{
     width: 615px;

@@ -1,3 +1,33 @@
+// search active
+var search = document.querySelector('.search_grid');
+var searchActive = document.querySelector('.search_grid-active')
+document.querySelector('.menu_icon-search').onclick = () =>{
+    search.style.display="block";
+    searchActive.style.display="block";
+}
+
+searchActive.onclick = () =>{
+    search.style.display="none";
+}
+
+// cart active
+var cart = document.querySelector('.cart_grid');
+var cartActive = document.querySelector('.cart_grid-active')
+console.log(cartActive)
+document.querySelector('.menu_icon-cart').onclick = () =>{
+    cart.style.display="block";
+    cartActive.style.display="block";
+}
+var cartClose = document.querySelector('.cart_close')
+cartClose.onclick = () =>{
+    cart.style.display="none";
+}
+cartActive.onclick = () =>{
+    cart.style.display="none";
+}
+
+
+// product slide
 var iconLeft = document.querySelector('.product_icon-left')
 var iconRight = document.querySelector('.product_icon-right')
 var textArray = [];
@@ -22,4 +52,3 @@ iconRight.onclick = () =>{
     slideBetween= textArray[0]
     slideRight= textArray[1];
 }
-
