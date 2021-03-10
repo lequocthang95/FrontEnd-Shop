@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home03</title>
-
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/home1.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/home1.css">   
     <link rel="stylesheet" href="assets/css/home3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -25,63 +25,251 @@
                     </select>
                 </div>
                 <div class="top_list">
-                    <span style="color:#2a9cf5">Ordered before 17:30,shipped tocolor:day</span>
-                    <div class="group1">
-                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-search.png">
+                    <span>Ordered before 17:30,shipped to day</span>
+                    <div class="top_infor">
+                        <img class="top_infor-item" src="./assets/image_page/icon-1/01_home-shipping.png">
                         <span>Free shipping</span>
                     </div>
-                    <div class="group2">
-                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-icon2.png" alt="">
+                    <div class="top_infor">
+                        <img class="top_infor-item" src="./assets/image_page/icon-1/01_home-time.png" alt="">
                         <span>24/7 Online Support</span>
                     </div>
                 </div>   
             </div>
         </div>
-        <div class="top_menu">
-            <div class="connect grid">
+        <div class="top_header">
+            <div class="header_body grid">
                 <div class="brand">
-                    <span style="color:#fff">BigEnja</span>  
-                    <span style="color:#2a9cf5">.</span>            
+                    <h4 style="color:#fff;">BigEnja</h4>
+                    <div class="brand-icon" style="background:#fff;"></div>             
                 </div>
-                <div class="connect_text">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <div class="header_body-group">
+                    <form class="home3_search">
+                        <div class="search_input-left"></div>
+                        <div class="input_overlay">
+                            <input class="home3_search-input" type="search" placeholder="Search your  keywords..." aria-label="Search">
+                        </div>
+                        <div class="catelogy">Category +</div>
+                        <div class="home3_search-icon"><img src="./assets/image_page/icon-1/03_home-search.png" alt=""></div>
                     </form>
-                    <div class="connect_text-infor">
-                        <img class="infor1-item" src="./assets/image_page/icon-1/01_home-mail.png" alt="">
+                    <div class="header_body-item">
+                        <div><img class="contact_icon" src="./assets/image_page/icon-1/01_home-mail.png" alt=""></div> 
                         <div>
                             <h6>Email Us</h6>
-                        <p>info@example.com</p>
+                            <p>info@example.com</p>
                         </div>  
                     </div>
-                    <div class="connect_text-infor">
-                        <img class="infor1-item" src="./assets/image_page/icon-1/01_home-call.png" alt="">
-                        <p>+88 (0) 101 0000 000
-                            +99 (989) 101 0000 000</p>
+                    <div class="header_body-item">
+                        <div><img class="contact_icon" src="./assets/image_page/icon-1/01_home-call.png" alt=""></div>
+                        <div>
+                            <h6>Free Support</h6>
+                            <p>(012) 800 456 789 - 10</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="catelory_select grid">
+                <input type="text">
+                <select class="form-select search_select" size="3" aria-label="size 3 select ">
+                <option value="">Category</option>
+                <option value="">One</option>
+                <option value="">Two</option>
+                <option value="">Three</option>
+            </select></div> 
         </div>
-        <div class="top_header">
+        <div class="home3_header-footer">
             <div class="top_menu grid">
+                <div class="brand">
+                    <h4>BigEnja</h4>
+                    <div class="brand-icon"></div>             
+                </div>
                 <ul class="top_menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Postfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Element</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a class="top_menu-link2" href="#">Home +</a></li>
+                    <li><a class="top_menu-link2" href="#">Pages +</a></li>
+                    <li><a class="top_menu-link2" href="#">Postfolio +</a></li>
+                    <li><a class="top_menu-link2" href="#">Blog +</a></li>
+                    <li><a class="top_menu-link2" href="#">Shop +</a></li>
+                    <li><a class="top_menu-link2" href="#">Element +</a></li>
+                    <li><a class="top_menu-link2" href="#">Login +</a></li>
                 </ul>
-                <div class="top_menu-icon">
-                    <img class="infor-item" src="./assets/image_page/icon-1/01_home-search.png">
-                    <div class="menu_icon-cart">
-                        <img class="infor-item" src="./assets/image_page/icon-1/01_home-cart.png">
-                        <div class="menu_icon-cart-number">10</div>
+                <ul class="home3_menu-icon">
+                    <li class="menu_icon-search" href="">
+                        <img src="./assets/image_page/icon-1/01_home-search.png" alt="">
+                    <li>
+                    <li class="menu_icon-cart">
+                        <img src="./assets/image_page/icon-1/01_home-cart.png">
+                        <div class="menu_icon-cart-number">10</div> 
+                    </li>
+                    <li class="menu_icon-list">
+                        <img src="./assets/image_page/icon-1/01_home-list.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <div class="search_grid">
+        <div class="search_grid-active"></div>
+        <div class="form_search"> 
+            <input type="text" class="form_search-input" placeholder="Search...">
+            <button type="submit" class="form_search-btn btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="cart_grid">
+        <div class="cart_grid-active"></div>
+        <div class="cart">
+            <div class="cart_shopping">
+                <div class="cart_column-name">
+                    <h4 style="color: #fff;">BigEnja.</h4>
+                    <div class="cart_close">
+                        <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
+                    </div> 
+                </div>
+                <h6 style="color: #fff;font-weight: 500; width: 92%; margin: 20px 0;">Shopping cart</h6>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark let
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
                     </div>
-                    <img class="infor-item" src="./assets/image_page/icon-1/01_home-list.png">
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div> 
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div> 
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark end
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div>
+                <a href=""><button class="cart_item-btn button-blue">CHECK OUT</button></a>     
+            </div>
+             
+        </div>
+    </div>
+    <div class="list_grid">
+        <div class="list_grid-active"></div>
+        <div class="list">
+            <div class="list_column-name">
+                <h4 style="color: #fff;">BigEnja.</h4>
+                <div class="list_close">
+                    <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
+                </div> 
+            </div>
+            <h6 style="color: #fff;font-weight: 500;">Recent Reviews</h6>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
                 </div>
             </div>
         </div>
-    </div>  
+    </div> 
+    <script type="text/javascript"  src="./assets/jq/jquery-3.6.0.min.js"></script>
+    <script src="./assets/main.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.js"></script>
+</body>  

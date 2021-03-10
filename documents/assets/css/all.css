@@ -41,7 +41,7 @@ ul{
     width: 1110px;
     margin: auto;
 }
-.grid_overlay,.search_grid,.search_grid-active,.cart_grid-active,.cart_grid{
+.grid_overlay,.search_grid,.search_grid-active,.cart_grid-active,.cart_grid,.list_grid,.list_grid-active{
     position: fixed;
     background: rgba(0, 0 ,0 , 0.1);
     top: 0;

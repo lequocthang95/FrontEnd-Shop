@@ -13,7 +13,6 @@ searchActive.onclick = () =>{
 // cart active
 var cart = document.querySelector('.cart_grid');
 var cartActive = document.querySelector('.cart_grid-active')
-console.log(cartActive)
 document.querySelector('.menu_icon-cart').onclick = () =>{
     cart.style.display="block";
     cartActive.style.display="block";
@@ -25,30 +24,61 @@ cartClose.onclick = () =>{
 cartActive.onclick = () =>{
     cart.style.display="none";
 }
+//remove product in cart shopping cart
+var cartShopping = document.querySelector('.cart')
+var removeBtns = document.querySelectorAll('.cart_item-remove')
+removeBtns.forEach((removeBtn) =>{
+    removeBtn.onclick = () => {
+        var cartItem = removeBtn.parentElement;
+        var promise = Promise.resolve();
+            promise
+                .then(()=>{
+                    return new Promise((resolve) =>{
+                        removeBtn.style="animation: removeItem 0.3s linear";
+                        setTimeout(resolve,300)
+                    })
+                })
+                .then(()=>{
+                    return new Promise((resolve) =>{
+                        removeBtn.style="display:none"
+                        cartItem.parentElement.style="animation: removeItem 1s linear";
+                        setTimeout(resolve,1000)
+                    })
+                })
+                .then(()=>{
+                    console.log(cartItem.parentElement)
+                    cartItem.parentElement.style.display="none";
+                })
+        
+    }
+    
+})
+        
 
+// list active
+var list = document.querySelector('.list_grid');
+var listActive = document.querySelector('.list_grid-active')
+document.querySelector('.menu_icon-list').onclick = () =>{
+    list.style.display="block";
+    listActive.style.display="block";
+}
+var listClose = document.querySelector('.list_close')
+listClose.onclick = () =>{
+    list.style.display="none";
+}
+listActive.onclick = () =>{
+    list.style.display="none";
+}
 
-// product slide
-var iconLeft = document.querySelector('.product_icon-left')
-var iconRight = document.querySelector('.product_icon-right')
-var textArray = [];
-var slideLeft = document.querySelector('.product_slide-left')
-    var slideBetween = document.querySelector('.product_slide-between')
-    var slideRight = document.querySelector('.product_slide-right')
-iconLeft.onclick = () =>{
-    var textArray = [];
-    textArray.push(slideLeft,slideBetween,slideRight) 
-    slideBetween.insertAdjacentElement("afterend",slideLeft);
-    slideRight.insertAdjacentElement("afterend",slideLeft);
-    slideLeft= textArray[1]
-    slideBetween= textArray[2]
-    slideRight= textArray[0];
-}
-iconRight.onclick = () =>{
-    var textArray = [];
-    textArray.push(slideLeft,slideBetween,slideRight)
-    slideRight.insertAdjacentElement("afterend",slideBetween);
-    slideRight.insertAdjacentElement("afterend",slideLeft);
-    slideLeft= textArray[2]
-    slideBetween= textArray[0]
-    slideRight= textArray[1];
-}
+// slick product slide
+$(function () {
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button style="padding: 0;"><img class="product_icon-left" src="./assets/image_page/icon-1/01_home-left.png" alt=""></button>',
+        nextArrow: '<button style="padding: 0;"><img class="product_icon-right" src="./assets/image_page/icon-1/01_home-right.png" alt=""></button>',
+        autoplay: true,
+    });
+});

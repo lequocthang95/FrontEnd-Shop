@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/home1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/home1.css">   
 </head>
 <body>
     <div class="header">
@@ -59,21 +59,10 @@
                         <img src="./assets/image_page/icon-1/01_home-cart.png">
                         <div class="menu_icon-cart-number">10</div> 
                     </li>
-                    <li class="navbar_menu-icon">
-                        <div class="navbar_menu">
-                                <ul class="navbar_menu-list">
-                                    <li><a class="top_menu-link" href="#">Home</a></li>
-                                    <li><a class="top_menu-link" href="#">Pages</a></li>
-                                    <li><a class="top_menu-link" href="#">Postfolio</a></li>
-                                    <li><a class="top_menu-link" href="#">Blog</a></li>
-                                    <li><a class="top_menu-link" href="#">Shop</a></li>
-                                    <li><a class="top_menu-link" href="#">Element</a></li>
-                                    <li><a class="top_menu-link" href="#">Login</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <li class="menu_icon-list">
+                        <img src="./assets/image_page/icon-1/01_home-list.png" alt="">
                     </li>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -86,84 +75,159 @@
             </button>
         </div>
     </div>
-    <div class="cart_grid grid_overlay">
+    <div class="cart_grid">
         <div class="cart_grid-active"></div>
-        <div class="cart"> 
-            <div class="cart_column-name">
+        <div class="cart">
+            <div class="cart_shopping">
+                <div class="cart_column-name">
+                    <h4 style="color: #fff;">BigEnja.</h4>
+                    <div class="cart_close">
+                        <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
+                    </div> 
+                </div>
+                <h6 style="color: #fff;font-weight: 500; width: 92%; margin: 20px 0;">Shopping cart</h6>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark let
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div> 
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div> 
+                <div class="cart_item">
+                    <div class="cart_item-img"></div>
+                    <div class="cart_item-infor">
+                        Footwear Dark end
+                        <div class="cart_price">
+                            <p style="margin-right: 15px;">$23.00</p>
+                            <p style="text-decoration: line-through;">$45.00</p>
+                        </div>
+                        <div class="cart_item-remove">
+                            REMOVE
+                        </div>
+                    </div>
+                </div>
+                <a href=""><button class="cart_item-btn button-blue">CHECK OUT</button></a>     
+            </div>
+             
+        </div>
+    </div>
+    <div class="list_grid">
+        <div class="list_grid-active"></div>
+        <div class="list">
+            <div class="list_column-name">
                 <h4 style="color: #fff;">BigEnja.</h4>
-                <div class="cart_close">
+                <div class="list_close">
                     <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
                 </div> 
             </div>
-            <h6 style="color: #fff;font-weight: 500;">Shopping cart</h6>
-            <div class="cart_item">
-                <div class="cart_item-img"></div>
-                <div class="cart_item-infor">
+            <h6 style="color: #fff;font-weight: 500;">Recent Reviews</h6>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
                     Footwear Dark
-                    <div class="cart_price">
-                        <p style="margin-right: 15px;">$23.00</p>
-                        <p style="text-decoration: line-through;">$45.00</p>
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
                     </div>
-                    <div class="cart_item-remove">
-                        REMOVE
+                    <div class="list_item-author">
+                        by Quoc Thang
                     </div>
                 </div>
             </div>
-            <div class="cart_item">
-                <div class="cart_item-img"></div>
-                <div class="cart_item-infor">
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
                     Footwear Dark
-                    <div class="cart_price">
-                        <p style="margin-right: 15px;">$23.00</p>
-                        <p style="text-decoration: line-through;">$45.00</p>
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
                     </div>
-                    <div class="cart_item-remove">
-                        REMOVE
+                    <div class="list_item-author">
+                        by Quoc Thang
                     </div>
                 </div>
             </div>
-            <div class="cart_item">
-                <div class="cart_item-img"></div>
-                <div class="cart_item-infor">
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
                     Footwear Dark
-                    <div class="cart_price">
-                        <p style="margin-right: 15px;">$23.00</p>
-                        <p style="text-decoration: line-through;">$45.00</p>
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
                     </div>
-                    <div class="cart_item-remove">
-                        REMOVE
-                    </div>
-                </div>
-            </div> 
-            <div class="cart_item">
-                <div class="cart_item-img"></div>
-                <div class="cart_item-infor">
-                    Footwear Dark
-                    <div class="cart_price">
-                        <p style="margin-right: 15px;">$23.00</p>
-                        <p style="text-decoration: line-through;">$45.00</p>
-                    </div>
-                    <div class="cart_item-remove">
-                        REMOVE
-                    </div>
-                </div>
-            </div> 
-            <div class="cart_item">
-                <div class="cart_item-img"></div>
-                <div class="cart_item-infor">
-                    Footwear Dark
-                    <div class="cart_price">
-                        <p style="margin-right: 15px;">$23.00</p>
-                        <p style="text-decoration: line-through;">$45.00</p>
-                    </div>
-                    <div class="cart_item-remove">
-                        REMOVE
+                    <div class="list_item-author">
+                        by Quoc Thang
                     </div>
                 </div>
             </div>
-            <button class="cart_item-btn button-blue">CHECK OUT</button>      
-        </div> 
-    </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item-img"></div>
+                <div class="list_item-infor">
+                    Footwear Dark
+                    <div class="list_item-icon">
+                        <img src="./assets/image_page/icon-1/01_home-star.png" alt="">
+                    </div>
+                    <div class="list_item-author">
+                        by Quoc Thang
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     <div class="header_layout">
         <div class="grid">
             <div class="slider">
@@ -183,7 +247,7 @@
     <div class="product">
         <div class="product_top grid">
             <p style="color:#2a9cf5">New Products</p>
-            <p style="font-size: 60px;color: black;">New Collections</p>
+            <p style="font-size: 60px;color: black; margin-bottom: 44px;">New Collections</p>
         </div>
         <div class="product_group grid">
             <div class="product_item">
@@ -374,12 +438,13 @@
             <p style="color:#2a9cf5">Trending products</p>
             <h2 style="color: black;">Our Best Sellers</h2>
         </div>
-        <div class="product_trending grid">
-            <img class="product_icon-left" src="./assets/image_page/icon-1/01_home-left.png" alt="">
-            <div class="product_slide-left">BEST SELLERS</div>
-            <div class="product_slide-between">TRENDING SELLERS</div>
-            <div class="product_slide-right">NEW SELLERS</div>
-            <img class="product_icon-right" src="./assets/image_page/icon-1/01_home-right.png" alt="">
+        <div class="product_trending multiple-items grid">
+            <div><div class="product_slide-item">BEST SELLERS</div></div>
+            <div><div class="product_slide-item">TRENDING SELLERS</div></div>
+            <div><div class="product_slide-item">NEW SELLERS</div> </div>
+            <div><div class="product_slide-item">BEST SELLERS</div></div>
+            <div><div class="product_slide-item">TRENDING SELLERS</div></div>
+            <div><div class="product_slide-item">NEW SELLERS</div></div>
         </div>
         <div class="product_group grid">
             <div class="product_item">
@@ -730,6 +795,10 @@
             </div>
         </div>
     </div>
-</body>
+<script type="text/javascript"  src="./assets/jq/jquery-3.6.0.min.js"></script>
 <script src="./assets/main.js"></script>
+<script type="text/javascript" src="./assets/js/slick.js"></script>
+
+
+</body>
 </html>
