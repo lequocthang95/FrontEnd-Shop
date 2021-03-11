@@ -7,6 +7,7 @@
         box-sizing: unset;
     }
     .top_menu-link{
+        font-weight: 400;
         padding-bottom: 9px;
         display: block;
         width: 50%;
