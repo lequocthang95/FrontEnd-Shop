@@ -1,4 +1,74 @@
-    .top_menu-link a {
+    .between{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .header{
+        min-height: 150px;
+        background: #232b37;
+        font-weight: normal;
+    }
+    .header_support{
+        min-height: 55px;
+        background: #232b37;
+        margin-top: 82px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #303743;
+    }
+    .header_support-language{
+        width: 136px;
+        display: flex;
+    }
+    .select_language{
+        border: 0 !important;
+        background: rgba(255, 255, 255,0);
+        color: #b7bec9;
+    }
+    option{
+        padding-left: 0;
+        color: #b7bec9;
+    }
+    .top_list{
+        width: 591px;
+    }
+    .top_infor:hover{
+        color:#2a9cf5;
+    }
+    .top_infor{
+        display: flex;
+    }
+    .top_infor-item{
+        margin-right: 10px;
+    }
+    .top_header{
+        min-height: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #232b37;
+        flex-wrap: wrap;
+    }
+    .top_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand{
+        display: flex;
+        font: bold 30px "Poppins";
+        text-align: center;
+    }
+    .brand-icon{
+        width: 6px;
+        height: 6px;
+        margin-left: 1px;
+        margin-top: calc(25% - 8.5px);
+        background:  #2a9cf5;
+    }.top_menu-link a {
         color: rgba(255,255,255,0.6);
         border: transparent;
     }
@@ -74,79 +144,7 @@
         display: flex;
         justify-content:space-between;
     }
-    .header{
-        height: 150px;
-        background: #232b37;
-        margin-top: 82px;
-        font-weight: normal;
-    }
-    .top_nav{
-        height: 55px;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-        display: flex;
-    }
-    .heading{
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        margin: auto; 
-    }
-    .top_select{
-        width: 136px; 
-        display: flex;
-        justify-content: space-between;
-        margin-left: -3px;
-        
-    }
-    .select_top{
-        border: 0 !important;
-        background: rgba(255, 255, 255,0);
-        text-indent: -1px;
-        color: #b7bec9;
-    }
-    option{
-        padding-left: 0;
-        color: #b7bec9;
-    }
-    .top_list{
-        display: flex;
-        width: 591px;
-        float: right;
-        justify-content: space-between;
-        margin-top: auto;
-    }
-    .top_infor:hover{
-        color:#2a9cf5;
-    }
-    .top_infor{
-        display: flex;
-    }
-    .top_infor-item{
-        margin-right: 10px;
-    }
-    .top_header{
-        height: 95px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .top_menu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .brand{
-        display: flex;
-        font: bold 30px "Poppins";
-        text-align: center;
-    }
-    .brand-icon{
-        width: 6px;
-        height: 6px;
-        margin-left: 1px;
-        margin-top: calc(25% - 8.5px);
-        background:  #2a9cf5;
-    }
+
     .top_menu-list{
         width: 460px;
         display: flex;
