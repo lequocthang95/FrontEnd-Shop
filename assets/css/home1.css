@@ -1,21 +1,78 @@
-    a {
-        color: rgba(255,255,255,0.7);
-        text-decoration: none;
-        background-color: transparent;
+    .top_menu-link a {
+        color: rgba(255,255,255,0.6);
+        border: transparent;
     }
-    *, ::after, ::before{
-        box-sizing: unset;
+    .top_menu-link a:hover {
+        color: rgb(255,255,255);
+        text-decoration: none;
     }
     .top_menu-link{
         font-weight: 400;
-        padding-bottom: 9px;
-        display: block;
-        width: 50%;
-    }
-    .top_menu-link:hover{
-        color: rgb(255,255,255);
+        font-size: 14px;
         text-decoration: none;
-        border-bottom: 1px solid #fff;
+        position: relative;
+        top: 18px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: -15px;
+      } 
+    .dropdown-content a {
+        color: #999999;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      } 
+    .dropdown_pages{
+        background:#f9f9f9;
+        display: none;
+        position: absolute;
+        width: 1110px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: -410px;
+        padding: 20px;
+    }
+    .dropdown_pages-column{
+        font-size: 16px;
+        color: #000000;
+    }
+    .column_page-text{
+        font-size: 14px;
+        color: #999999;
+        padding-top: 10px;
+    }
+    .column_page-text:hover{
+        color:#2a9cf5;
+    }
+    .pages_column-img{
+        width: 250px;
+        height: 200px;
+        background:rgba(236, 118, 118, 0.452)
+    }
+    .dropdown-content a:hover {background-color: #2a9cf5}
+    .menu_link-border{
+        width: 50%;
+        height: 33px;
+        position: relative;
+        margin-top: 10px;
+        border: transparent;
+    }
+    .top_menu-link:hover .menu_link-border{
+        display: block;
+        border-top: 2px solid #fff;
+    }
+    .top_menu-link:hover .dropdown-content {
+        display: block;
+    }
+    .top_menu-link:hover .dropdown_pages{
+        display: flex;
+        justify-content:space-between;
     }
     .header{
         height: 150px;
@@ -58,6 +115,9 @@
         justify-content: space-between;
         margin-top: auto;
     }
+    .top_infor:hover{
+        color:#2a9cf5;
+    }
     .top_infor{
         display: flex;
     }
@@ -73,7 +133,7 @@
     .top_menu{
         display: flex;
         justify-content: space-between;
-        margin: auto;
+        align-items: center;
     }
     .brand{
         display: flex;
@@ -91,8 +151,6 @@
         width: 460px;
         display: flex;
         justify-content:space-between;
-        font: Bold 14px "Poppins";
-        margin: auto;
     }
     .top_menu-icon{
         width: 88px;
@@ -221,17 +279,16 @@
         margin-top: -8px;
     }
     .menu_icon-cart-number{
-        background: #2a9cf5;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        margin-top: -10px;
+        background-image: url(../image_page/icon-1/01_home-br-cart-number.png);
+        background-repeat: no-repeat;
+        margin-top: -12px;
         margin-left: -10px;
         font-size: 12px;
         display: flex;
         justify-content:center;
         color: #fff;
-        align-items: center;
+        font-weight: bold;
+        padding: 4px;
     }
 
     .menu_icon-list{
@@ -260,19 +317,26 @@
         line-height: 1.6;
     }
     .top_button1{
-        width: 240px; 
-        height: 60px;
+        padding: 26px 45px;
         background-color:#206a8e;
         color: #fff;
         margin-top: 22px;
+        border: 2px solid  rgba(255,255,255,0);
+    }
+    .top_button1:hover{
+        background: rgba(255,255,255,0);
+        border: 2px solid #666666;
     }
     .top_button2{
-        width: 168px; 
-        height: 64px;
+        padding: 26px 35px;
         color: #fff;
         border: 2px solid #555d66;
         background: #2b3440;
         margin-top: 22px;
+    }
+    .top_button2:hover{
+        background: #206a8e;
+        border: 2px solid  rgba(255,255,255,0);
     }
     .product{
         height: 1285px;
@@ -298,6 +362,26 @@
         border: 1px solid #e2e2e2;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+    }
+    .add_cart{
+        display: none;
+    }
+    .product_item-img:hover .add_cart{
+        display: inline-block;
+        background-color: #2a9cf5;
+        padding: 10px 25px;
+        border-radius: 25px;
+        color: #fff;
+        font-weight: 700;
+        -ms-transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        font-size: 12px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in
     }
     .product_item-text{
         width: 255px;
