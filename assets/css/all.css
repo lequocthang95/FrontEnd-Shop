@@ -69,3 +69,10 @@ button{
 .open{
     visibility: inherit;
 }
+@media only screen and (max-width: 767px){
+    .header_support-language
+    {
+        display: block;
+        text-align: center;
+    }
+}

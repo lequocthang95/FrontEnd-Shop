@@ -33,7 +33,7 @@
         color: #b7bec9;
     }
     .top_list{
-        width: 591px;
+        width: 591px;  
     }
     .top_infor:hover{
         color:#2a9cf5;
@@ -51,11 +51,6 @@
         align-items: center;
         background: #232b37;
         flex-wrap: wrap;
-    }
-    .top_menu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     .brand{
         display: flex;
@@ -300,10 +295,13 @@
     .top_menu-icon2{
         padding-bottom: 10px;
     }
+    /*  */
     .header_layout{
-        height: 700px;
+        min-height: 700px;
         background: #2b3440;
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     .slider{
         width: 700px;
