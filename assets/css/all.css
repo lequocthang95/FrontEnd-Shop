@@ -13,6 +13,12 @@ body{
     color: #757e8a;
     line-height: 1.125;
 }
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
 h1{
     font-size: 80px;
     font-weight: bold;
@@ -40,10 +46,6 @@ ul{
     list-style: none;
     margin: auto;
 }
-.grid{
-    width: 1110px;
-    margin: auto;
-}
 .grid_overlay,.search_grid,.search_grid-active,.cart_grid-active,.cart_grid,.list_grid,.list_grid-active{
     position: fixed;
     background: rgba(0, 0 ,0 , 0.1);
@@ -65,9 +67,6 @@ button{
 }
 .button-blue{
     background:#2a9cf5;
-}
-.open{
-    visibility: inherit;
 }
 @media only screen and (max-width: 767px){
     .header_support-language
