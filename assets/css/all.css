@@ -68,10 +68,57 @@ button{
 .button-blue{
     background:#2a9cf5;
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 992px){
     .header_support-language
     {
-        display: block;
-        text-align: center;
+        flex: 1;
+        margin-bottom: 10px;
+        margin-left: 40px
     }
+    .top_menu-list{
+        margin-top: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .top_menu-link{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        min-width: 50px;
+    }
+    .top_infor{
+        margin-left: 0;
+    }
+    .form_search{
+        position: relative;
+        left: 0; 
+    }
+    .form_search-input{
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .brand_group{
+        padding: 20px 0;
+    }
+    .center{
+        padding: 20px 0;
+    }
+    .form_search{
+        position: relative;
+        left: 0; 
+    }
+
+}
+@media only screen and (max-width: 576px){
+    .brand_group{
+        padding: 20px 0;
+    }
+    .center{
+        padding: 20px 0;
+    }
+    .form_search{
+        position: relative;
+        right: 350px; 
+    }
+
 }
