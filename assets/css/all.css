@@ -12,6 +12,7 @@ body{
     font-size: 16px;
     color: #757e8a;
     line-height: 1.125;
+    font-weight: 300;
 }
 a {
     color: black;
@@ -20,15 +21,15 @@ a:hover {
     text-decoration: none;
 }
 h1{
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: bold;
     color: #fff;
 }
 h2{
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 h3{
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 h4{
     font-size: 30px;
@@ -59,16 +60,27 @@ ul{
     display: none;
     z-index: 1;
 }
-button{
-    border: rgba(255, 255, 255, 0);
-    color: #fff;
-    font-size: 12px;
-    border-radius: 5px;
-}
 .button-blue{
     background:#2a9cf5;
+    width: 170px;
+    height: 60px;
+    border: 2px solid  rgba(255,255,255,0);
+    border-radius: 5px;color: #fff;
+    margin-top: 22px;
+    border: 2px solid  rgba(255,255,255,0);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 @media only screen and (max-width: 992px){
+    h2{
+        font-size: 2.5rem;
+    }
     .header_support-language
     {
         flex: 1;
@@ -97,7 +109,7 @@ button{
     }
 }
 @media only screen and (max-width: 767px){
-    .brand_group{
+    .brand_group,.product{
         padding: 20px 0;
     }
     .center{
@@ -110,7 +122,10 @@ button{
 
 }
 @media only screen and (max-width: 576px){
-    .brand_group{
+    h1{
+        font-size: 60px;
+    }
+    .brand_group,.call_action{
         padding: 20px 0;
     }
     .center{
@@ -120,5 +135,7 @@ button{
         position: relative;
         right: 350px; 
     }
-
+    .features{
+        padding-bottom: 120px;
+    }
 }

@@ -312,22 +312,38 @@
         align-items: center;
     }
     .top_button1{
-        padding: 26px 45px;
+        width: 240px;
+        height: 60px;
         background-color:#206a8e;
         color: #fff;
         margin-top: 22px;
         border: 2px solid  rgba(255,255,255,0);
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .top_button1:hover{
         background: rgba(255,255,255,0);
         border: 2px solid #666666;
     }
     .top_button2{
-        padding: 26px 35px;
+        width: 170px;
+        height: 60px;
         color: #fff;
         border: 2px solid #555d66;
         background: #2b3440;
         margin-top: 22px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .top_button2:hover{
         background: #206a8e;
@@ -336,7 +352,7 @@
     .product{
         min-height: 1285px;
         background: #fff;
-        font-weight: bold;
+        font-weight: 500;
     }
     .product_img{
         position: relative;
@@ -397,6 +413,7 @@
         max-width: 200px;
         color: black;
         text-align: center; 
+        font-weight: bold;
     }
     .product_infor-type{
         text-align: center;
@@ -406,6 +423,7 @@
         background-color: #f5f5f5;
         border-radius: 20px;
         margin-bottom: 20px;
+        font-weight: bold;
     }
     .product_infor-type:hover{
         background: #2a9cf5;
@@ -423,7 +441,11 @@
         min-height: 700px;
         background: #e2e2e2;
     }
-    .features_body-item{
+    .features_top{   
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features_top-item{
         display: flex;
         justify-content: center;
         flex-wrap: wrap ;
@@ -432,7 +454,7 @@
         background: #b1d0cb;
         border: 1px solid rgba(255, 255, 255, 0.65);
         border-radius: 100%;
-        margin-top: 77px;
+        margin-right: 10px;
         text-align: center;
         align-items: center;
         color:#fff;
@@ -468,22 +490,25 @@
         background: #2a9cf5;
         cursor: pointer;
     }
-    .call_to_action{
-        height: 300px;
+    .call_action{
+        min-height: 300px;
         background: #363e48;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-weight: 500;
     }
-    .call_to_action-item{
-        display: block;
+    .cal_infor-item{
+        margin-right: 30px;
     }
-    .call_to_action-text{
-        width: 465px;
+    .call_action-text{
+        
         font-size: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     .featured{
         min-height: 985px;
@@ -491,6 +516,7 @@
     .featured_column-name{
         margin-top: 120px;
         margin-bottom: 60px;
+        font-weight: 600;
     }
     .featured_column-item{
         margin-bottom: 20px;
@@ -530,43 +556,26 @@
         min-height: 554px;
         background: #232b37;
         font-size: 14px;
+        padding-top: 100px;
+        color: #c1c6ce;
     }
-    .footer_body-infor{
-        margin-right: 30px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer_body-infor-group{
-        display: flex;
-        margin-top: 25px;
-    }
-    .footer_body-infor-item{
-        background: #2d3644;
-        margin-bottom: 37px;
-        border-radius: 4px;
-    }
-    .footer_body-infor-text1{
-        width: 250px;
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: normal;
-    }
-    .footer_body-infor-text{
+    .footer_infor{
         margin-top: 30px;
-        font-weight: normal;
+        font-weight: 300;
     }
-    .footer_end{
+    .footer_infor-group{
         display: flex;
-        height: 88px;
-        background: #232b37;
+        line-height: 1.8;
+        margin-top: -12px;  
     }
-    .footer_end-group{
-        display: flex;
-        justify-content: space-between;
-    }
+    .footer_infor-item{
+        margin-top: 5px;
+        margin-right: 30px;
+        border-radius: 4px;
+        background: #303743;
+    } 
     .footer_end-text{
-        display: flex;
-        text-align: center;
+        font-weight: 600;
     }
     .footer_end-items{
         width: 415px;
@@ -579,3 +588,4 @@
         height: 30px;
         background: #c7c7c7;
     }
+   
