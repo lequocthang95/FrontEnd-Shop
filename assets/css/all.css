@@ -4,15 +4,20 @@
     --blue-page: #2a9cf5;
 }
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+    font-size: 16px;
+    font-weight: 300;
   }
 body{
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #757e8a;
     line-height: 1.125;
     font-weight: 300;
+}
+button {
+    border: none;
 }
 a {
     color: black;
@@ -40,12 +45,17 @@ h5{
 h6{
     font-size: 18px;
 }
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 ul{
     list-style: none;
     margin: auto;
+}
+.fa-star,.fa-star-half-alt{
+  margin-right: 8px;
+  color: #ffd800;
 }
 .grid_overlay,.search_grid,.search_grid-active,.cart_grid-active,.cart_grid,.list_grid,.list_grid-active{
     position: fixed;
@@ -76,6 +86,11 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.button-blue:hover{
+    background: lightblue;
+    cursor: pointer;
+    color:black;
 }
 @media only screen and (max-width: 992px){
     h2{

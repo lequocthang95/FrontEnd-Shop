@@ -82,3 +82,42 @@ $(function () {
         autoplay: true,
     });
 });
+
+// header support languages
+var deflang = document.getElementById('default')
+var dropSelect = document.querySelector('.dropdown-select');
+document.querySelector('.language-english').onclick = () => {
+    var selectLans = document.querySelectorAll('.language');
+    selectLans.forEach((lang) =>{
+        lang.style.display="none";
+    }
+    )
+    document.querySelector('.english').style.display="block";
+    }
+document.querySelector('.language-france').onclick = () => {
+    var selectLans = document.querySelectorAll('.language');
+    selectLans.forEach((lang) =>{
+        lang.style.display="none";
+    }
+    )
+    document.querySelector('.france').style.display="block";
+}
+document.querySelector('.language-german').onclick = () => {
+    var selectLans = document.querySelectorAll('.language');
+    selectLans.forEach((lang) =>{
+        lang.style.display="none";
+    }
+    )
+    document.querySelector('.german').style.display="block";
+}
+document.querySelector('.language-hindi').onclick = () => {
+    var selectLans = document.querySelectorAll('.language');
+    selectLans.forEach((lang) =>{
+        lang.style.display="none";
+    }
+    )
+    document.querySelector('.hindi').style.display="block";
+}
+dropSelect.onclick = () => {
+    deflang.style.display="none";   
+}

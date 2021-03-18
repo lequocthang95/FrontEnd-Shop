@@ -1,5 +1,6 @@
-a{
+.top_menu-link a {
     color:#757e8a;
+    font-weight: 500;
 }
 .top_header{
     background: #fff;
