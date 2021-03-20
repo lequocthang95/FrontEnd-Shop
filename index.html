@@ -4,72 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home01</title>
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/home1.css">   
+    <link rel="stylesheet" href="assets/css/home1.css"> 
+
 </head>
-<body>
+<body>  
     <div class="header_support">    
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="center">
-                        <div class="center">
-                            <div class="header_support-language">
-                                <div>  
-                                    <div id="default" class="language-default"> 
-                                        <img src="./assets/image_page/icon-1/english.jpg" alt="">
-                                        English
-                                        <img class="icon-select" src="./assets/image_page/icon-1/drop.png" alt="">
-                                    </div>     
-                                    <div class="english language"> 
-                                        <img src="./assets/image_page/icon-1/english.jpg" alt="">
-                                        English
-                                        <img class="icon-select" src="./assets/image_page/icon-1/drop.png" alt="">
-                                    </div>
-                                    <div class="france language">
-                                        <img src="./assets/image_page/icon-1/france.jpg" alt="">
-                                        France
-                                        <img class="icon-select" src="./assets/image_page/icon-1/drop.png" alt="">
-                                    </div>
-                                    <div class="german language">
-                                        <img src="./assets/image_page/icon-1/german.jpg" alt="">
-                                        Germany
-                                        <img class="icon-select" src="./assets/image_page/icon-1/drop.png" alt="">  
-                                    </div>
-                                    <div class="hindi language">
-                                        <img src="./assets/image_page/icon-1/hindi.jpg" alt="">
-                                        Hindi
-                                        <img class="icon-select" src="./assets/image_page/icon-1/drop.png" alt="">
-                                    </div> 
-                                    <div class="dropdown-select">
-                                        <div class="language-english">
-                                            <img src="./assets/image_page/icon-1/english.jpg" alt="">
-                                            English
-                                        </div>
-                                        <div class="language-france">
-                                            <img src="./assets/image_page/icon-1/france.jpg" alt="">
-                                            France 
-                                        </div> 
-                                        <div  class="language-german">
-                                            <img src="./assets/image_page/icon-1/german.jpg" alt="">
-                                            Germany
-                                        </div>
-                                        <div class="language-hindi"> 
-                                            <img src="./assets/image_page/icon-1/hindi.jpg" alt="">
-                                            Hindi
-                                        </div>
-                                    </div> 
-                                </div>  
-                            </div>
-                            <select class="select_language" style="max-width: 55px;">
-                                <option selected>USD</option>
-                                <option value="">IND</option>
-                                <option value="">AUD</option>
-                                <option value="">EUR</option>
+                        <div class="header_support-language">
+                            <select class="selectpicker my_select" data-width="fit" data-style="">
+                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/english.jpg"> English</span>'></option>
+                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/france.jpg" alt=""> France</span>'></option>
+                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/german.jpg" alt=""> German</span>'></option>
+                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/Hindi.jpg" alt=""> Hindi</span>'></option>
+                            </select>    
+                            <select class="selectpicker my_select" data-width="80px" data-style="">
+                                <option data-content='<span class="select_language"> USD<span>'></option>
+                                <option data-content='<span class="select_language"> IND<span>'></option>
+                                <option data-content='<span class="select_language"> EUR<span>'></option>
+                                <option data-content='<span class="select_language"> AUD<span>'></option>
                             </select>
                         </div>
                         <div class="top_list">
@@ -1324,8 +1295,16 @@
             </div>
         </div>
     </div>
-<script type="text/javascript"  src="./assets/jq/jquery-3.6.0.min.js"></script>
 <script src="./assets/main.js"></script>
 <script type="text/javascript" src="./assets/js/slick.js"></script>
+<script>
+    // header support languages
+    $.fn.selectpicker.Constructor.BootstrapVersion = '4';
+    $.fn.selectpicker.Constructor.DEFAULTS.multipleSeparator = ' | ';
+
+    $(function(){
+        $('.my_select').selectpicker();
+    });
+</script>
 </body>
 </html>
