@@ -62,13 +62,12 @@
     .top_list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;  
+        padding: 0;  
     }
     .top_infor{
         display: flex;
-        padding: 5px;
         margin-left: 20px;
     }
     .top_infor:hover{
@@ -122,6 +121,12 @@
         width: 50%;
         height: 2px;
     }
+    .bridge{
+        position: absolute;
+        top: -36px;
+        width: 96%;
+        height: 35px;
+    }
     .top_menu-link:hover .menu_link-border{
         display: block;
         background: #fff;
@@ -159,18 +164,27 @@
         padding: 20px;
         margin-top: 35px;
         margin-left: -410px;
-        width: 1110px;
+        width: 1106px;
     }
     .dropdown_pages-column{
-        font-size: 16px;
-        color: #000000;
+        width: 12.5%;
+        max-width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
     }
-    .column_page-text{
+    .dropdown_pages-column a {
+        display: block;
         font-size: 14px;
         color: #999999;
-        padding-top: 10px;
+        min-width: 100%;
     }
-    .column_page-text:hover{
+    .dropdown_pages-column a:first-child{
+        color: #000000;
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+    .dropdown_pages-column a:hover{
         color:#2a9cf5;
     }
     .pages_column-img{
@@ -194,7 +208,6 @@
         background: #232b37;
         padding: 10px;
         margin-left:  -10px;
-        z-index: 1000;
     }
     .menu_btn:hover{
         cursor: pointer;
@@ -664,8 +677,8 @@
         flex-wrap: wrap;
     }
     .footer_end-item{
-        width: 44px;
-        height: 30px;
+        width: 43px;
+        height: 31px;
         background: #c7c7c7;
     }
     .footer h4{ 

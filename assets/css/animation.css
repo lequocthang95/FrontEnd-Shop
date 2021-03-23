@@ -43,6 +43,7 @@
     {
         flex: 1;
         height: 25%;
+        padding-bottom: 0;
     }
     .top_list{
         align-items: flex-start;
@@ -67,8 +68,12 @@
     }
     .dropdown_pages{
         margin:0; 
-        width: 400%;
+        margin-top: 5px;
+        width: 365%;
         flex-wrap: wrap;
+    }
+    .dropdown_pages-column{
+        padding-bottom: 30px;
     }
     .dropdown-content{
         margin: 0;
