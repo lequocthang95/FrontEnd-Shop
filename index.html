@@ -18,73 +18,183 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
     
-    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/home1.css"> 
+    <link rel="stylesheet" href="assets/css/animation.css">
 
 </head>
 <body>  
     <div class="header_support">    
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="center">
-                        <div class="header_support-language">
-                            <select class="selectpicker my_select" data-width="fit" data-style="">
-                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/english.jpg"> English</span>'></option>
-                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/france.jpg" alt=""> France</span>'></option>
-                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/german.jpg" alt=""> German</span>'></option>
-                                <option data-content='<span class="select_language"><img src="./assets/image_page/icon-1/Hindi.jpg" alt=""> Hindi</span>'></option>
-                            </select>    
-                            <select class="selectpicker my_select" data-width="80px" data-style="">
-                                <option data-content='<span class="select_language"> USD<span>'></option>
-                                <option data-content='<span class="select_language"> IND<span>'></option>
-                                <option data-content='<span class="select_language"> EUR<span>'></option>
-                                <option data-content='<span class="select_language"> AUD<span>'></option>
-                            </select>
-                        </div>
-                        <div class="top_list">
-                            <span class="top_infor">Ordered before 17:30,shipped to day</span>    
-                            <div class="top_infor">
-                                <div><img class="top_infor-item" src="./assets/image_page/icon-1/01_home-shipping.png"></div>
-                                <span>Free shipping</span>
-                            </div>
-                            <div class="top_infor">
-                                <div><img class="top_infor-item" src="./assets/image_page/icon-1/01_home-time.png" alt=""></div>
-                                <span>24/7 Online Support</span>
-                            </div>
-                        </div>
+                <div class="col-lg-12" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                    <div class="header_support-language">
+                        <select class="selectpicker my_select" data-width="fit" data-style="">
+                            <option data-content='<span class="select_language"><img class="ensign" src="./assets/image_page/icon-1/english.jpg">   English   <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></span>'></option>
+                            <option data-content='<span class="select_language"><img class="ensign"  src="./assets/image_page/icon-1/france.jpg">  France  <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></span>'></option></span>'></option>
+                            <option data-content='<span class="select_language"><img class="ensign"  src="./assets/image_page/icon-1/german.jpg">  German  <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></span>'></option></span>'></option>
+                            <option data-content='<span class="select_language"><img class="ensign"  src="./assets/image_page/icon-1/Hindi.jpg">  Hindi <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></span>'></option></span>'></option>
+                        </select>    
+                        <select class="selectpicker my_select" data-width="fit" data-style="">
+                            <option data-content='<span class="select_language"> USD <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"><span>'></option>
+                            <option data-content='<span class="select_language"> IND <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"><span>'></option>
+                            <option data-content='<span class="select_language"> EUR <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"><span>'></option>
+                            <option data-content='<span class="select_language"> AUD <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"><span>'></option>
+                        </select>
                     </div>
+                    <div class="top_list">
+                        <span class="top_infor">Ordered before 17:30,shipped to day</span>    
+                        <div class="top_infor">
+                            <div><img class="top_infor-item" src="./assets/image_page/icon-1/01_home-shipping.png"></div>
+                            <span>Free shipping</span>
+                        </div>
+                        <div class="top_infor">
+                            <div><img class="top_infor-item" src="./assets/image_page/icon-1/01_home-time.png" alt=""></div>
+                            <span>24/7 Online Support</span>
+                        </div>
+                    </div>     
                 </div>
             </div>  
         </div>
     </div>
     <div class="top_header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center">
-                        <div class="brand_group" style="display: flex; justify-content: space-between; width: 100%;">
+            <div class="row top_menu-active">
+                <div class="col-lg-12" style="display: flex; justify-content: space-between;">
+                    <div class="brand_group" style="display: flex;">
+                        <div class="brand">
+                            <h4 style="color:#fff;">BigEnja</h4>
+                            <div>
+                                <div class="brand-icon"></div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="top_menu-list">
+                        <div class="top_menu-link">
+                            <a  href="#index.html">Home</a>
+                            <div class="menu_link-border"></div>
+                            <div class="dropdown-content">
+                                <a href="">Home 2</a>
+                                <a href="">Home 3</a>
+                                <a href="">Home 4</a>
+                            </div>  
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Pages</a>
+                            <div class="menu_link-border"></div>
+                            <div class="dropdown_pages">
+                                <div class="dropdown_pages-column">
+                                    <div style="padding-bottom: 15px">Inner Pages</div>
+                                    <div class="column_page-text">Category</div>
+                                    <div class="column_page-text">Cart</div>
+                                    <div class="column_page-text">Products Details</div>
+                                    <div class="column_page-text">Signup</div>
+                                    <div class="column_page-text">Sellers Products</div>
+                                    <div class="column_page-text">Sellers Dashboard</div>
+                                </div>
+                                <div class="dropdown_pages-column">
+                                    <div style="padding-bottom: 15px">Inner Pages</div>
+                                    <div class="column_page-text">Category</div>
+                                    <div class="column_page-text">Cart</div>
+                                    <div class="column_page-text">Products Details</div>
+                                    <div class="column_page-text">Signup</div>
+                                    <div class="column_page-text">Sellers Products</div>
+                                    <div class="column_page-text">Sellers Dashboard</div>
+                                </div>
+                                <div class="dropdown_pages-column">
+                                    <div style="padding-bottom: 15px">Inner Pages</div>
+                                    <div class="column_page-text">Category</div>
+                                    <div class="column_page-text">Cart</div>
+                                    <div class="column_page-text">Products Details</div>
+                                    <div class="column_page-text">Signup</div>
+                                    <div class="column_page-text">Sellers Products</div>
+                                    <div class="column_page-text">Sellers Dashboard</div>
+                                </div>
+                                <div class="pages_column-img"></div>
+                            </div>
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Postfolio</a>
+                            <div class="menu_link-border"></div>
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Blog</a>
+                            <div class="menu_link-border"></div>
+                            <div class="dropdown-content">
+                                <a href="#">Blog</a>
+                                <a href="#">Blog Details</a>
+                            </div> 
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Shop</a>
+                            <div class="menu_link-border"></div>
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Element</a>
+                            <div class="menu_link-border"></div>
+                        </div>
+                        <div class="top_menu-link">
+                            <a  href="#">Login</a>
+                            <div class="menu_link-border"></div>
+                        </div>     
+                    </div>
+                    <div class="top_menu-icon">
+                        <div class="menu_icon-search">
+                            <div>
+                                <img src="./assets/image_page/icon-1/01_home-search.png" alt="">
+                            </div>
+                        </div>
+                        <div class="menu_icon-cart">
+                            <div>
+                                <img src="./assets/image_page/icon-1/01_home-cart.png">  
+                            </div>
+                            <div class="menu_icon-cart-number">10</div> 
+                        </div>
+                        <div class="menu_icon-list">
+                            <div>
+                                <img src="./assets/image_page/icon-1/01_home-list.png" alt="">
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="row respon_menu-active">
+                <div class="container">
+                    <div class="between">
+                        <div class="brand_group" style="display: inline-block; width: 100%;">
                             <div class="brand">
                                 <h4 style="color:#fff;">BigEnja</h4>
                                 <div>
                                     <div class="brand-icon"></div>
                                 </div>                    
                             </div>
-                            <div class="top_menu-icon">
-                                <div class="menu_icon-search">
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="menu_btn">
+                            <i class="fas fa-th-list" style="color:#fff;"></i>
+                        </div>
+                        <div class="top_menu-icon">
+                            <div class="menu_icon-search">
+                                <div>
                                     <img src="./assets/image_page/icon-1/01_home-search.png" alt="">
                                 </div>
-                                <div class="menu_icon-cart">
-                                    <img src="./assets/image_page/icon-1/01_home-cart.png">
-                                    <div class="menu_icon-cart-number">10</div> 
+                            </div>
+                            <div class="menu_icon-cart">
+                                <div>
+                                    <img src="./assets/image_page/icon-1/01_home-cart.png">  
                                 </div>
-                                <div class="menu_icon-list">
+                                <div class="menu_icon-cart-number">10</div> 
+                            </div>
+                            <div class="menu_icon-list">
+                                <div>
                                     <img src="./assets/image_page/icon-1/01_home-list.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="top_menu-list">
+                    </div>
+                    <div class="respon_menu">
+                        <div class="menu_list">
                             <div class="top_menu-link">
                                 <a  href="#index.html">Home</a>
                                 <div class="menu_link-border"></div>
@@ -153,9 +263,8 @@
                                 <div class="menu_link-border"></div>
                             </div>     
                         </div>
-                    </div>
-                    
-                </div> 
+                    </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -182,7 +291,7 @@
                 <div class="cart_item">
                     <div class="cart_item-img"></div>
                     <div class="cart_item-infor">
-                        Footwear Dark let
+                            Footwear Dark let
                         <div class="cart_price">
                             <p style="margin-right: 15px;">$23.00</p>
                             <p style="text-decoration: line-through;">$45.00</p>
@@ -625,13 +734,15 @@
                 </div>
             </div>
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
-                <div class="col-lg-8 product_trending multiple-items grid">
-                    <div><div class="product_slide-item">BEST SELLERS</div></div>
-                    <div><div class="product_slide-item">TRENDING SELLERS</div></div>
-                    <div><div class="product_slide-item">NEW SELLERS</div> </div>
-                    <div><div class="product_slide-item">BEST SELLERS</div></div>
-                    <div><div class="product_slide-item">TRENDING SELLERS</div></div>
-                    <div><div class="product_slide-item">NEW SELLERS</div></div>
+                <div class="col-lg-8">
+                    <div class="product_trending multiple-items">
+                        <div><div class="product_slide-item">BEST SELLERS</div></div>
+                        <div><div class="product_slide-item">TRENDING SELLERS</div></div>
+                        <div><div class="product_slide-item">NEW SELLERS</div> </div>
+                        <div><div class="product_slide-item">BEST SELLERS</div></div>
+                        <div><div class="product_slide-item">TRENDING SELLERS</div></div>
+                        <div><div class="product_slide-item">NEW SELLERS</div></div>
+                    </div>
                 </div>
             </div>
             <div class="row"> 
@@ -854,7 +965,7 @@
     <div class="featured">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="col-lg-4">
                     <div class="featured_column-name">
                         <p style="color:#2a9cf5;">GET 45% OFF</p>
                         <h2 style="color: black;">Featured</h2>
@@ -879,8 +990,35 @@
                                     <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
+                                <p style="color:#2a9cf5">$47.00</p>   
+                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured_column-item">
+                        <div class="featured_item-img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured_item-group">
+                            <a href="">
+                                <div class="featured_item-icon"> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> 
+                            </a>
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -901,12 +1039,12 @@
                                 <div class="featured_item-icon">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
                             <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
@@ -925,51 +1063,23 @@
                         </div>
                         <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
-                                <p style="color:#2a9cf5">$47.00</p>   
-                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured_column-item">
-                        <div class="featured_item-img">
-                            <div class="add_cart">
-                                <a href="">
-                                    <div class="add_cart-btn">
-                                        Add TO CART
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="featured_item-group"> 
-                            <a href="">
-                                <div class="featured_item-icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </a>
-                            <div class="featured_item-icon"></div> 
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="col-lg-4">
                     <div class="featured_column-name">
                         <p style="color:#2a9cf5">GET 45% OFF</p>
                         <h2 style="color: black; margin-left: -3px;">Best Seller</h2>
@@ -994,8 +1104,8 @@
                                     <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1013,16 +1123,16 @@
                         </div>
                         <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1040,16 +1150,16 @@
                         </div>
                         <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1065,26 +1175,25 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="featured_item-group"> 
+                        <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> 
                             </a>
-                            <div class="featured_item-icon"></div> 
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="col-lg-4">
                     <div class="featured_column-name">
                         <p style="color:#2a9cf5">GET 45% OFF</p>
                         <h2 style="color: black; margin-left: -3px;">Best Seller</h2>
@@ -1109,8 +1218,8 @@
                                     <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1128,16 +1237,16 @@
                         </div>
                         <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1155,16 +1264,16 @@
                         </div>
                         <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div> 
                             </a>
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1180,19 +1289,18 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="featured_item-group"> 
+                        <div class="featured_item-group">
                             <a href="">
-                                <div class="featured_item-icon">
+                                <div class="featured_item-icon"> 
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> 
                             </a>
-                            <div class="featured_item-icon"></div> 
-                            <a href="" style="margin-left: 27px; font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px; margin-top: 10px;">
+                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                            <div class="featured_item-text" style="width: 125px;">
                                 <p style="color:#2a9cf5">$47.00</p>   
                                 <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
                             </div>
@@ -1297,14 +1405,5 @@
     </div>
 <script src="./assets/main.js"></script>
 <script type="text/javascript" src="./assets/js/slick.js"></script>
-<script>
-    // header support languages
-    $.fn.selectpicker.Constructor.BootstrapVersion = '4';
-    $.fn.selectpicker.Constructor.DEFAULTS.multipleSeparator = ' | ';
-
-    $(function(){
-        $('.my_select').selectpicker();
-    });
-</script>
 </body>
 </html>
