@@ -11,7 +11,7 @@ body{
     color: #757e8a;
     font-weight: 300;
 }
-button {
+button{
     border: none;
 }
 a {
@@ -81,6 +81,7 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-transform: uppercase;
 }
 .button-blue:hover{
     background: lightblue;

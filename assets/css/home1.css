@@ -167,8 +167,7 @@
         width: 1106px;
     }
     .dropdown_pages-column{
-        width: 12.5%;
-        max-width: 25%;
+        width: 25%;
         display: flex;
         flex-wrap: wrap;
         float: left;
@@ -178,6 +177,7 @@
         font-size: 14px;
         color: #999999;
         min-width: 100%;
+        text-transform: capitalize;
     }
     .dropdown_pages-column a:first-child{
         color: #000000;
@@ -383,11 +383,12 @@
         border: 2px solid  rgba(255,255,255,0);
         border-radius: 5px;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 450;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        text-transform: uppercase;
     }
     .top_button1:hover{
         background: rgba(255,255,255,0);
@@ -403,11 +404,12 @@
         margin-top: 22px;
         border-radius: 5px;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 450;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        text-transform: uppercase;
     }
     .top_button2:hover{
         background: #206a8e;
@@ -417,7 +419,7 @@
     .product{
         min-height: 1285px;
         background: #fff;
-        font-weight: 500;
+        font-weight: 600;
     }
     .product_img{
         position: relative;
@@ -515,6 +517,7 @@
     .features_top{   
         display: flex;
         flex-wrap: wrap;
+        font-weight: 550;
     }
     .features_top-item{
         display: flex;
@@ -559,6 +562,7 @@
         min-height: 50px;
         font-weight: 500;
         text-align: center;
+        text-transform: uppercase;
     }
     .product_icon-left:hover, .product_icon-right:hover,.product_slide-item:hover{
         color: #fff;
@@ -680,6 +684,7 @@
         width: 43px;
         height: 31px;
         background: #c7c7c7;
+        margin-left: 5px;
     }
     .footer h4{ 
         color: #fff;
