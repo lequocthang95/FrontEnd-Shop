@@ -73,7 +73,10 @@
                     </a>
                     <div class="top_menu-list">
                         <div class="top_menu-link">
-                            <a  href="#index.html">Home</a>
+                            <div class="top_menu-link-firt">
+                                <a  href="#index.html">Home</a>
+                                <div class="link_icon"></div>
+                            </div>
                             <div class="menu_link-border"></div>
                             <div class="dropdown-content">
                                 <div class="bridge"></div>
@@ -83,7 +86,10 @@
                             </div>  
                         </div>
                         <div class="top_menu-link">
-                            <a  href="#">Pages</a>
+                            <div class="top_menu-link-firt">
+                                <a  href="#index.html">Pages</a>
+                                <div class="link_icon"></div>
+                            </div>
                             <div class="menu_link-border"></div>
                             <div class="dropdown_pages">
                                 <div class="bridge"></div>
@@ -124,7 +130,10 @@
                             <div class="menu_link-border"></div>
                         </div>
                         <div class="top_menu-link">
-                            <a  href="#">Blog</a>
+                            <div class="top_menu-link-firt">
+                                <a  href="#index.html">Blog</a>
+                                <div class="link_icon"></div>
+                            </div>
                             <div class="menu_link-border"></div>
                             <div class="dropdown-content">
                                 <div class="bridge"></div>
@@ -203,7 +212,10 @@
                     <div class="respon_menu">
                         <div class="menu_list">
                             <div class="top_menu-link">
-                                <a  href="#index.html">Home</a>
+                                <div class="top_menu-link-firt">
+                                    <a  href="#index.html">Home</a>
+                                    <div class="link_icon"></div>
+                                </div>
                                 <div class="menu_link-border"></div>
                                 <div class="dropdown-content">
                                     <a href="">Home 2</a>
@@ -212,7 +224,10 @@
                                 </div>  
                             </div>
                             <div class="top_menu-link">
-                                <a  href="#">Pages</a>
+                                <div class="top_menu-link-firt">
+                                    <a  href="#index.html">Pages</a>
+                                    <div class="link_icon"></div>
+                                </div>
                                 <div class="menu_link-border"></div>
                                 <div class="dropdown_pages">
                                     <div class="dropdown_pages-column">
@@ -250,7 +265,10 @@
                                 <div class="menu_link-border"></div>
                             </div>
                             <div class="top_menu-link">
-                                <a  href="#">Blog</a>
+                                <div class="top_menu-link-firt">
+                                    <a  href="#index.html">Blog</a>
+                                    <div class="link_icon"></div>
+                                </div>
                                 <div class="menu_link-border"></div>
                                 <div class="dropdown-content">
                                     <a href="#">Blog</a>
@@ -289,7 +307,14 @@
         <div class="cart">
             <div class="cart_shopping">
                 <div class="cart_column-name">
-                    <h4 style="color: #fff;">BigEnja.</h4>
+                    <a href="#" class="brand_group">
+                        <div class="brand">
+                            <h4 style="color:#fff;">BigEnja</h4>
+                            <div>
+                                <div class="brand-icon"></div>
+                            </div>                    
+                        </div>
+                    </a>
                     <div class="cart_close">
                         <img src="./assets/image_page/icon-1/01_home-close.png" alt="">
                     </div> 
@@ -742,214 +767,626 @@
             </div>
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
                 <div class="col-lg-8">
-                    <div class="product_trending multiple-items">
-                        <div><div class="product_slide-item">BEST SELLERS</div></div>
-                        <div><div class="product_slide-item">TRENDING SELLERS</div></div>
-                        <div><div class="product_slide-item">NEW SELLERS</div></div>
-                        <div><div class="product_slide-item">BEST SELLERS</div></div>
-                        <div><div class="product_slide-item">TRENDING SELLERS</div></div>
-                        <div><div class="product_slide-item">NEW SELLERS</div></div>
+                    <div class="multiple-items">
+                        <button class="btn product_slide-item" onclick="currentDiv(0)">BEST SELLERS</button>
+                        <button class="btn product_slide-item" onclick="currentDiv(1)">TRENDING SELLERS</button>
+                        <button class="btn product_slide-item" onclick="currentDiv(2)">NEW SELLERS</button>
+                        <button class="btn product_slide-item" onclick="currentDiv(0)">BEST SELLERS</button>
+                        <button class="btn product_slide-item" onclick="currentDiv(1)">TRENDING SELLERS</button>
+                        <button class="btn product_slide-item" onclick="currentDiv(2)">NEW SELLERS</button>
                     </div>
                 </div>
             </div>
-            <div class="row"> 
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+            <div class="w3-content">
+                <div class="mySlides">
+                    <div class="col-lg-12" style="text-align: center; margin-top: 20px"><h4>BEST SELLERS</h4></div>   
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <img src="./assets/image_page/product/1.jfif" alt="" style="width:100%;height: 255px;">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SPORTSWEAR
+                                    </div>
+                                </a>
+                                <a href="">Black Tshirt Brock</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$23.00</p>
+                                    <p style="text-decoration: line-through;">$45.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    SPORTSWEAR
-                                </div>
-                            </a>
-                            <a href="">Black Tshirt Brock</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$23.00</p>
-                                <p style="text-decoration: line-through;">$45.00</p>
-                            </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$56.00</p>
+                                    <p style="text-decoration: line-through;">$78.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ACCESORIES
+                                    </div>
+                                </a>
+                                <a href="">Milo Hoverboard</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$120.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        HAT
+                                    </div>
+                                </a>
+                                <a href="">Red Yello Hat</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$89.00</p>
+                                    <p style="text-decoration: line-through;">$156.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        CYCLE
+                                    </div>
+                                </a>
+                                <a href="">Minimal Cycle</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$700.00</p>
+                                    <p style="text-decoration: line-through;">$1000.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        BIKE
+                                    </div>
+                                </a>
+                                <a href="">Dart Moto Bike</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$980.00</p>
+                                    <p style="text-decoration: line-through;">$1600.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ELECTRIC
+                                    </div>
+                                </a>
+                                <a href="">Minimal Screw</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$47.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+                <div class="mySlides">
+                    <div class="col-lg-12" style="text-align: center; margin-top: 20px"><h4>TRENDING SELLERS</h4></div>   
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <img src="./assets/image_page/product/2.jpeg" alt="" style="width:100%;height: 100%;">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SPORTSWEAR
+                                    </div>
+                                </a>
+                                <a href="">Black Tshirt Brock</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$23.00</p>
+                                    <p style="text-decoration: line-through;">$45.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    SHOE
-                                </div>
-                            </a>
-                            <a href="">Footwear Dark</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$56.00</p>
-                                <p style="text-decoration: line-through;">$78.00</p>
-                            </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$56.00</p>
+                                    <p style="text-decoration: line-through;">$78.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ACCESORIES
+                                    </div>
+                                </a>
+                                <a href="">Milo Hoverboard</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$120.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        HAT
+                                    </div>
+                                </a>
+                                <a href="">Red Yello Hat</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$89.00</p>
+                                    <p style="text-decoration: line-through;">$156.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        CYCLE
+                                    </div>
+                                </a>
+                                <a href="">Minimal Cycle</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$700.00</p>
+                                    <p style="text-decoration: line-through;">$1000.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        BIKE
+                                    </div>
+                                </a>
+                                <a href="">Dart Moto Bike</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$980.00</p>
+                                    <p style="text-decoration: line-through;">$1600.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ELECTRIC
+                                    </div>
+                                </a>
+                                <a href="">Minimal Screw</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$47.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+                <div class="mySlides">
+                    <div class="col-lg-12" style="text-align: center; margin-top: 20px"><h4>NEW SELLERS</h4></div>   
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <img src="./assets/image_page/product/3.jpg" alt="" style="width:100%;height: 255px;">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SPORTSWEAR
+                                    </div>
+                                </a>
+                                <a href="">Black Tshirt Brock</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$23.00</p>
+                                    <p style="text-decoration: line-through;">$45.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    ACCESORIES
-                                </div>
-                            </a>
-                            <a href="">Milo Hoverboard</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
-                                <p style="text-decoration: line-through;">$99.00</p>
-                            </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$56.00</p>
+                                    <p style="text-decoration: line-through;">$78.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ACCESORIES
+                                    </div>
+                                </a>
+                                <a href="">Milo Hoverboard</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    SHOE
-                                </div>
-                            </a>
-                            <a href="">Footwear Dark</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
-                                <p style="text-decoration: line-through;">$120.00</p>
-                            </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        SHOE
+                                    </div>
+                                </a>
+                                <a href="">Footwear Dark</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$78.00</p>
+                                    <p style="text-decoration: line-through;">$120.00</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        HAT
+                                    </div>
+                                </a>
+                                <a href="">Red Yello Hat</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$89.00</p>
+                                    <p style="text-decoration: line-through;">$156.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                </div>          
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        CYCLE
+                                    </div>
+                                </a>
+                                <a href="">Minimal Cycle</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$700.00</p>
+                                    <p style="text-decoration: line-through;">$1000.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    HAT
-                                </div>
-                            </a>
-                            <a href="">Red Yello Hat</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$89.00</p>
-                                <p style="text-decoration: line-through;">$156.00</p>
-                            </div> 
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        BIKE
+                                    </div>
+                                </a>
+                                <a href="">Dart Moto Bike</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$980.00</p>
+                                    <p style="text-decoration: line-through;">$1600.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product_img">
+                            <div class="add_cart">
+                                <a href="">
+                                    <div class="add_cart-btn">
+                                        Add TO CART
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    CYCLE
-                                </div>
-                            </a>
-                            <a href="">Minimal Cycle</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$700.00</p>
-                                <p style="text-decoration: line-through;">$1000.00</p>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    BIKE
-                                </div>
-                            </a>
-                            <a href="">Dart Moto Bike</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$980.00</p>
-                                <p style="text-decoration: line-through;">$1600.00</p>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="product_img">
-                        <div class="add_cart">
-                            <a href="">
-                                <div class="add_cart-btn">
-                                    Add TO CART
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="product_infor">
-                        <div class="product_infor-item">
-                            <a href="">
-                                <div class="product_infor-type">
-                                    ELECTRIC
-                                </div>
-                            </a>
-                            <a href="">Minimal Screw</a> 
-                            <div class="product_infor-price">
-                                <p style="color:#2a9cf5; margin-right: 15px;">$47.00</p>
-                                <p style="text-decoration: line-through;">$99.00</p>
-                            </div> 
+                        <div class="product_infor">
+                            <div class="product_infor-item">
+                                <a href="">
+                                    <div class="product_infor-type">
+                                        ELECTRIC
+                                    </div>
+                                </a>
+                                <a href="">Minimal Screw</a> 
+                                <div class="product_infor-price">
+                                    <p style="color:#2a9cf5; margin-right: 15px;">$47.00</p>
+                                    <p style="text-decoration: line-through;">$99.00</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -972,7 +1409,7 @@
     <div class="featured">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="featured_column-name">
                         <p style="color:#2a9cf5;">GET 45% OFF</p>
                         <h2 style="color: black;">Featured</h2>
@@ -1086,7 +1523,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="featured_column-name">
                         <p style="color:#2a9cf5">GET 45% OFF</p>
                         <h2 style="color: black; margin-left: -3px;">Best Seller</h2>
@@ -1200,118 +1637,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="featured_column-name">
-                        <p style="color:#2a9cf5">GET 45% OFF</p>
-                        <h2 style="color: black; margin-left: -3px;">Best Seller</h2>
-                    </div>
-                    <div class="featured_column-item">
-                        <div class="featured_item-img">
-                            <div class="add_cart">
-                                <a href="">
-                                    <div class="add_cart-btn">
-                                        Add TO CART
-                                    </div>
-                                </a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="featured_column">
+                        <div class="featured_column-name">
+                            <p style="color:#2a9cf5">PRODUCT INTRO</p>
+                            <h2 style="color: black; margin-left: -3px; font-weight: bold;">Offer Ad</h2>
                         </div>
-                        <div class="featured_item-group">
-                            <a href="">
-                                <div class="featured_item-icon"> 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> 
-                            </a>
-                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px;">
-                                <p style="color:#2a9cf5">$47.00</p>   
-                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured_column-item">
-                        <div class="featured_item-img">
-                            <div class="add_cart">
-                                <a href="">
-                                    <div class="add_cart-btn">
-                                        Add TO CART
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="featured_item-group">
-                            <a href="">
-                                <div class="featured_item-icon"> 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> 
-                            </a>
-                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px;">
-                                <p style="color:#2a9cf5">$47.00</p>   
-                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured_column-item">
-                        <div class="featured_item-img">
-                            <div class="add_cart">
-                                <a href="">
-                                    <div class="add_cart-btn">
-                                        Add TO CART
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="featured_item-group">
-                            <a href="">
-                                <div class="featured_item-icon"> 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> 
-                            </a>
-                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px;">
-                                <p style="color:#2a9cf5">$47.00</p>   
-                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured_column-item">
-                        <div class="featured_item-img">
-                            <div class="add_cart">
-                                <a href="">
-                                    <div class="add_cart-btn">
-                                        Add TO CART
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="featured_item-group">
-                            <a href="">
-                                <div class="featured_item-icon"> 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> 
-                            </a>
-                            <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
-                            <div class="featured_item-text" style="width: 125px;">
-                                <p style="color:#2a9cf5">$47.00</p>   
-                                <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
-                            </div>
-                        </div>
+                        <div class="featured_column-item-big"></div>
+                        <div class="featured_column-item-big"></div>
                     </div>
                 </div>
             </div>  
@@ -1351,29 +1684,25 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" style="min-width: 300px;">
-                    <a href="">
-                        <h4>Shopping Guiden</h4>
-                    </a>
+                    <h4>Shopping Guiden</h4>
                     <div class="footer_infor">
-                        <p>--  Blog</p>
-                        <p>--  Faq</p> 
-                        <p>--  Payment</p>
-                        <p>--  Shipment</p>
-                        <p>--  Where is my order</p>
-                        <p>--  Return policy</p>
+                        <a href="">--  Blog</a>
+                        <a href="">--  Faq</a> 
+                        <a href="">--  Payment</a>
+                        <a href="">--  Shipment</a>
+                        <a href="">--  Where is my order</a>
+                        <a href="">--  Return policy</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="">
-                        <h4>Style Advisor</h4>
-                    </a>
+                    <h4>Style Advisor</h4>
                     <div class="footer_infor">
-                        <p>--  Your Account</p>
-                        <p>--  Information</p>    
-                        <p>--  Address</p>   
-                        <p>--  Discount</p> 
-                        <p>--  Order History</p>  
-                        <p>--  Order Tracking</p> 
+                        <a href="">--  Your Account</a>
+                        <a href="">--  Information</a>    
+                        <a href="">--  Address</a>   
+                        <a href="">--  Discount</a> 
+                        <a href="">--  Order History</a>  
+                        <a href="">--  Order Tracking</a> 
                     </div>       
                 </div>
                 <div class="col-lg-3 col-md-6" style="max-width: 200px;">
@@ -1381,17 +1710,17 @@
                         <h4>Information</h4> 
                     </a>             
                     <div class="footer_infor">
-                        <p>--  Sitemap</p>
-                        <p>--  Search Terms</p>    
-                        <p>--  Advanced Search</p>
-                        <p>--  About us</p>
-                        <p>--  Contact Us</p>
-                        <p>--  Suppliers</p> 
+                        <a href="">--  Sitemap</a>
+                        <a href="">--  Search Terms</a>    
+                        <a href="">--  Advanced Search</a>
+                        <a href="">--  About us</a>
+                        <a href="">--  Contact Us</a>
+                        <a href="">--  Suppliers</a> 
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div style="border-top: 2px solid #3e4755; width: 97%; margin: auto; margin-top: 82 px"></div>
+                <div style="border-top: 2px solid #3e4755; width: 97%; margin: auto; margin-top: 80px"></div>
                 <div class="col-lg-12" style="display: flex; justify-content: space-between; margin-top: 30px; flex-wrap: wrap;">
                     <div class="footer_end-text">
                         <p>Copyright by@Bigenza - 2018</p>

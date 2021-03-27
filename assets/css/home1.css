@@ -11,16 +11,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 2px solid #303743;
+        border-bottom: 1px solid #303743;
     }
     .header_support-language{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 0;
     }
-    .my_select  {
+    .my_select {
         margin-right: 13px;
         background:rgba(255, 255, 255, 0);
         color: #999fa9;
@@ -44,13 +43,17 @@
         border: none !important;
     }
     .dropdown-item{
-        padding:2px;
+        padding: 7px;
         width: 97%;
         margin-left: 1.5px;
     }
     .dropdown-item:not(.disabled) .icon-drop{
         opacity: 0;
     }
+    .my_select select {
+        border: none !important;
+      }
+      
     .icon-drop{
         margin-bottom: 2px;
         margin-left: 2px;
@@ -107,19 +110,38 @@
         font-weight: 400;
         font-size: 14px;
         text-decoration: none;
+        height: 70%;
+        
     }
     .top_menu-link a {
         color: rgba(255,255,255,0.6);
-        border: transparent;
     }
     .top_menu-link a:hover {
         color: rgb(255,255,255);
         text-decoration: none;
     }
+    .top_menu-link-firt{
+        display: flex;
+    }
+    .link_icon{
+        content: "";
+        margin-top: 8px;
+        margin-left: 5px;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-color:  #b7bec9 transparent transparent transparent;
+    }
+    .top_menu-link-firt:hover .link_icon{
+        border: 4px solid transparent;
+        border-color:  #fff transparent transparent transparent;
+    }
     .dropdown-content a:hover {background-color: #2a9cf5}
     .menu_link-border{
         width: 50%;
         height: 2px;
+        margin-top: 9px;
+        opacity: 0;
     }
     .bridge{
         position: absolute;
@@ -128,7 +150,7 @@
         height: 35px;
     }
     .top_menu-link:hover .menu_link-border{
-        display: block;
+        opacity: 1;
         background: #fff;
         margin-bottom: 2px;
     }
@@ -147,7 +169,7 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         margin-left: -15px;
-        margin-top: 35px;
+        margin-top: 29px;
       } 
     .dropdown-content a{
         color: #999999;
@@ -162,9 +184,9 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         padding: 20px;
-        margin-top: 35px;
-        margin-left: -410px;
-        width: 1106px;
+        margin-top: 29px;
+        margin-left: -405px;
+        width: 240%;
     }
     .dropdown_pages-column{
         width: 25%;
@@ -537,37 +559,40 @@
         margin-top: 40px;
         font-size: 18px;
     }
-    .product_trending{
-        margin-top: 58px;
-        display: flex;
-        justify-content: center;
-        height: 50px;
-    }
     .product_icon-left, .product_icon-right{
         background: #f4f4f4;
         padding: 20px 24px;
         border-radius: 5px;
         border: none;
     }
-    .product_slide-item{
-        background: #f4f4f4;
+    .multiple-items{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+    }
+    .mySlides{
+        display: none;
+        flex-wrap: wrap;
+    }
+    
+    .product_slide-item{
+        /* background: #f4f4f4; */
         border-radius: 5px;
         color: #d1d0d0;
-        margin: 0 20px;
-        padding: 16px 0;
+        max-width: 165px;
         font-size: 12px;
         min-height: 50px;
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
+        margin-left: 20px;
     }
     .product_icon-left:hover, .product_icon-right:hover,.product_slide-item:hover{
         color: #fff;
         background: #2a9cf5;
         cursor: pointer;
+    }
+    .blue {
+        background-color: #f44336!important;
     }
     .call_action{
         min-height: 300px;
@@ -589,6 +614,8 @@
     }
     .featured{
         min-height: 985px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .featured_column-name{
         margin-top: 120px;
@@ -596,16 +623,21 @@
         font-weight: 600;
     }
     .featured_column-item{
+        position: relative;
+        width: 100%;
+        min-height: 135px;
         margin-bottom: 20px;
         display: flex;
     }
     .featured_item-img{
-        position: relative;
-        width: 130px;
+        position: absolute;
+        min-width: 130px;
         min-height: 135px;
+        left: 0;
+        top: 0;
         background: #e2e2e2;
-        border-top-left-radius: 4px; 
-        border-bottom-left-radius: 4px; 
+        border-top-left-radius: 5px; 
+        border-bottom-left-radius: 5px;
     }
     .featured_item-img > .add_cart{
         border-top-left-radius: 5px;
@@ -620,16 +652,15 @@
         text-transform: uppercase;
         transition: all 0.3s ease-in;
     }
-    .featured_item-group{
-        display: flex;
-        flex-wrap: wrap;
-        width: 220px;
-        border: 3px solid #e2e2e2;
-        border-left: none;
-        border-top-right-radius: 4px; 
-        border-bottom-right-radius: 4px;
+    .featured_item-group{ 
+        min-width: calc( 100% - 130px );
+        margin-left: 130px;
         padding-top: 23px; 
         padding-left: 25px;
+        border: 3px solid #e2e2e2;
+        border-left: none;
+        border-top-right-radius: 5px; 
+        border-bottom-right-radius: 5px;
     }
     .featured_item-icon:hover .fa-star, .featured_item-icon:hover .fa-star-half-alt{
         color: #2a9cf5;
@@ -638,7 +669,7 @@
         display: flex;
     }
     .featured_column-item-big{
-        height: 285px;
+        min-height: 285px;
         background: #e2e2e2;
         margin-bottom: 30px;
         border-radius: 4px;
@@ -650,7 +681,7 @@
         color: #2a9cf5;
     }
     .footer{
-        min-height: 554px;
+        min-height: 555px;
         background: #232b37;
         font-size: 14px;
         padding-top: 100px;
@@ -659,17 +690,28 @@
     .footer_infor{
         margin-top: 30px;
         font-weight: 300;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 2.5;
+    }
+    .footer_infor a{
+        color: #c1c6ce;
+        width: 100%;
+    }
+    .footer_infor a:hover{
+        color: #2a9cf5;
     }
     .footer_infor-group{
         display: flex;
         line-height: 1.8;
-        margin-top: -12px;  
     }
     .footer_infor-item{
         margin-top: 5px;
         margin-right: 30px;
         border-radius: 4px;
         background: #303743;
+        padding: 3px;
     } 
     .footer_end-text{
         font-weight: 600;

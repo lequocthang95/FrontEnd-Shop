@@ -39,12 +39,6 @@ removeBtns.forEach((removeBtn) =>{
         console.log(cartItem)
         var promise = Promise.resolve();
             promise
-                // .then(()=>{
-                //     return new Promise((resolve) =>{
-                //         cartInfor.style="animation: removeItem 0.3s linear";
-                //         setTimeout(resolve,300)
-                //     })
-                // })
                 .then(()=>{
                     return new Promise((resolve) =>{
                         cartItem.parentElement.style="animation: removeItem 1s linear";
@@ -96,11 +90,49 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button style="padding: 0;"><img class="product_icon-left" src="./assets/image_page/icon-1/01_home-left.png" alt=""></button>',
-        nextArrow: '<button style="padding: 0;"><img class="product_icon-right" src="./assets/image_page/icon-1/01_home-right.png" alt=""></button>',
-        autoplay: true,
+        prevArrow: '<button class="btn" onclick="plusDivs(-1)" style="padding: 0;"><img class="product_icon-left" src="./assets/image_page/icon-1/01_home-left.png" alt=""></button>',
+        nextArrow: '<button class="btn" onclick="plusDivs(1)" style="padding: 0;"><img class="product_icon-right" src="./assets/image_page/icon-1/01_home-right.png" alt=""></button>',    
     });
 });
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+    slideIndex = slideIndex + n;
+    switch(slideIndex) {
+        case 3:
+            slideIndex = 0;
+        break;
+        case -1:
+            slideIndex = 2;
+        break;    
+    }
+    showDivs(slideIndex);  
+}
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+function showDivs(n) {   
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("product_slide-item");
+  if (n > x.length) {slideIndex = 0}    
+  if (n < 0) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("blue");
+  }
+  if (n = 1){ dots[slideIndex].classList.add("blue")}
+  x[slideIndex].style.display = "flex";
+  dots[slideIndex + 3].classList.add("blue")  
+  if (dots.length > 6){
+    dots[slideIndex + 6].classList.add("blue")   
+    dots[slideIndex + 9].classList.add("blue")  
+  }
+}
+
+
 
 // header support languages
 $.fn.selectpicker.Constructor.BootstrapVersion = '4';

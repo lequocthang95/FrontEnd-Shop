@@ -1,3 +1,4 @@
+
 @keyframes right_left{
     from{
         opacity: 0;
@@ -31,6 +32,10 @@
     to {
 
     }
+}
+
+.btn{
+    transition: none;
 }
 @media only screen and (max-width: 992px){
     .header_support,.product,.features,.call_action,.featured,.footer{

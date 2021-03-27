@@ -1,9 +1,8 @@
 
 @font-face {
     font-family: 'Poppins', sans-serif;
-    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
     font-size: 16px;
-    font-weight: 300;
   }
 body{
     font-family: 'Poppins', sans-serif;
