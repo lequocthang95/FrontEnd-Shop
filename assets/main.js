@@ -121,14 +121,14 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("blue");
+    dots[i].classList.remove("orange");
   }
-  if (n = 1){ dots[slideIndex].classList.add("blue")}
+  if (n = 1){ dots[slideIndex].classList.add("orange")}
   x[slideIndex].style.display = "flex";
-  dots[slideIndex + 3].classList.add("blue")  
+  dots[slideIndex + 3].classList.add("orange")  
   if (dots.length > 6){
-    dots[slideIndex + 6].classList.add("blue")   
-    dots[slideIndex + 9].classList.add("blue")  
+    dots[slideIndex + 6].classList.add("orange")   
+    dots[slideIndex + 9].classList.add("orange")  
   }
 }
 
