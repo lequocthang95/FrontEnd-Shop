@@ -51,7 +51,6 @@ removeBtns.forEach((removeBtn) =>{
                 })
     } 
 })
-        
 
 // list active
 var list = document.querySelector('.list_grid');
@@ -148,8 +147,6 @@ function showDivs(n) {
     dots[slideIndex + 6].classList.add("orange")   
     dots[slideIndex + 9].classList.add("orange")  
   }
-  var btnProduct1 = document.querySelector('.product_btn1');
-  console.log(btnProduct1)
 }
 
 

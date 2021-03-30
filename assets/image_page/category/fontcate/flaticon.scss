@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?21417a99938ebfe68ff6cdddabb273a1") format("truetype"),
+url("./flaticon.woff?21417a99938ebfe68ff6cdddabb273a1") format("woff"),
+url("./flaticon.woff2?21417a99938ebfe68ff6cdddabb273a1") format("woff2"),
+url("./flaticon.eot?21417a99938ebfe68ff6cdddabb273a1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?21417a99938ebfe68ff6cdddabb273a1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bathtub": "\f101",
+    "first-aid-kit": "\f102",
+    "high-heels": "\f103",
+    "laptop": "\f104",
+    "puzzle": "\f105",
+    "scissors": "\f106",
+    "shop": "\f107",
+    "watermelon": "\f108",
+);
+
+.flaticon-bathtub:before {
+    content: map-get($flaticon-map, "bathtub");
+}
+.flaticon-first-aid-kit:before {
+    content: map-get($flaticon-map, "first-aid-kit");
+}
+.flaticon-high-heels:before {
+    content: map-get($flaticon-map, "high-heels");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon-map, "laptop");
+}
+.flaticon-puzzle:before {
+    content: map-get($flaticon-map, "puzzle");
+}
+.flaticon-scissors:before {
+    content: map-get($flaticon-map, "scissors");
+}
+.flaticon-shop:before {
+    content: map-get($flaticon-map, "shop");
+}
+.flaticon-watermelon:before {
+    content: map-get($flaticon-map, "watermelon");
+}

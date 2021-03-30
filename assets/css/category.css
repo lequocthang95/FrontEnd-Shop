@@ -1,0 +1,29 @@
+
+.category_layout{
+    width:100%;
+    background: #363e48;
+    min-height: 300px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.category_layout a {
+    color: #727681;
+}
+.category_layout a:hover {
+    color: #2a9cf5;
+}
+.category_body-item{
+    border: 1px solid #303743;
+    border-radius: 5px;
+    min-height: 252px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 255px;
+    font-size: 140px;
+    text-align: center;
+}
+.category_body-item:hover{
+    background: #2a9cf5;
+    color: #fff;
+}

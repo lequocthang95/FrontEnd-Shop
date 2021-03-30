@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?21417a99938ebfe68ff6cdddabb273a1") format("truetype"),
+url("./flaticon.woff?21417a99938ebfe68ff6cdddabb273a1") format("woff"),
+url("./flaticon.woff2?21417a99938ebfe68ff6cdddabb273a1") format("woff2"),
+url("./flaticon.eot?21417a99938ebfe68ff6cdddabb273a1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?21417a99938ebfe68ff6cdddabb273a1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-bathtub:before {
+    content: "\f101";
+}
+.flaticon-first-aid-kit:before {
+    content: "\f102";
+}
+.flaticon-high-heels:before {
+    content: "\f103";
+}
+.flaticon-laptop:before {
+    content: "\f104";
+}
+.flaticon-puzzle:before {
+    content: "\f105";
+}
+.flaticon-scissors:before {
+    content: "\f106";
+}
+.flaticon-shop:before {
+    content: "\f107";
+}
+.flaticon-watermelon:before {
+    content: "\f108";
+}

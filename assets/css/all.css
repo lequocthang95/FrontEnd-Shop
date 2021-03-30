@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: 'Poppins', sans-serif;
-    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
+    src: url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap);
     font-size: 16px;
   }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: #757e8a;
     font-weight: 300;
@@ -13,11 +13,9 @@ body{
 button{
     border: none;
 }
-a {
-    color: black;
-}
-a:hover {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
+    outline: none;
 }
 h1{
     font-size: 5rem;
@@ -38,10 +36,6 @@ h5{
 }
 h6{
     font-size: 18px;
-}
-h1, h2, h3, h4,h5,h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 ul{
     list-style: none;

@@ -1,3 +1,14 @@
+    @font-face {
+        font-family: 'Poppins', sans-serif;
+        src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
+        font-size: 16px;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #757e8a;
+        font-weight: 300;
+    }
    .header{
         min-height: 150px;
         background: #232b37;
