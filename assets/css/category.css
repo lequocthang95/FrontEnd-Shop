@@ -16,7 +16,7 @@ select{
     color: #2a9cf5;
 }
 .category{
-    padding-top: 80px;
+    padding: 80px 0;
 }
 .category_item,.category_slide-list{
     border: 2px solid #e5e5e5;
@@ -57,16 +57,14 @@ select{
 .category_slide-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+    padding: 25px 40px;
 }
 .category_slide-list a{
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 14px; 
-    font-weight: 500;
+    font-weight: 400;
     align-items: center;
     min-width: 175px;
     color: #bbc4d1;
@@ -81,6 +79,27 @@ select{
 }
 .category_slide-list a:hover .icon_add{
     font-size: 24px;
+}
+.category_slide-infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 175px;
+    color: #bbc4d1;
+    font-weight: 400;
+    border-bottom: 2px solid #f6f6f6;
+    padding-top: 22px;
+    padding-bottom: 7px;
+}
+.category_slide-infor-text{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    font-size: 14px;
+    line-height: 0.7;
+}
+.category_slide-infor-icon{
+    color: #2a9cf5;
 }
 .slide_head{
     display: flex;
@@ -135,4 +154,17 @@ select{
     cursor: pointer;
     background: #2a9cf5;
     color: #fff;
+}
+.category_end{
+    background: #f7f7f7;
+    padding: 120px 0;
+}
+.category_end-item{
+    width: 100%;
+    min-height: 266px;
+    background: #e2e2e2;
+}
+.category_end-text{
+    width: 100%;
+    text-align: center;
 }
