@@ -19,11 +19,14 @@
         transform: translateX(0);
     }
 }
-@keyframes removeItem{
-    from{
-        transition: width 2s, height 2s, transform: 2s;
+@keyframes removeItem
+{
+    from
+    {
+        transition: width 2s, height 2s, transform 2s;
     }
-    to{
+    to
+    {
         width:10px;
         height:10px;
         overflow: hidden;
@@ -73,6 +76,13 @@
     }
     .form_search-input{
         max-width: 200px;
+    }
+    .rope{
+        display: none;
+    }
+    .slide_head-group{
+        justify-content: center;
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 767px){
