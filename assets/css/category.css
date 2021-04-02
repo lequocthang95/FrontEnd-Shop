@@ -24,7 +24,7 @@ select{
     min-height: 252px;
     margin-right: 30px;
     margin-bottom: 30px;
-    min-width: 255px;
+    width: 100%;
     text-align: center;
 }
 .category_item-img{
@@ -66,7 +66,7 @@ select{
     font-size: 14px; 
     font-weight: 400;
     align-items: center;
-    min-width: 175px;
+    width: 100%;
     color: #bbc4d1;
     line-height: 3.5;
 }
@@ -82,9 +82,9 @@ select{
 }
 .category_slide-infor{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-width: 175px;
+    width: 100%;
     color: #bbc4d1;
     font-weight: 400;
     border-bottom: 2px solid #f6f6f6;
@@ -133,6 +133,29 @@ select{
 .slide_head-group .slide_head-item:hover{
     cursor: pointer;
 }
+.slide_head-select{
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 9px 30px 11px 50px;
+}
+.slide_head-select-op{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bbc4d1;
+}
+.slide_head-select .dropdown-menu{
+    margin-top: 13px;
+    margin-left: -48px;
+}
+.slide_head-select .icon-drop{
+    margin-left: 7px;
+}
 .rope{
     background:  #e5e5e5;
     height: 2px;
@@ -146,7 +169,7 @@ select{
     position: relative;
     border: 2px solid #e5e5e5;
     border-radius: 100%;
-    padding:  15px 20px;
+    padding:  16px 20px;
     color: #afb6bf;
     background: #fff;
 }
@@ -163,6 +186,7 @@ select{
     width: 100%;
     min-height: 266px;
     background: #e2e2e2;
+    margin-top: 55px;
 }
 .category_end-text{
     width: 100%;
