@@ -70,16 +70,16 @@
                                 <span class="cart-price"></span>
                             </div>
                             <div class="amount">
-                                <div class="amount_reduc" onclick="amountChane(-1)">
+                                <div class="amount_reduc" onclick="amountChange(-1)">
                                     -
                                 </div>
                                 <div class="amount_present">
-                                    <input type="text" style="border: none; width: 100%; text-align: center;" name="product_quantity" value="1" />
+                                    <input type="number" style="border: none; width: 100%; text-align: center; overflow: visible;" name="product_quantity" value="1" onchange="amountChange(0)"/>
                                 </div>
-                                <div class="amount_increa"  onclick="amountChane(1)">
+                                <div class="amount_increa"  onclick="amountChange(1)">
                                     +
                                 </div>
-                            </div>
+                            </div>  
                             <div class="price_total"></div>
                         </div>
                     </div>

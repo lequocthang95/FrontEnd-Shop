@@ -1,14 +1,7 @@
-var priceOne = document.querySelector('.price_one').innerText;
 var amount = document.querySelector('.amount_present input');
 var productPrice = document.querySelector('.price_one input');
 var productPriceText = document.querySelector('.price_one span');
 var priceTotal = document.querySelector('.price_total')
-var x = priceOne.replace("$","");
-var y = x.replace(",","");
-var z = parseInt(y)
-var p = 1;
-var a = "$"
-var b = ".00"
 
 // insert character coppy from https://stackoverflow.com/questions/4313841/insert-a-string-at-a-specific-index
 if (!String.prototype.splice) {
@@ -19,25 +12,22 @@ if (!String.prototype.splice) {
 String.prototype.splice = function(idx, rem, str) {
     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
 };
-total(p)
-function total() {
-    //amount.innerText = (p);
-    var c = z*p.toString();
-    var d = a.concat(c,b);
-    productPriceText.innerText = parseInt(productPrice.value).toFixed(2)
-    priceTotal.innerText = (parseInt(productPrice.value) * parseInt(amount.value)).toFixed(2)
-}
 
-function amountChane(n){
+total(amount.value);
+function total(n) {
+    productPriceText.innerText = parseInt(productPrice.value).toFixed(2)
+    priceTotal.innerText = (parseInt(productPrice.value) * n).toFixed(2)
+}
+// function inputAmount(){
+//     console.log(amount.value)
+// }
+function amountChange(n){
     var btnReduc = document.querySelector('.amount_reduc');
-    p = p +n;
-    amount.value = parseInt(amount.value) + n
-    switch(p){
-        case 0:
-            btnReduc.setAttribute("disabled", "disabled")
-            p = 1;
-            break;
+    amount.value = parseInt(amount.value) + n;
+    if ( parseInt(amount.value) <= 0){
+        btnReduc.setAttribute("disabled","disabled")
+        amount.value= 1;
     }
-    total(p)
+    total(amount.value);
 }
 
