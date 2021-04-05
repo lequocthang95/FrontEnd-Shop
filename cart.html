@@ -46,37 +46,69 @@
     <div class="cartpage">
         <div class="container">
             <div class="row">
-                <div class="cartpage_head">
                     <div class="col-lg-7">
-                        Product
-                    </div>
-                    <div class="col-lg-5" style="display: flex; justify-content: space-between;">
-                        <div class="cartpage_head-group">
-                            <p>Price</p>
-                            <p>Quantity</p>
-                            <p>Total</p>
+                        <div class="cartpage_head-firt">
+                            <p>Product</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cal_price">
-                    <div class="col-lg-7">
                         <div class="infor_product">
                             <i class="fas fa-times"></i>
-                            <div class="infor_product-img">
-
-                            </div>
+                            <div class="infor_product-img"></div>
                             <div class="infor_product-text1">
                                 Wireless Audio System Multiroom 360
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-
+                        <div class="cartpage_head-group">
+                            <p>Price</p>
+                            <p>Quantity</p>
+                            <p>Total</p>
+                        </div>
+                        <div class="calc_price-group">
+                            <div class="price_one">
+                                $3,899.00
+                            </div>
+                            <div class="amount">
+                                <div class="amount_reduc" onclick="amountChane(-1)">
+                                    -
+                                </div>
+                                <div class="amount_present">
+                                    
+                                </div>
+                                <div class="amount_increa"  onclick="amountChane(1)">
+                                    +
+                                </div>
+                            </div>
+                            <div class="price_total">
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-coupon">
+                        <div class="form-outline">
+                            <input type="search"  class="coupon_input" placeholder="Coupon Code...">
+                        </div>
+                        <button type="button" class="coupon_btn">
+                            apply coupon
+                        </button>       
+                    </div>
+                </div>
+                <div class="col-lg-6" style="display: flex; justify-content: flex-end;">
+                    <div class="coupon_group-btn">
+                        <div class="button-white cart-btn">
+                            update cart
+                        </div>
+                        <div class="button-blue cart-btn" style="min-width: 280px;">
+                            proceed to checkout
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./assets/js/cart.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.js"></script>
 </body>
