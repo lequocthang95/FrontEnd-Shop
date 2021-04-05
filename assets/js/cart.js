@@ -1,10 +1,12 @@
 var priceOne = document.querySelector('.price_one').innerText;
-var amount = document.querySelector('.amount_present');
+var amount = document.querySelector('.amount_present input');
+var productPrice = document.querySelector('.price_one input');
+var productPriceText = document.querySelector('.price_one span');
 var priceTotal = document.querySelector('.price_total')
 var x = priceOne.replace("$","");
 var y = x.replace(",","");
 var z = parseInt(y)
-var p=1;
+var p = 1;
 var a = "$"
 var b = ".00"
 
@@ -19,21 +21,23 @@ String.prototype.splice = function(idx, rem, str) {
 };
 total(p)
 function total() {
-    amount.innerText = (p);
+    //amount.innerText = (p);
     var c = z*p.toString();
     var d = a.concat(c,b);
-    priceTotal.innerText =  d.splice(d.length-6,0, "," )
+    productPriceText.innerText = parseInt(productPrice.value).toFixed(2)
+    priceTotal.innerText = (parseInt(productPrice.value) * parseInt(amount.value)).toFixed(2)
 }
 
 function amountChane(n){
     var btnReduc = document.querySelector('.amount_reduc');
     p = p +n;
+    amount.value = parseInt(amount.value) + n
     switch(p){
         case 0:
-            btnReduc.setAttribute("disabled","disabled")
+            btnReduc.setAttribute("disabled", "disabled")
             p = 1;
             break;
     }
-    total(p) 
+    total(p)
 }
 
