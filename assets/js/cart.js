@@ -15,12 +15,38 @@ String.prototype.splice = function(idx, rem, str) {
 
 total(amount.value);
 function total(n) {
-    productPriceText.innerText = parseInt(productPrice.value).toFixed(2)
-    priceTotal.innerText = (parseInt(productPrice.value) * n).toFixed(2)
+    var s = "$"
+    var text = s.concat(parseInt(productPrice.value).toFixed(2).toString());
+    if (text.length > 7){
+        text = text.splice(text.length - 6, 0, ",")
+    }
+    if (text.length > 11){
+        text = text.splice(text.length - 10, 0, ",")
+    }
+    if (text.length > 15){
+        text = text.splice(text.length - 15, 0, ",")
+    }
+    if (text.length >= 22){
+        text = text.splice(text.length - 21, 0, ",")
+    }
+
+    productPriceText.innerText = text;
+
+    var text2 = s.concat((parseInt(productPrice.value) * n).toFixed(2).toString());
+    if (text2.length > 7){
+        text2 = text2.splice(text2.length - 6, 0, ",")
+    }
+    if (text2.length > 11){
+        text2 = text2.splice(text2.length - 10, 0, ",")
+    }
+    if (text2.length > 15){
+        text2 = text2.splice(text2.length - 14, 0, ",")
+    }
+    if (text2.length > 22){
+        text2 = text2.splice(text2.length - 22, 0, ",")
+    }
+    priceTotal.innerText = text2;
 }
-// function inputAmount(){
-//     console.log(amount.value)
-// }
 function amountChange(n){
     var btnReduc = document.querySelector('.amount_reduc');
     amount.value = parseInt(amount.value) + n;
@@ -31,3 +57,40 @@ function amountChange(n){
     total(amount.value);
 }
 
+
+// slide cart
+var slideN = 0;
+showItems(slideN);
+
+function plusItems(n) {
+    slideN += n;
+    switch(slideN) {
+        case 3:
+            slideN = 0;
+        break;
+        case -1:
+            slideN = 2;
+        break;    
+    }
+  showItems(slideN);
+}
+
+function currentItem(n) {
+  showItems(slideN = n);
+}
+
+function showItems(n) {
+    var i;
+    var x = document.getElementsByClassName("cart_slide-show");
+    var dots = document.getElementsByClassName("cart_slide-item");
+    if (n > x.length) {slideN = 0}    
+    if (n < 0) {slideN = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("orange");
+    }
+    if (n = 1){ dots[slideN].classList.add("orange")}
+    x[slideN].style.display = "flex";
+}
