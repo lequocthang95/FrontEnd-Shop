@@ -5,7 +5,8 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 20px 35px; 
     border: 2px solid #e5e5e5;
     font-weight: bold;
-    min-width: 190px;
+    min-width: 30%;
+    margin-left: 20px;
 }
 .cartpage{
     padding: 80px 0;
@@ -78,15 +79,13 @@ input[type=number]::-webkit-inner-spin-button {
     border-right: 2px solid #e5e5e5;
     border-left: 2px solid #e5e5e5;
 }
-.form-coupon{
-    display: flex;
-}
 .coupon_input{
     border: 2px solid #e5e5e5;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
-    padding: 16px 35px;
+    min-width: 45%;
+    padding: 20px 35px; 
 }
 .coupon_btn{
     display: flex;
@@ -100,8 +99,9 @@ input[type=number]::-webkit-inner-spin-button {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-left: none; 
-    padding: 16px 35px;
-    min-width: 190px;
+    padding: 20px 35px; 
+    min-width: 30%;
+    
 }
 .coupon_btn:hover{
     cursor: pointer;
@@ -128,63 +128,12 @@ input[type=number]::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 }
-.cart_logos{
-    display: flex;
-    justify-content:  center;
-    align-items: center;
-    min-height: 232px;
-    border: 1px solid #e5e5e5;
-    margin: 30px 38px;
-    align-items: center;
-}
-.logo{
-    min-width: 100px;
-    min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cart_product{
-    padding: 50px 0;
-}
-.featured_item-group a {
-    color: #232b37;
-}
-.cart_slide-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 30%;
-    border: 2px solid #e5e5e5;
-    border-radius: 30px;
-    padding: 16px 0;
-    text-transform: uppercase;
-    color: #b1b6bd;
-    font-size: 12px;
-    margin-right: 20px;
-    background: #fff;
-}
-.cart_slide-btn{
-    border: 2px solid #e5e5e5;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-left: 20px;
-    background: #fff;
-}
-.cart_slide-item:hover{
-    color: #fff;
-    background: #2a9cf5;
-    cursor: pointer;
-}
-.cart_slide-show{
-    display: flex;
-    flex-wrap: wrap;
-}
 @media only screen and (max-width: 992px){
-    .logo{
-        margin: 20px 0;
-    }
     .cart_slide-btn{
         margin-top: 20px; 
+    }
+    .calc_price-group{
+        padding-top: 0px;
+        padding-bottom: 20px;
     }
 }

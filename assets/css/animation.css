@@ -84,6 +84,9 @@
         justify-content: center;
         margin-bottom: 30px;
     }
+    .logo{
+        margin: 20px 0;
+    }
 }
 @media only screen and (max-width: 767px){
     .top_menu-active{

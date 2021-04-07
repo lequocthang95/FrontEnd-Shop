@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-
+    <title>Check out</title>
 
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
@@ -24,7 +23,7 @@
 
     <link rel="stylesheet" href="assets/css/home1.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
     <link rel="stylesheet" href="assets/css/animation.css">
 
 </head>
@@ -33,95 +32,86 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" style="display:flex;justify-content: space-between; align-items: center;">
-                    <h3 style="color: #fff; font-weight: 300;">Cart</h3>
+                    <h3 style="color: #fff; font-weight: 300;">Checkout</h3>
                     <div style="display: flex;text-transform: uppercase;font-weight: bold; max-height: 15px; align-items: center;">
-                        <a href="https://waribiki95.github.io/baitap/" style="padding-right: 10px;">home</a>
-                        <a href="https://waribiki95.github.io/baitap/cart.html" style="color: #2a9cf5; border-left: 3px solid #727681;padding-left: 10px;">cart</a>
+                        <a href="index.html" style="padding-right: 10px;">home</a>
+                        <a href="https://waribiki95.github.io/baitap/checkout.html" style="color: #2a9cf5; border-left: 3px solid #727681;padding-left: 10px;">checkout</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="cartpage">
+    <div class="checkout_body">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="cartpage_head-firt">
-                        <p>Product</p>
-                    </div>
-                    <div class="infor_product">
-                        <i class="fas fa-times"></i>
-                        <div class="infor_product-img"></div>
-                        <div class="infor_product-text1">
-                            Wireless Audio System Multiroom 360
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="cartpage_head-group">
-                        <p>Price</p>
-                        <p>Quantity</p>
-                        <p>Total</p>
-                    </div>
-                    <div class="calc_price-group">
-                        <div class="price_one">
-                            <input type="hidden" name="product_price" value="3899" />
-                            <span class="cart-price"></span>
-                        </div>
-                        <div class="amount">
-                            <div class="amount_reduc" onclick="amountChange(-1)">
-                                -
-                            </div>
-                            <div class="amount_present">
-                                <input type="number" min="1" max="100000" style="color: #838b97; border: none; width: 100%; text-align: center; overflow: visible;" name="product_quantity" value="1" onchange="amountChange(0)"/>
-                            </div>
-                            <div class="amount_increa"  onclick="amountChange(1)">
-                                +
-                            </div>
-                        </div>  
-                        <div class="price_total"></div>
-                    </div>
-                </div>
+            <div class="support_select">
+                Returning customer? 
+                <a href="">Click here to login</a>  
             </div>
-            <div class="row">
-                <div class="col-lg-6" style="display: flex;"> 
-                    <input type="search"  class="coupon_input" placeholder="Coupon Code..."/>
-                    <button type="button" class="coupon_btn">
-                        apply coupon
-                    </button>
-                </div>
-                <div class="col-lg-6" style="display: flex;justify-content: flex-end;">
-                    <div class="button-white cart-btn">
-                        update cart
-                    </div>
-                    <div class="button-blue cart-btn" style="min-width: 50%;">
-                        proceed to checkout
-                    </div>
-                </div>
+            <div class="support_select">
+                Have a coupon?  
+                <a href="">Click here to enter your code</a>     
             </div>
-            <div class="row" style="display: flex; justify-content: flex-end;">
-                <div class="col-lg-4 col-md-6">
-                    <div class="cart_total">
-                        <p style="font-size: 30px; font-weight: 300;"> Cart Totals</p>
-                        <div class="cart_total-sub">
-                            <p>Subtotal</p> 
-                            <span>$2,299.00</span>
+            <form class="order" action="">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <span style="font-size: 30px; margin-left: 0; color: #303743"> Billing Details</span>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
                         </div>
-                        <div class="cart_total-ship">
-                            <p>Ship ping</p>
-                            <span></span>
-                        </div>
-                        <div  class="cart_total-tax">
-                            <p>Tax (estimated for Bangladesh)</p>
-                            <span>$0.00</span>
-                        </div>
-                        <div class="cart_total-all">
-                            <p>Total</p>
-                            <span style="color:#2a9cf5">$2,299.00</span>
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
                         </div>
                     </div>
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                        </div>
+                    </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <span style="font-size: 30px; margin-left: 0; color: #303743"> Your Order</span>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="all_logos">
@@ -1275,6 +1265,6 @@
         </div>
     </div>
     <script src="./assets/main.js"></script>
-    <!-- <script src="./assets/js/cart.js"></script> -->
-    <script type="text/javascript" src="./assets/js/slick.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.js"></script>  
 </body>
+</html>
