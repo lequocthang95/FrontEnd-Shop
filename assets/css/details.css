@@ -1,0 +1,15 @@
+
+.details_body{
+    padding: 80px 0;
+}
+.details_img-big{
+    min-width: 540px;
+}
+.details_img-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.details_img-small {
+    cursor: pointer;
+}
