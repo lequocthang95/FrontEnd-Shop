@@ -46,24 +46,6 @@
         margin-top: 0;
         padding-left: 0;
     }
-    .icon-drop{
-        opacity: 1;
-    }
-    .dropdown-toggle::after{
-        border: none !important;
-    }
-    .dropdown-item{
-        padding: 7px;
-        width: 97%;
-        margin-left: 1.5px;   
-    }
-    .dropdown-item:not(.disabled) .icon-drop{
-        opacity: 0;
-    } 
-    .icon-drop{
-        margin-bottom: 2px;
-        margin-left: 2px;
-    }
     .ensign{
         margin-right: 10px;
         margin-bottom: 2px;

@@ -64,13 +64,3 @@ function showDivs(n) {
     dots[slideIndex + 9].classList.add("orange")  
   }
 }
-
-
-
-// header support languages
-$.fn.selectpicker.Constructor.BootstrapVersion = '4';
-$.fn.selectpicker.Constructor.DEFAULTS.multipleSeparator = ' | ';
-
-$(function(){
-    $('.my_select').selectpicker();
-});

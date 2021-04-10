@@ -51,67 +51,174 @@
                 Have a coupon?  
                 <a href="">Click here to enter your code</a>     
             </div>
-            <form class="order" action="">
+            <div class="row" style="display: flex;">
                 <div class="col-lg-6">
                     <div class="row">
-                        <span style="font-size: 30px; margin-left: 0; color: #303743"> Billing Details</span>
+                        <span style="font-size: 30px; margin-bottom: 20px; color: #303743"> Billing Details</span>
                     </div>
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                    <div class="row" style="display: flex;">
+                        <div class="customer_infor" style="margin-right: 30px;">
+                            <label style="display: flex;"><p>First Name</p><p style="color:#2a9cf5">**</p></label>
                             <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
                         </div>
                         <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
-                    </div>
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                            <label style="display: flex;"><p>Last Name</p><p style="color:#2a9cf5">**</p></label>
+                            <input class="customer_infor-input" type="text" placeholder="Last Name..." >      
                         </div>
                     </div>
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
+                    <div class="row" style="display: flex;">
+                        <div class="customer_infor" style="margin-right: 30px;">
+                            <label style="display: flex;"><p>Company name</p><p style="color:#2a9cf5">**</p></label>
+                            <input class="customer_infor-input" type="text" placeholder="Company name..." >      
                         </div>
                         <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
+                            <div  style="display: flex;"><p>Country</p><p style="color:#2a9cf5">**</p></div> 
+                            <div class="customer_infor-input" style="margin-top: 9px;">
+                                <select class="selectpicker" data-width="100%" data-style="">
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> Country </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option> 
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> Viet nam </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>   
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> USA </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> France </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> England </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex;">
+                        <div class="customer_infor" style="margin-right: 30px;">
+                            <label style="display: flex;"><p>Street address</p><p style="color:#2a9cf5">**</p></label>
+                            <input class="customer_infor-input" type="text" placeholder="Address..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <input class="customer_infor-input" style="margin-top: 32px" type="text" placeholder="Address other..." >      
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex;">
+                        <div class="customer_infor" style="margin-right: 30px;">
+                            <label style="display: flex;"><p>Town/City</p><p style="color:#2a9cf5">**</p></label>
+                            <input class="customer_infor-input" type="text" placeholder="Enter town/city..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <div  style="display: flex;"><p>District</p><p style="color:#2a9cf5">**</p></div> 
+                            <div class="customer_infor-input" style="margin-top: 9px;">
+                                <select class="selectpicker" data-width="100%" data-style="">
+                                    <option value="District" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> District </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option> 
+                                    <!-- <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> Viet nam </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>   
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> USA </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> France </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option>
+                                    <option value="country" data-content='<div class="" style="color: #b1b7c0;font-size: 14px; display: flex; justify-content: space-between; align-items: center; width: 100%;"> <p style="margin: 0;"> England </p> <img class="icon-drop" src="./assets/image_page/icon-1/drop.png"></div>'></option> -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex;">
+                        <div class="customer_infor" style="margin-right: 30px;">
+                            <label style="display: flex;"><p>Phone number</p><p style="color:#2a9cf5">**</p></label>
+                            <input class="customer_infor-input" type="text" placeholder="Phone number..." >      
+                        </div>
+                        <div class="customer_infor">
+                            <label style="display: flex;"><p>Email address</p><p style="color:#2a9cf5">**</p></label>
                             <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
                         </div>
                     </div>
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
+                    <div class="row" style="display: flex; justify-content: flex-start; align-items: center;">
+                        <label class="checkbox_style" for="">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Create an account?
+                        </label>                
                     </div>
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
-                        <div class="customer_infor">
-                            <label class="w3-text-blue"><b>First Name</b><b style="color:#2a9cf5">**</b></label>
-                            <input class="customer_infor-input" type="text" placeholder="Firt name..." >      
-                        </div>
-                    </div>
-                <div class="col-lg-6">
                     <div class="row">
-                        <span style="font-size: 30px; margin-left: 0; color: #303743"> Your Order</span>
+                        <span style="font-size: 30px; margin-top: 22px; margin-bottom:15px; color: #303743"> Shipping Details</span>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: flex-start; align-items: center;">
+                        <label class="checkbox_style" for="">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Ship to a different address?
+                        </label>                
+                    </div>
+                    <div class="row" style="width:100%;display: flex;flex-wrap: wrap;">
+                        <label  style="margin: 25px 0 18px 0;" for="subject">Order notes</label>
+                        <textarea placeholder="Notes about your order, e.g. special notes for delivery." style="height:120px;width:100%;padding:30px 0 0 30px; "></textarea>
                     </div>
                 </div>
-            </form>
+                <div class="col-lg-6" style="padding-left: 50px;">
+                    <div style="width: 97.3%;">
+                        <div class="row">
+                            <span style="font-size: 30px; margin-bottom: 20px; color: #303743"> Your Order</span>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor" style="padding-top:0;">
+                                <span>product</span> <span>total</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor">
+                                <p>Wireless Audio System Multiroom 360 	× 1</p> <p>$3,299.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor">
+                                <span>subtotal</span> <p>$3,299.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor">
+                                <div>
+                                    <span>shipping</span> 
+                                    <p style="margin-top: 8px;">Enter your full address to see shipping costs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor">
+                                <span>tax</span> <p> 0 </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="bill_infor">
+                                <span>total</span> <p>$3,299.00</p>
+                            </div>
+                        </div>
+                        <div class="row" style=" display: flex; justify-content: space-between; align-items: center;margin-top: 30px;">
+                            <label class="checkbox_style" for="">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Cash on delivery
+                            </label>
+                        </div>
+                        <div class="row">
+                            <button class="button-blue pay_btn">Pay with cash upon delivery.</button>
+                        </div>
+                        <div class="row" style=" display: flex; justify-content: space-between; align-items: center;">
+                            <label class="checkbox_style" style="top: 6px;" for="">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Credit Card (Stripe)
+                            </label>
+                            <div style="min-width: 307px;display: flex; justify-content: space-between">
+                                <div class="card-img"></div>
+                                <div class="card-img"></div>
+                                <div class="card-img"></div>
+                                <div class="card-img"></div>
+                                <div class="card-img"></div>
+                                <div class="card-img"></div>
+                            </div>
+                        </div>
+                        <div class="row" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 30px; margin-bottom: 30px;">
+                            <label class="checkbox_style" for="">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                I’ve read and accept the and  <a style="margin-left: 2px;" href="">terms & conditions *</a>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <button class="button-blue place_btn">place your order</button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
         </div>
     </div>
     <div class="all_logos">
@@ -1265,6 +1372,6 @@
         </div>
     </div>
     <script src="./assets/main.js"></script>
-    <script type="text/javascript" src="./assets/js/slick.js"></script>  
+    <script src="./assets/js/cart.js"></script>
 </body>
 </html>

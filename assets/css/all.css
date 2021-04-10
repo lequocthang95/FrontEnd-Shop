@@ -10,6 +10,29 @@ body{
     color: #757e8a;
     font-weight: 300;
 }
+button, input, optgroup, select, textarea, option {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+.icon-drop{
+    opacity: 1;
+}
+.dropdown-toggle::after{
+    border: none !important;
+}
+.dropdown-item{
+    padding: 7px;
+    width: 97%;
+    margin-left: 1.5px;   
+}
+.dropdown-item:not(.disabled) .icon-drop{
+    opacity: 0;
+} 
+.icon-drop{
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
 button{
     border: none;
 }
