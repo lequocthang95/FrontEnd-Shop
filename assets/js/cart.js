@@ -3,16 +3,6 @@ var productPrice = document.querySelector('.price_one input');
 var productPriceText = document.querySelector('.price_one span');
 var priceTotal = document.querySelector('.price_total')
 
-// insert character coppy from https://stackoverflow.com/questions/4313841/insert-a-string-at-a-specific-index
-if (!String.prototype.splice) {
-    String.prototype.splice = function(start, delCount, newSubStr) {
-        return this.slice(0, start) + newSubStr + this.slice(start + Math.abs(delCount));
-    };
-}
-String.prototype.splice = function(idx, rem, str) {
-    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
-};
-
 // slide cart
 var slideN = 0;
 showItems(slideN);
@@ -49,6 +39,16 @@ function showItems(n) {
     if (n = 1){ dots[slideN].classList.add("orange")}
     x[slideN].style.display = "flex";
 }
+
+// insert character coppy from https://stackoverflow.com/questions/4313841/insert-a-string-at-a-specific-index
+if (!String.prototype.splice) {
+    String.prototype.splice = function(start, delCount, newSubStr) {
+        return this.slice(0, start) + newSubStr + this.slice(start + Math.abs(delCount));
+    };
+}
+String.prototype.splice = function(idx, rem, str) {
+    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+};
 
 total(amount.value);
 function total(n) {
