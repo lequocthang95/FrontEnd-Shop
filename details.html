@@ -43,58 +43,636 @@
     <div class="details_body">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="" style="max-width: 540px; display: flex;">
-                        <img src="assets/image_page/product/hp01.jpg" alt="" class="details_img-big" style="width:100%">
-                        <img src="assets/image_page/product/hp02.jpg" alt="" class="details_img-big" style="width:100%">
-                        <img src="assets/image_page/product/hp03.jpg" alt="" class="details_img-big" style="width:100%">
+                <div class="detail_slide-show"> 
+                    <div class="col-lg-6">
+                        <div style="max-width: 540px; display: flex;">
+                            <img src="assets/image_page/product/hp01.jpg" alt="" class="details_img-big" style="width:100%">
+                            <img src="assets/image_page/product/hp02.jpg" alt="" class="details_img-big" style="width:100%">
+                            <img src="assets/image_page/product/hp03.jpg" alt="" class="details_img-big" style="width:100%">
+                        </div>
+                        <div class="details_img-group">
+                            <img src="assets/image_page/product/hphone1.jpg" alt="" onclick="currentImg(0)" class="details_img-small"> 
+                            <img src="assets/image_page/product/hphone2.jpg" alt="" onclick="currentImg(1)" class="details_img-small" >
+                            <img src="assets/image_page/product/hphone3.jpg" alt="" onclick="currentImg(2)" class="details_img-small">
+                        </div>
                     </div>
-                    <div class="details_img-group">
-                        <img src="assets/image_page/product/hphone1.jpg" alt="" onclick="currentItem(0)" class="details_img-small"> 
-                        <img src="assets/image_page/product/hphone2.jpg" alt="" onclick="currentItem(1)" class="details_img-small" >
-                        <img src="assets/image_page/product/hphone3.jpg" alt="" onclick="currentItem(2)" class="details_img-small">
+                    <div class="col-lg-6" style="display: flex; justify-content: flex-end;">
+                        <div class="details_product">
+                            <div class="row" style="display: flex; align-items: center; margin-top: 10px; margin-bottom:20px;">
+                                <div class="reviews_star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>  
+                                </div>
+                                <span style="margin: 0 20px 2px 8px; font-weight: 400;">23 <small> reviews</small></span>
+                                <div class="amount_orders"> Orders(200+)</div>
+                            </div>
+                            <div class="row">
+                                <span style="text-transform: uppercase; font-weight: 500; color:#2a9cf5; font-size: 14px;">accessories</span>
+                            </div>
+                            <div class="row">
+                                <span style="text-transform:capitalize; font-weight: 400; font-size: 30px; color:#232b37;word-spacing: -2px;">Wireless Audio System Multiroom 360</span>
+                            </div>
+                            <div class="row" style="display: flex; justify-content: space-between; align-items:center; line-height: 1.8">
+                                <div>
+                                    <span style="font-weight: 300; color:#2a9cf5; font-size: 50px; margin-right: 20px;"> $460</span>
+                                    <span style="font-weight: 300; color:#bfc7d3; font-size: 50px; text-decoration: line-through;"> $689</span>
+                                </div>
+                                <button class="button-white size_btn">size chart</button>
+                            </div>  
+                            <div class="row" style="display: flex; justify-content: space-between; width: 56%;">
+                                <div style="margin-top: 20px; font-size: 16px; color:#232b37;line-height: 0.8; font-weight: 500;">
+                                    <p>Brands:</p>
+                                    <p>Product Code:</p>
+                                    <p>Reward Points:</p>
+                                    <p>Stock:</p>
+                                </div>
+                                <div style="margin-top: 20px; font-size: 16px; color:#9ca4ae;line-height: 0.8;font-weight: 400;">
+                                    <p>Hewlett-Packard</p>
+                                    <p>d12</p>
+                                    <p>100</p>
+                                    <p style="color:#2a9cf5;">In Stock</p>
+                                </div>
+                            </div> 
+                            <div class="row" style="font-size: 30px;color: #232b37;">Overview</div> 
+                            <div class="row" style="font-size:16px ;color: #838b97; margin-top: 10px;margin-bottom: 35px; line-height: 1.75;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Excepteur sint occaecat cupida...</div>
+                            <div class="row" style="display: flex; justify-content: space-between; width: 73%; margin-bottom: 30px;">
+                                <div class="amount">
+                                    <div class="amount_reduc" onclick="amountChange(-1)">
+                                        -
+                                    </div>
+                                    <div class="amount_present">
+                                        <input type="number" min="1" max="100000" style="color: #838b97; border: none; width: 100%; text-align: center; overflow: visible;" name="product_quantity" value="1" onchange="amountChange(0)"/>
+                                    </div>
+                                    <div class="amount_increa"  onclick="amountChange(1)">
+                                        +
+                                    </div>
+                                </div>
+                                <div class="details-icon"><i class="fas fa-heart"></i></div>
+                                <div class="details-icon"><i class="fas fa-heart"></i></div>
+                                <div class="details-icon"><i class="fas fa-share-square"></i></div> 
+                            </div>
+                            <div class="row">
+                                <button class="button-blue details_add-btn"> add to cart</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="details_product">
-                        <div class="row" style="display: flex; align-items: center;">
-                            <div class="reviews_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>  
-                            </div>
-                            <span style="margin: 0 20px 2px 8px; font-weight: 400;">23 <small> reviews</small></span>
-                            <div class="amount_orders"> Orders(200+)</div>
+                <div class="detail_slide-show">
+                    descriptions 
+                </div>
+                <div class="detail_slide-show">
+                    methods
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px; margin-bottom: 30px;">       
+                <div class="rope" style="top: 25px; width: 98.5%; left: 6px;"></div>
+                <div class="col-lg-12" style="display: flex;">
+                    <div style="display: flex;justify-content: center;align-items: center; margin: auto; width:100%;">
+                        <button class="button-blue detail_slide-item" onclick="currentItem(0)">item review</button>
+                        <button class="button-blue detail_slide-item" onclick="currentItem(1)" style="margin: 0 20px;">descriptions</button>
+                        <button class="button-blue detail_slide-item" onclick="currentItem(2)">methods</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">               
+                <div class="col-lg-12">
+                    <span style="font-size:30px; color: #232b37;margin-top: 30px; font-weight: 500;">Technical Specifications</span>
+                </div> 
+                <div class="col-lg-12">
+                    <table>
+                    <tr>
+                        <td>Brand</td>
+                        <td>apple</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>item height</td>
+                        <td>18 millimeters</td> 
+                        <td></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td>item width</td>
+                        <td>31.4 centimeters</td> 
+                        <td></td>
+                        <td></td>                   
+                    </tr>
+                    <tr>
+                        <td>screen size</td>
+                        <td>13 inches</td> 
+                        <td></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td>item weight</td>
+                        <td>1.6 kg</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Product Dimensions</td>
+                        <td>21.9 x 31.4 x 1.8 cm</td> 
+                        <td></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td>Item model number</td>
+                        <td>MF841HN/A</td> 
+                        <td></td>
+                        <td></td>                   
+                    </tr>
+                    <tr>
+                        <td>Processor Brand</td>
+                        <td>Inte</td> 
+                        <td></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td>Processor Type</td>
+                        <td>Core i5</td> 
+                        <td></td>
+                        <td></td>                  
+                        </tr>
+                        <tr>
+                            <td>Processor Speed</td>
+                            <td>2.9 GHz</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>RAM Sizes</td>
+                            <td>8 GBs</td> 
+                            <td></td>
+                            <td></td>                  
+                        </tr>
+                        <tr>
+                            <td>Hard Drive Sizer</td>
+                            <td>512 GB</td> 
+                            <td></td>
+                            <td></td>                   
+                        </tr>
+                        <tr>
+                            <td>Hard Disk Technology</td>
+                            <td>Solid State Drive</td> 
+                            <td></td>
+                            <td></td>                  
+                        </tr>
+                    <tr>
+                        <td>Graphics Coprocessor</td>
+                        <td>Intel Integrated Graphics</td> 
+                        <td></td>
+                        <td></td>                   
+                    </tr>
+                    <tr>
+                        <td>Graphics Card Description</td>
+                        <td>integrated Graphics Card</td> 
+                        <td></td>
+                        <td></td>                  
+                    </tr>
+                    <tr>
+                        <td>Hardware Platform</td>
+                        <td>Mac</td> 
+                        <td></td>
+                        <td></td>                  
+                        </tr>
+                        <tr>
+                            <td>Operating System</td>
+                            <td>Mac OS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Average Battery Life (in hours)</td>
+                            <td>9</td> 
+                            <td></td>
+                            <td></td>                  
+                        </tr>  
+                    </table>
+                </div>
+                <div class="col-lg-12"  style="margin-top: 20px;">
+                    <span style="font-size:30px; color: #232b37;margin-top: 30px; font-weight: 500;">Product Descriptions</span>
+                </div>
+                <div class="col-lg-12"  style="margin-top: 30px;">
+                    <span>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </span>
+                </div>
+                <div class="col-lg-12"  style="margin-top: 30px;">
+                    <span>
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncove many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). . .
+                    </span>
+                </div>
+                <div class="col-lg-12">
+                    <span style="font-size:30px; color: #232b37;margin-top: 30px; font-weight: 500;">More Features</span>
+                </div>
+                <div class="col-lg-12">
+                    <table>
+                        <tr>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>24/7 Online Support</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>Unlimited Features</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>100% Pure cotton</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>simple and easy</td>
+                        </tr>
+                        <tr>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>24/7 Online Support</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>Unlimited Features</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>100% Pure cotton</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>simple and easy</td>
+                        </tr>
+                        <tr>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>24/7 Online Support</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>Unlimited Features</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>100% Pure cotton</td>
+                            <td class="details_table-td"><i class="fas fa-check" style="color: #2a9cf5; margin-right:7px;"></i>simple and easy</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-12" style="margin-top: 25px;">
+                    <span>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncove
+                        many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour
+                        and the like) Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum
+                        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                        (injected humour and the like)..
+                    </span>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="all_product" style="padding-top:0">
+        <div class="container">
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="rope"></div>
+                <div class="col-lg-7 col-md-6" style="display: flex; justify-content: space-between; padding-right: 0">
+                    <button class="btn cart_slide-item" >Releted Products</button>
+                </div>  
+                <div class="col-lg-5 col-md-6" style="display: flex; justify-content: flex-end;">
+                    <button class="btn cart_slide-btn">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn cart_slide-btn">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div> 
+            </div>
+            <div class="w3-content">
+                <div class="cart_slide-show">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <img src="./assets/image_page/product/cart1.jpg" alt="">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>                    
                         </div>
-                        <div class="row">
-                            <span style="text-transform: uppercase; font-weight: 500; color:#2a9cf5; font-size: 14px;">accessories</span>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>      
                         </div>
-                        <div class="row">
-                            <span style="text-transform:capitalize; font-weight: 400; font-size: 30px; color:#232b37;">Wireless Audio System Multiroom 360</span>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>   
                         </div>
-                        <div class="row" style="display: flex; justify-content: space-between; align-items:center">
-                            <div>
-                                <span style="font-weight: 300; color:#2a9cf5; font-size: 50px; margin-right: 20px;"> $460</span>
-                                <span style="font-weight: 300; color:#bfc7d3; font-size: 50px; text-decoration: line-through;"> $689</span>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <img src="./assets/image_page/product/cart2.jpg" alt="">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="button-white size_btn">size chart</button>
-                        </div>  
-                        <div class="row" style="display: flex; justify-content: space-between; width: 56%;">
-                            <div style="margin-top: 30px; font-size: 16px; color:#232b37;line-height: 0.8; font-weight: 500;">
-                                <p>Brands:</p>
-                                <p>Product Code:</p>
-                                <p>Reward Points:</p>
-                                <p>Stock:</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div style="margin-top: 30px; font-size: 16px; color:#9ca4ae;line-height: 0.8;font-weight: 400;">
-                                <p>Hewlett-Packard</p>
-                                <p>d12</p>
-                                <p>100</p>
-                                <p style="color:#2a9cf5;">In Stock</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <img src="./assets/image_page/product/cart2.jpg" alt="">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <img src="./assets/image_page/product/cart2.jpg" alt="">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>  
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="featured_column-item">
+                                <div class="featured_item-img">
+                                    <div class="add_cart">
+                                        <a href="">
+                                            <div class="add_cart-btn">
+                                                Add TO CART
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="featured_item-group">
+                                    <a href="">
+                                        <div class="featured_item-icon"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div> 
+                                    </a>
+                                    <a href="" style="font-weight: bold; font-size: 18px;">Minimal Screw</a> 
+                                    <div class="featured_item-text" style="width: 125px;">
+                                        <p style="color:#2a9cf5">$47.00</p>   
+                                        <p style="text-decoration: line-through;padding-left: 14px;">$99.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

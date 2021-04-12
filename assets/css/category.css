@@ -158,15 +158,6 @@ select{
 .slide_head-select .icon-drop{
     margin-left: 7px;
 }
-.rope{
-    background:  #e5e5e5;
-    height: 2px;
-    position: relative;
-    width: 90%;
-    z-index: -1;
-    margin: auto;
-    top: 30px;
-}
 .slide_head-icon{
     position: relative;
     border: 2px solid #e5e5e5;
