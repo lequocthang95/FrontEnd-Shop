@@ -625,10 +625,15 @@ ul{
     padding-top: 120px;
     padding-bottom: 80px;
 }
-.end_layout-item{
+.end_layout-img{
     width: 100%;
     min-height: 266px;
-    background: #e2e2e2;
+}
+.end_layout-img:hover{
+    filter: grayscale(100%)
+}
+.end_layout a:hover{
+    color: #2a9cf5!important;
 }
 .end_layout-text{
     width: 100%;
