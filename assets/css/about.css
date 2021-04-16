@@ -143,7 +143,7 @@
     margin-bottom: 25px;
 }
 .ourteam{
-    padding-bottom: 380px;
+    max-height: 880px;
 }
 .ourteam_head{
     background: #232b37;
@@ -160,8 +160,96 @@
     font-weight: 400;
 }
 .ourteam_item-img{
+    position: relative;
     width: 100%;
     min-height: 330px;
     background: #d1d1d1;
     margin-bottom: 40px;
+}
+.ourteam_item-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width : 100%;
+    height: 100%;
+    background: rgba(42, 156, 245, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.hover-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 47%;
+    display: flex;
+    justify-content:  space-between;
+    transform: translateY(0);
+    font-size: 14px;
+}
+.hover-icon a{
+    color: #fff;
+}
+.ourteam_item-img:hover .ourteam_item-hover{
+    visibility: inherit;
+    opacity: 1;
+}
+.ourteam_item-img:hover .hover-icon{
+    transition: all 0.3s ease-in;
+    transform: translateY(108px);
+}
+.hover-icon a:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(2.5);
+}
+.prev,.next{
+    visibility: inherit;
+    opacity: 0;
+}
+.slick-dots{
+    display: flex;
+    min-width: 87px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    margin-top: 35px;
+}
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    background: #dbdbdb;
+    color: transparent;
+    border-radius: 100%; 
+}
+.slick-dots li button:hover{
+    background: #005fe0; 
+}
+.slick-dots li.slick-active button{
+    background: #005fe0; 
+}
+.testimonials{
+    background: #f7f7f7;
+    padding: 120px 0;
+}
+.testimonials_item{
+    margin-top: 38px;
+    width: 100%;
+    min-height: 360px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testimonials_item-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #c3c3c3;
+}
+.testimonials_item-text{
+    width: 100%;
+    text-align: center;
 }
