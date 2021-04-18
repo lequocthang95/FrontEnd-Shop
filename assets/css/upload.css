@@ -1,0 +1,63 @@
+.upload_file{
+    width: 100%;
+    height: 300px;
+    background: #f3f4ff;
+    border: 2px dashed #b2b2b2 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #a5aab2;
+    margin-top: 80px;
+}
+.fa-cloud-upload-alt{
+    color: #e2e3ed;
+    font-size: 100px;
+}
+.dz-button
+{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.upload_product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.upload_product-form{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.upload_product .upload_product-form label {
+    color: #232b37;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.upload_product .upload_product-form .input-field {
+    border: 2px solid #f0f0f0;
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 5px;
+    color: #7c7c90;
+}
+.upload-btn{
+    min-width: 230px;
+    height: 60px;
+    margin-top: 20px;
+}
+.upload-btn:hover{
+    background: #b2b2b2;
+}

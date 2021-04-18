@@ -1,0 +1,10 @@
+.offer_body{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.single-offer-item{
+    width: 100%;
+    height: 540px;
+    background: #e8e8e8;
+    margin-bottom: 30px;;
+}

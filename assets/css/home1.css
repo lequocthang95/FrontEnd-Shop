@@ -10,6 +10,32 @@
         font-weight: 300;
     }
     /*  */
+    .header_support{
+        background: #2b3440;
+        border-bottom: 1px solid #303743;
+    }
+    .top_header{
+        background: #232b37;
+    }
+    .top_menu-list{
+        padding-top: 0;
+        min-width: 490px;
+    }
+    .top_menu-link{
+        text-decoration: none;
+        height: 70%;   
+    }
+    .top_menu-link a {
+        color: #b7bec9;
+    }
+    .top_menu-link a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    .dropdown_pages{
+        margin-left: -403px;
+        width: 226%;
+    }
     .header_layout{
         min-height: 700px;
         background: #2b3440;

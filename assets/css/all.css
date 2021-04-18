@@ -140,20 +140,13 @@ ul{
     margin: auto;
     top: 30px;
 }
-.header{
-    min-height: 150px;
-    background: #232b37;
-    font-weight: normal;
-}
 .header_support{
     min-height: 55px;
-    background: #232b37;
-    margin-top: 82px;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #303743;
+    border-bottom: 1px solid #cdd0d5;
 }
 .header_support-language{
     display: flex;
@@ -182,6 +175,60 @@ ul{
     margin-bottom: 2px;
     margin-left: 5px;
 }
+
+.header_contacts{
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts_search{
+    display: flex;
+    position: relative;
+}
+.contacts_search-input{
+    width: 100%;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 120px 0 30px;
+}
+::placeholder {
+    color: #aeb5c0;
+    font-size: 12px;
+}
+.contacts_search-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #2a9cf5;
+}
+.contacts_search-btn{
+    width: 40px;
+    height: 40px;
+    background: #2a9cf5;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.contacts_item{
+    display: flex;
+}
+.contacts_item-icon{
+    margin-left: 10px;;
+    color: #2a9cf5;
+    font-size: 16px;;
+}
+.contacts_item-text{
+    margin-left: 11px;;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+}
+
 .top_list{
     display: flex;
     flex-wrap: wrap;
@@ -204,8 +251,15 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #232b37;
+    background: #2a9cf5;
     flex-wrap: wrap;
+}
+.top_header-btn{
+    border: 2px solid #55b0f7;
+    min-width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    text-transform: capitalize;
 }
 .brand{
     display: flex;
@@ -221,23 +275,23 @@ ul{
 }
 .top_menu-list{
     position: relative;
-    min-width: 460px;
+    min-width: 610px;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding-top: 10px;
 }
 .top_menu-link{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     text-decoration: none;
-    height: 70%;
-    
+    height: 70%;  
 }
 .top_menu-link a {
-    color: rgba(255,255,255,0.6);
+    color: rgb(255,255,255);
 }
 .top_menu-link a:hover {
-    color: rgb(255,255,255);
+    color: #232b37;
     text-decoration: none;
 }
 .top_menu-link-firt{
@@ -305,8 +359,8 @@ ul{
     z-index: 1;
     padding: 20px;
     margin-top: 29px;
-    margin-left: -415px;
-    width: 240%;
+    margin-left: -384px;
+    width: 181.5%;
 }
 .dropdown_pages-column{
     width: 25%;
@@ -315,16 +369,18 @@ ul{
     float: left;
 }
 .dropdown_pages-column a {
+    font-weight: 400;
     display: block;
     font-size: 14px;
     color: #999999;
     min-width: 100%;
     text-transform: capitalize;
 }
-.dropdown_pages-column a:first-child{
+.dropdown_pages-column p{
     color: #000000;
     padding-bottom: 15px;
     font-size: 16px;
+    font-weight: 500;
 }
 .dropdown_pages-column a:hover{
     color:#2a9cf5;
@@ -350,6 +406,7 @@ ul{
     background: #232b37;
     padding: 10px;
     margin-left:  -10px;
+    z-index: 1000;
 }
 .menu_btn:hover{
     cursor: pointer;
@@ -791,4 +848,60 @@ ul{
 }
 .footer a:hover h4 {
     color: #2a9cf5;
+}
+
+/* text clients */
+.prev,.next{
+    visibility: inherit;
+    opacity: 0;
+}
+.slick-dots{
+    display: flex;
+    min-width: 87px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    margin-top: 35px;
+}
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    background: #dbdbdb;
+    color: transparent;
+    border-radius: 100%; 
+}
+.slick-dots li button:hover{
+    background: #005fe0; 
+}
+.slick-dots li.slick-active button{
+    background: #005fe0; 
+}
+.testimonials{
+    background: #f7f7f7;
+    padding: 120px 0;
+}
+.testimonials_item{
+    margin-top: 38px;
+    width: 100%;
+    height: 360px;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testimonials_item-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #c3c3c3;
+}
+.testimonials_item-text{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+.clients .slick-center {
+    background: #ffffff;
 }

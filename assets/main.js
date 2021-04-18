@@ -87,5 +87,17 @@ $(function(){
     $('.my_select').selectpicker();
 });
 
-
+// TESTIMONIALS clients
+$(function () {
+    $('.clients').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      prevArrow: '<button class="prev" aria-label="Previous" type="button"></button>',
+      nextArrow: '<button class="next" aria-label="Next" type="button"></button>',
+      centerMode: true,
+      centerPadding: '0',
+    });
+  });
 

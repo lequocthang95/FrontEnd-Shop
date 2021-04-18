@@ -88,7 +88,7 @@ $(function () {
   $('.autoplay').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<button class="prev" aria-label="Previous" type="button"></button>',
     nextArrow: '<button class="next" aria-label="Next" type="button"></button>',
