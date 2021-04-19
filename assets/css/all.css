@@ -382,7 +382,7 @@ ul{
     font-size: 16px;
     font-weight: 500;
 }
-.dropdown_pages-column a:hover{
+.top_menu-link .dropdown_pages-column a:hover{
     color:#2a9cf5;
 }
 .pages_column-img{
