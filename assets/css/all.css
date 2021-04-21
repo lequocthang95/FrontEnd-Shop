@@ -10,6 +10,18 @@ body{
     color: #757e8a;
     font-weight: 300;
 }
+.blue-16-u5{
+    color: #2a9cf5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.black-60-c5{
+    color: #232b37;
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
 button, input, optgroup, select, textarea, option {
     margin: 0;
     font-family: 'Rubik', sans-serif;

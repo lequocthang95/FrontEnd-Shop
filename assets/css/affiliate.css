@@ -1,0 +1,108 @@
+.affiliate_top{
+    padding: 110px 0;
+}
+.affiliate_top-item{
+    font-size: 16px;
+    color: #838b97;
+}
+.affliate_link{
+    display: flex;
+}
+.affliate_link-input{
+    position: relative;
+    margin-right: 20px;
+    width: 65%;
+    display: flex;
+    margin-top: 30px;
+}
+.link-input{
+    width: 100%;
+    height: 60px;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    padding: 0 80px 0 30px;
+    position: absolute;
+}
+.affliate_link-input-icon{
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+}
+.affliate_link-icon .fab{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%; 
+    background: #2a9cf5;
+    color: #fff;
+    margin-right: 15px;  
+    margin-top: 30px;    
+}
+.affliate_link-icon .fa-facebook-f{
+    background: #305dcd;
+}
+.affliate_link-icon .fab:hover{
+    color: #838b97;
+}
+.affiliate_btn{
+    display: flex;
+    margin-top: 35px;
+}
+.affiliate_btn-black,.affiliate_btn-blue{
+    width: 45%;
+    height: 60px;
+    text-align: center;
+    background: #232b37;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.affiliate_btn-blue{
+    background: #2a9cf5;
+    margin-left: 20px;
+}
+.affiliate_btn-blue:hover,
+.affiliate_btn-black:hover{
+    background: #363e48;
+    transition: all 0.5s ease-in;
+}
+.affiliate_btn a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    word-spacing: 5px;
+}
+.affiliate_top-img{
+    height: 315px;
+    background: #eeeeee;
+}
+.affiliate_footer{
+    padding: 120px 0;
+    background: #363e48;
+}
+.affiliate_footer-item{
+    text-align: center;
+}
+.affiliate_footer-item-icon{
+    font-size: 60px;
+    color: #2a9cf5;
+}
+.affiliate_footer-item-text{
+    font-size: 16px;
+    color: #b2b2bf;
+}
+.count{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+}
