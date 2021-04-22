@@ -77,11 +77,126 @@
     width: 100%;
 }
 .track_table-show-item tr{
-    padding: 40px 0;
     border-top: 1px solid #aeaeae;
-    display: flex;
-    justify-content: space-between;
 }
-.track_table-show-item td:second-child {
-    background: red;
+.track_table-show-item tr td{
+    padding: 40px 0;
+    font-size: 14px;
+    color: #838b97;
+    font-weight: 400;
+}
+.track_table-show-item tr td strong{
+    color: #232b37;
+}
+.base-color{
+    color: #2a9cf5;
+}
+.track_footer{
+    background: #f7f7f7;
+    padding: 115px 0;
+}
+.track_footer-top{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.track_footer-item{
+    width: 83%;
+    height: 185px;
+    display: flex;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+.right::before,.down::before,.left::before,.up::before{
+    position: absolute;
+    background: #dedede;
+    content: '';
+}
+.right::before{
+    right: -70px;
+    top: 50%;
+    height: 2px;
+    width: 70px;
+}
+.down::before{
+    left: 50%;
+    bottom: -72px;
+    height: 70px;
+    width: 2px;
+}
+.left::before{
+    left: -70px;
+    top: 50%;
+    height: 2px;
+    width: 70px;
+}
+.up::before{
+    top: -72px;
+    left: 50%;
+    width: 2px;
+    height: 70px;
+}
+.right::after,.down::after,.left::after,.up::after{
+    position: absolute;
+    font-size: 16px;
+    line-height: 16px;
+    color: #dedede;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.right::after{
+    right: -74px;
+    top: 46.26%;
+    content: ""; 
+}
+.down::after{  
+    left: 49%;
+    bottom: -81px;
+    content: ""; 
+}
+.left::after{  
+    left: -73px;
+    top: calc(50% - 6.52px);
+    content: ""; 
+}
+.up::after{
+    top: -80px;
+    left: calc(50% - 4.5px);
+    content: "";
+}
+.track_footer-item:hover{
+    border-color: #2a9cf5;
+}
+.track_footer-item:hover .right::before,
+.track_footer-item:hover .down::before,
+.track_footer-item:hover .up::before,
+.track_footer-item:hover .left::before
+{
+    background: #2a9cf5; 
+}
+.track_footer-item:hover .right::after,
+.track_footer-item:hover .down::after,
+.track_footer-item:hover  .up::after,
+.track_footer-item:hover .left::after
+{
+    color: #2a9cf5;
+}
+.track_footer-item-icon{
+    background: #2a9cf5;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 30px;
+}
+.track_footer-item-text{
+    width: 60%;
+    font-size: 14px;
+    color: #838b97;
 }
