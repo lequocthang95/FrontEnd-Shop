@@ -1,0 +1,212 @@
+.seller_product{
+    padding: 80px 0;
+    display: flex;
+    font-weight: 500;
+}
+.account_menu{
+    margin-right: 30px;
+    width: 100%;
+    font-weight: 500;
+}
+.account_menu-top{
+    height: 50px;
+    padding-left: 40px;
+    background: #2a9cf5;    
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.account_menu-body-item{
+    position: relative;
+    height: 50px;
+    padding-left: 40px;
+    background: #232b37;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+.account_menu-body-item:hover {
+    background: #2b333f;
+    cursor: pointer;
+}
+.scroll{
+    top: 0;
+    left: 0;
+    position: absolute; 
+    width: 4px;
+    height: 50px;
+    background: #2a9cf5;
+    display: none;
+}
+.account_menu-body-item:hover .scroll{
+    display:block;
+} 
+.seller_product-tab{
+    width: 100%;
+    background: #f3f5f5;
+}
+.tab-top{
+    height: 50px;
+    padding-left: 40px;
+    background: #2a9cf5;    
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tab-inner{
+    padding: 30px;
+}
+.tab-inner-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.add_seller{
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.add_seller:hover{
+    background: #e5e5e5;
+}
+.icon-setup{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller_product-table{
+    width: 100%;
+    background: #fff;
+}
+.seller_product-table tr:first-child{
+    background: #2a9cf5;
+    height: 50px;
+    align-items: center;
+} 
+.seller_product-table tr:first-child th:first-child{
+    padding-left: 30px;
+}
+.seller_product-table th {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.seller_product-table .fas{
+    margin-left: 10px;
+}
+.seller_product-table td{
+    font-size: 14px;
+    font-weight: 400;
+}
+.seller_product-table td:first-child{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+.table-td-img{
+    width: 70px;
+    height: 70px;
+    background: #e5e5e5;
+    margin: 30px;
+}
+
+/* seller dashboard */
+.seller_board{
+    padding: 80px 0;    
+}
+.dashboard{
+    width: 100%;
+    background: #f3f5f5;
+}
+.dashboard_top{
+    height: 50px;
+    background: #2a9cf5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.dashboard_body{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.board_item-top{
+    display: flex;
+}
+.board_item-top1,.board_item-top2,.board_item-top3,.board_item-top4{
+    position: relative;
+    z-index: 0;
+    height: 155px;
+    color: #fff;
+    font-size: 50px;
+    padding-left: 20px;
+    line-height: 1.3;
+}
+.board_item-top1{  
+    background: #38a0ba;
+}
+.board_item-top .fas{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: -1;
+    font-size: 100px;
+}
+.board_item-top1 .fas{
+    color: #1b88a3;
+}
+.board_item-top2{
+    background: #6aac54;    
+}
+.board_item-top2 .fas{
+    color: #4a8336;
+}
+.board_item-top3{
+    background: #f5aa5d;
+}
+.board_item-top3 .fas{
+    color: #cf8a43;
+}
+.board_item-top4{
+    background: #525657;
+}
+.board_item-top4 .fas{
+    color: #40494b;
+}
+.board_panel{
+    margin-top: 30px;
+    padding-left: 15px;
+}
+.board_panel-item{
+    height: 365px;
+    background: #fff;
+}
+.panel-item-top{
+    background: #2a9cf5;
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}

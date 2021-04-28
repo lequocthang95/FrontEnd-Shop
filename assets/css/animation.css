@@ -51,6 +51,24 @@
     transition: none;
 }
 @media only screen and (max-width: 992px){
+    .contacts_item{
+        margin-top: 30px;
+    }
+    .header_contacts {
+        padding: 40px 0;
+    }
+    .header_contacts .brand_group{
+        display: none!important; 
+    }
+    .contacts_item-text span{
+        width: 100%;
+    }
+    .top_menu-active{
+        display:none;
+    }
+    .respon_menu-active{
+        display: block;
+    }
     .header_support,.product,.features,.call_action,.featured,.footer{
         padding-bottom: 20px;
     }
@@ -136,6 +154,30 @@
         font-size: 40px;
     }
 
+    .seller_product-table tr:first-child th:first-child{
+        padding-left: 5px;
+    }
+    .seller_product-table th {
+        font-size: 8px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .seller_product-table .fas{
+        margin-left: 5px;
+    }
+    .seller_product-table td{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    
+    .table-td-img{
+        width: 20px;
+        height: 20px;
+        background: #e5e5e5;
+        margin: 10px;
+    }
+    
 }
 @media only screen and (max-width: 576px){
     h1{
