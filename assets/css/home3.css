@@ -1,16 +1,46 @@
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder { 
     color: #ffd3c8;
   }
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder { 
     color: #ffd3c8;
   }
   
   ::placeholder {
     color: #ffd3c8;
   }
-p{
-    font-size: 12px;
+.header_support{
+    border: none;
+}
+.home3_head,.top_header{
+    background: #f45832;
+    color: #ffd3c8;
+}
+.select_language{
+    color: #ffd3c8;
+}
+.icon-drop{
+    color: #ffd3c8;
+}
+.header_contacts{
+    border: 1px solid #f6795b;
+}
+.contacts_search-input,.contacts_search-btn{
+    background: #f45832;
+    border: 1px solid #f6795b;
+}
+.contacts_item,
+.contacts_search-group,
+.top_header-btn,
+.top_menu-link a
+{
+    color: #ffd3c8; 
+}
+.menu_icon-cart-number{
+    background: #d34724;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 400;
 }
 .over_boder{
     border-top: 1px solid #d1d2d3;

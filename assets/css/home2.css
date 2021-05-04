@@ -1,41 +1,62 @@
+.header_support{
+    background: #2b3440;
+    border-bottom: 1px solid #303743;
+}
 .top_menu-link a {
     color:#757e8a;
     font-weight: 500;
 }
 .top_header{
     background: #fff;
-    height: 100px;
+    min-height: 100px;
 }
-.header_layout-body{
-    display: flex;
-    justify-content: flex-end;
+.top_menu-icon{
+    color: #a7adb6;
+}
+.home02_layout-head{
+    background: #505b6c;
+    padding: 200px 0;
 }
 .slider2{
-    width: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: auto;
     line-height: 1.6;
+    color: #e1f4f8;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
 }
-.button_home2-01{
-    background:#2a9cf5;
-    font-weight: bold;
+.layout_button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
 }
-.button_home2-01:hover{
-    background: rgba(255,255,255,0);
-    color: rgba(255,255,255,0.7)
-    border: 2px solid #dddedf;
+.slider2-btn1{
+    background: #0066ff;
+    min-width: 245px;
+    height: 60px;   
+    font-weight: 500;
 }
-.button_home2-02{
-    background: rgba(255,255,255,0);
+.slider2-btn1:hover{
     border: 2px solid #4f555f;
     font-weight: bold;
 }
-.button_home2-02:hover{
-    background:#2a9cf5;
-    
+.slider2-btn2{
+    border: 2px solid #4f555f;
+    width: 245px;
+    height: 60px;   
+    font-weight: 500;
+    background: #505b6c;
+}
+.slider2-btn2:hover{
+    background: #0066ff;
+    color: #fff; 
 }
 .product_home2{
     display: flex;
@@ -44,13 +65,20 @@
 }
 .product_home2-item{
     display: flex;
-    width: 700px;
+    width: 100%;
     height: 500px;
     background: #232b37;
     margin-top: 30px;
     color: #fff;
-    align-items: center;
-    
+    align-items: center;   
+}
+.home2-item-btn{
+    color: #fff;
+    width: 160px;
+    height: 60px;
+    background: #232b37;
+    font-weight: 500;
+    border: 1px solid #4f555f;
 }
 .product_top-item-text{
     margin-left: 70px;
@@ -61,7 +89,7 @@
     justify-content: space-between;
     padding: 0 38px;
 }
-.header_layout-below{
+.home02_layout-end{
     margin-top: 30px;
     background: #f2f2f2;
     height: 700px;

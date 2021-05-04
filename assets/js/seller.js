@@ -1,11 +1,13 @@
 var ctx = document.getElementById('myChart').getContext('2d');
+var gross = document.getElementById('gross')
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['','JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG','SEP','OCT','NOV','DEC','',],
-        datasets: [
+        datasets: 
+        [
             {
-                label: '# Votes th',
+                label: gross,
                 data: [0, 1100,3000,2500,1700,2500,3400,1100,2600,4200,3400,2800,2300,0],
                 pointRadius: 0,
                 backgroundColor: '#f5aa5d',
@@ -16,15 +18,27 @@ var myChart = new Chart(ctx, {
                 pointRadius: 0,
                 backgroundColor: '#6aac54',
             },
-    ],
+        ]
     },
-   
     options: {
         fill: true,
         scales: {
             y: {
                 stacked: true
             },
-        }
+        },
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend:{
+        
+                display: false,
+            }
+        }, 
+        layout: {
+            padding: 30,
+        } 
+       
     }
 });

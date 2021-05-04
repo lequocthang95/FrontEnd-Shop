@@ -193,21 +193,17 @@
                         </div>
                         <div class="top_menu-icon">
                             <div class="menu_icon-search">
-                                <div>
-                                    <img src="./assets/image_page/icon-1/01_home-search.png" alt="">
-                                </div>
+                                <i class="fas fa-search"></i>
                             </div>
                             <div class="menu_icon-cart">
                                 <div>
-                                    <img src="./assets/image_page/icon-1/01_home-cart.png">  
+                                    <i class="fas fa-shopping-basket"></i> 
                                 </div>
                                 <div class="menu_icon-cart-number">10</div> 
                             </div>
                             <div class="menu_icon-list">
-                                <div>
-                                    <img src="./assets/image_page/icon-1/01_home-list.png" alt="">
-                                </div>
-                            </div>
+                                <i class="fas fa-bars"></i>
+                            </div>                      
                         </div>  
                     </div> 
                 </div>
@@ -618,313 +614,295 @@
                                     </div>
                                 </div>                                                                                                               
                             </div>
-                            <div class="board_panel">
+                            <div class="board_display">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class="board_panel-item">
-                                            <div class="panel-item-top">
-                                                Sales analytics
-                                            </div>
-                                            <div class="sales-cart-area">
-                                                <canvas id="myChart" width="637" height="318" style="display: block; height: 255px; width: 510px;"></canvas>
-                                            </div>
+                                        <div class="board_display-item">
+                                            <div class="display-item-top">
+                                                <span>
+                                                    Sales analytics
+                                                </span>
+                                                <div class="display-item-top-group">
+                                                    <div style="display: flex;align-items: center;margin-right: 30px;">
+                                                        <div class="display-gross"></div>
+                                                        <span>Gross Sales</span> 
+                                                    </div>                                                  
+                                                    <div style="display: flex;align-items: center;">
+                                                        <div class="display-total"></div>
+                                                        <span>Total Ordars</span>
+                                                    </div>
+                                                </div>
+                                            </div>                                        
+                                            <canvas id="myChart" width="637" height="325" style="display: block; height: 255px; width: 510px;"></canvas>                                        
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                                <div class="seller-card">
-                                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="board_display-item">
+                                                    <div class="display-item-top">
                                                             Top selling products
                                                     </div>
-                                                    <div class="card-body">
+                                                    <div class="display-item-inner">
                                                         <ul>
                                                             <li>
                                                                 <a href="#" class="heading">Footwear Dark</a>
-                                                                <span class="right">$390.00</span>
+                                                                <span>$390.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Milo Hoverboard</a>
-                                                                <span class="right">$80.00</span>
+                                                                <span>$80.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Lobina Perak Shoe</a>
-                                                                <span class="right">$30.00</span>
+                                                                <span>$30.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Black Tshirt Brock</a>
-                                                                <span class="right">$20.00</span>
+                                                                <span>$20.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Red Yello Hat</a>
-                                                                <span class="right">$05.00</span>
+                                                                <span>$05.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Minimal Cycle</a>
-                                                                <span class="right">$700.00</span>
+                                                                <span>$700.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Dart Moto Bike</a>
-                                                                <span class="right">$980.00</span>
+                                                                <span>$980.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Minimal Screw</a>
-                                                                <span class="right">$90.00</span>
+                                                                <span>$90.00</span>
                                                             </li>
                                                             <li>
                                                                 <a href="#" class="heading">Screw Minimal </a>
-                                                                <span class="right">$70.00</span>
+                                                                <span>$70.00</span>
                                                             </li>
                                                             
                                                         </ul>
-                                                    </div>
-                                                    
+                                                    </div>                                                 
                                                 </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                                <div class="seller-card">
-                                                    <div class="card-header">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="board_display-item">
+                                                    <div class="display-item-top">
                                                             Most viewed products
                                                     </div>
-                                                    <div class="card-body">
+                                                    <div class="display-item-inner">
                                                             <ul>
                                                                 <li>
                                                                     <a href="#" class="heading">Footwear Dark</a>
-                                                                    <span class="right">12358</span>
+                                                                    <span>12358</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Milo Hoverboard</a>
-                                                                    <span class="right">12000</span>
+                                                                    <span>12000</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Lobina Perak Shoe</a>
-                                                                    <span class="right">11985</span>
+                                                                    <span>11985</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Black Tshirt Brock</a>
-                                                                    <span class="right">10258</span>
+                                                                    <span>10258</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Red Yello Hat</a>
-                                                                    <span class="right">9581</span>
+                                                                    <span>9581</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Minimal Cycle</a>
-                                                                    <span class="right">9325</span>
+                                                                    <span>9325</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Dart Moto Bike</a>
-                                                                    <span class="right">6584</span>
+                                                                    <span>6584</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Minimal Screw</a>
-                                                                    <span class="right">5248</span>
+                                                                    <span>5248</span>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" class="heading">Screw Minimal </a>
-                                                                    <span class="right">$70.00</span>
+                                                                    <span>$70.00</span>
                                                                 </li>
                                                             </ul>
-                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class="latest-order">
-                                                <div class="table-panel">
-                                                <div class="card-header">
-                                                    latest orders
-                                                </div>
-                                                <div class="card-body">
-                                                    <table class="table table-responsive seller-dashboard-table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Date</th>
-                                                                <th>Customer</th>
-                                                                <th>Status</th>
-                                                                <th>Total</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Lesa Patterson </td>
-                                                                <td><span class="base-color">Pending</span> </td>
-                                                                <td>$101.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Lesa Patterson </td>
-                                                                <td>Proccessing </td>
-                                                                <td>$101.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Lesa Patterson </td>
-                                                                <td><span class="base-color">Pending</span> </td>
-                                                                <td>$101.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Lesa Patterson </td>
-                                                                <td><span class="base-color">Pending</span> </td>
-                                                                <td>$101.00</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                        <div class="board_display-item">                                             
+                                            <div class="display-item-top">
+                                                latest orders
+                                            </div> 
+                                            <table class="display-item-table">                                            
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Customer</th>
+                                                    <th>Status</th>
+                                                    <th>Total</th>
+                                                </tr>                                     
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Lesa Patterson </td>
+                                                    <td><span style="color: #2a9cf5;">Pending</span> </td>
+                                                    <td>$101.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Lesa Patterson </td>
+                                                    <td>Proccessing </td>
+                                                    <td>$101.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Lesa Patterson </td>
+                                                    <td><span style="color: #2a9cf5;">Pending</span> </td>
+                                                    <td>$101.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Lesa Patterson </td>
+                                                    <td><span style="color: #2a9cf5;">Pending</span> </td>
+                                                    <td>$101.00</td>
+                                                </tr>                                              
+                                            </table>                                        
                                         </div>
-                                        <div class="latest-invoice">
-                                                <div class="table-panel">
-                                                <div class="card-header">
-                                                    latest invoices
-                                                </div>
-                                                <div class="card-body">
-                                                    <table class="table table-responsive seller-dashboard-table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Date</th>
-                                                                <th>Type</th>
-                                                                <th>Description</th>
-                                                                <th>Status</th>
-                                                                <th>Total</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Payout</td>
-                                                                <td>LesaPatterson</td>
-                                                                <td>unpaid</td>
-                                                                <td>$130.25</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Payout</td>
-                                                                <td>LesaPatterson</td>
-                                                                <td><span class="base-color">Paid</span> </td>
-                                                                <td>$130.25</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Payout</td>
-                                                                <td>LesaPatterson</td>
-                                                                <td><span class="base-color">Paid</span> </td>
-                                                                <td>$130.25</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Payout</td>
-                                                                <td>LesaPatterson</td>
-                                                                <td>unpaid</td>
-                                                                <td>$130.25</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>09/07/2018 </td>
-                                                                <td>Payout</td>
-                                                                <td>LesaPatterson</td>
-                                                                <td><span class="base-color">Paid</span> </td>
-                                                                <td>$130.25</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                        <div class="board_display-item">
+                                            <div class="display-item-top">
+                                                latest invoices
+                                            </div>                                               
+                                            <table class="display-item-table">                                              
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Type</th>
+                                                    <th>Description</th>
+                                                    <th>Status</th>
+                                                    <th>Total</th>
+                                                </tr>                                               
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Payout</td>
+                                                    <td>LesaPatterson</td>
+                                                    <td>unpaid</td>
+                                                    <td>$130.25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>        
+                                                    <td>Payout</td>
+                                                    <td>LesaPatterson</td>
+                                                    <td><span style="color: #2a9cf5;">Paid</span> </td>
+                                                    <td>$130.25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Payout</td>
+                                                    <td>LesaPatterson</td>
+                                                    <td><span style="color: #2a9cf5;">Paid</span> </td>
+                                                    <td>$130.25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09/07/2018 </td>
+                                                    <td>Payout</td>
+                                                    <td>LesaPatterson</td>
+                                                    <td>unpaid</td>
+                                                    <td>$130.25</td>
+                                                </tr>                                           
+                                            </table>                                                                                         
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                            <div class="latest-message">
-                                                    <div class="table-panel">
-                                                    <div class="card-header">
-                                                        latest Shipment
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <table class="table table-responsive seller-dashboard-table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Date</th>
-                                                                    <th>Customer</th>
-                                                                    <th>Location</th>
-                                                                    <th>Status</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td><span class="base-color">Shppied</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td><span class="base-color">Shppied</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td><span class="base-color">Shppied</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09/07/2018 </td>
-                                                                    <td>Lesa </td>
-                                                                    <td>Dhaka,Bangladesh</td>
-                                                                    <td>Pending</td>
-                                                                </tr>
-                                                                
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="board_display-item" style="height: 770px;">
+                                            <div class="display-item-top">
+                                                latest Shipment
+                                            </div>                                         
+                                            <table class="display-item-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Customer</th>
+                                                            <th>Location</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td><span style="color: #2a9cf5;">Shppied</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td><span style="color: #2a9cf5;">Shppied</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td><span style="color: #2a9cf5;">Shppied</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>09/07/2018 </td>
+                                                            <td>Lesa </td>
+                                                            <td>Dhaka,Bangladesh</td>
+                                                            <td>Pending</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                            </table>                                            
+                                        </div>                                      
                                     </div>
                                 </div>
                             </div>
@@ -990,9 +968,7 @@
                     </div>       
                 </div>
                 <div class="col-lg-3 col-md-6" style="max-width: 200px;">
-                    <a href="">
-                        <h4>Information</h4> 
-                    </a>             
+                    <h4>Information</h4>            
                     <div class="footer_infor">
                         <a href="">--  Sitemap</a>
                         <a href="">--  Search Terms</a>    
