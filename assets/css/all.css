@@ -732,7 +732,7 @@ ul{
 .featured_item-group a {
     color: #232b37;
 }
-.cart_slide-item{
+.cart_slide-item,.cart_slide-div,.cart_slide-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -758,7 +758,7 @@ ul{
     background: #2a9cf5;
     cursor: pointer;
 }
-.cart_slide-show{
+.cart_slide-show,.slide_show-box{
     display: flex;
     flex-wrap: wrap;
 }

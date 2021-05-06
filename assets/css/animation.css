@@ -177,7 +177,9 @@
         background: #e5e5e5;
         margin: 10px;
     }
-    
+    .layout-btn2{
+        margin-top: 8px;
+    }
 }
 @media only screen and (max-width: 576px){
     h1{
