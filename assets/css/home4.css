@@ -1,0 +1,39 @@
+.home4_top{
+    height: 125px;
+    border-bottom: 2px solid #d3d5d7;
+}
+.header_support{
+    background: #2b3440;
+    border-bottom: 1px solid #303743;
+}
+.top_menu-link a {
+    color:#757e8a;
+}
+.top_header{
+    background: #fff;
+    min-height: 100px;
+}
+.top_menu-icon{
+    color: #a7adb6;
+}
+.menu_link-border{
+    position: absolute;
+}
+.top_menu-list{
+    padding: 0;
+    margin-top: -5px;
+    margin-right: 40px;
+}
+.dropdown_pages{
+    margin-left: -273px;
+}
+.home4-btn{
+    min-width: 240px;
+    height: 60px;
+    border-radius: 30px;
+}
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    width: 66%;     
+}
