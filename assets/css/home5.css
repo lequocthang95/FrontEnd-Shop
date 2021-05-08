@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Merriweather', serif;
+    src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap);
+    font-size: 16px;
+}
+.home5_head {
+    background: #fff;   
+    height: 130px;
+}
+.brand {
+    font-size: 60px;
+    color: #232b37;
+    font-family: 'Merriweather', serif;
+}
+.top_menu-link a {
+    font-family: 'Rubik', sans-serif;
+    color: #9ea5ae;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.brand-icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 56px;
+}
+.top_menu-link{
+    height: 20px;
+}
+.home5_layout-top{
+    padding: 80px 0;
+    background: #e5e5e5;
+}
+.layout-top-btn{
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    margin-top: -8px;
+}
+.goshop-btn{
+    width: 160px;
+    height: 60px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+.home5_slide{
+    display: flex;
+}
+.home5_slide-top{
+    height: 60px;
+    width: 194px;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    color: #8f97a2;
+    text-transform: uppercase;
+    font-weight: 500;
+}

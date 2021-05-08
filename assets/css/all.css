@@ -409,6 +409,7 @@ ul{
     min-width: 88px;
     justify-content: space-between;
     align-items: center;
+    color: #8f97a2;
 }
 .respon_menu-active{
     display: none;
