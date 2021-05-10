@@ -132,10 +132,12 @@ function showItems(n) {
       x[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("orange");
+        if (dots[i]){
+            dots[i].classList.remove("orange");
+        }   
     }
-    if (n = 1){ dots[slideN].classList.add("orange")}
-    x[slideN].style.display = "flex";
+    if (n = 1 && dots[slideN]) { dots[slideN].classList.add("orange")}
+    if (x[slideN]){x[slideN].style.display = "flex";} 
 }
 
  // slide cart , all show slide
@@ -169,10 +171,12 @@ function showItems(n) {
       x[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("orange");
+        if (dots[i]){
+            dots[i].classList.remove("orange");
+        }   
     }
-    if (n = 1){ dots[slideN].classList.add("orange")}
-    x[slideN].style.display = "flex";
+    if (n = 1 && dots[slideN]) { dots[slideN].classList.add("orange")}
+    if (x[slideN]){x[slideN].style.display = "flex";} 
 }
 
  // slide cart , all show slide
@@ -206,10 +210,12 @@ function showItems(n) {
        x[i].style.display = "none";  
      }
      for (i = 0; i < dots.length; i++) {
-       dots[i].classList.remove("orange");
-     }
-     if (n = 1){ dots[slideN].classList.add("orange")}
-     x[slideN].style.display = "flex";
+        if (dots[i]){
+            dots[i].classList.remove("orange");
+        }   
+    }
+    if (n = 1 && dots[slideN]) { dots[slideN].classList.add("orange")}
+    if (x[slideN]){x[slideN].style.display = "flex";} 
  }
 
   // slide cart , all show slide
@@ -243,8 +249,10 @@ function showBox(n) {
       x[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("orange");
+        if (dots[i]){
+            dots[i].classList.remove("orange");
+        }   
     }
-    if (n = 1){ dots[slideN].classList.add("orange")}
-    x[slideN].style.display = "flex";
+    if (n = 1 && dots[slideN]) { dots[slideN].classList.add("orange")}
+    if (x[slideN]){x[slideN].style.display = "flex";} 
 }
