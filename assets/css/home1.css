@@ -126,7 +126,6 @@
         display: none;
         flex-wrap: wrap;
     }
-    
     .product_slide-item{
         background: #f4f4f4;
         border-radius: 5px;
@@ -171,12 +170,6 @@
         margin-top: 120px;
         margin-bottom: 60px;
         font-weight: 600;
-    }
-    .featured_column-item-big{
-        min-height: 285px;
-        background: #e2e2e2;
-        margin-bottom: 30px;
-        border-radius: 4px;
     }
     .featured_column-item-big:hover{
         background: #232b37;

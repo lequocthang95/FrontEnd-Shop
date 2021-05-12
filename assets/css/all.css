@@ -144,6 +144,9 @@ ul{
 .orange {
     background: #f44336!important;
 }
+.blue{
+    background: #2a9cf5!important;
+}
 .rope{
     background:  #e5e5e5;
     height: 2px;
@@ -589,7 +592,7 @@ ul{
 }
 .product_img{
     position: relative;
-    min-height: 255px;
+    height: 255px;
     background: #e2e2e2;
     border: 1px solid #e2e2e2;
     border-top-right-radius: 5px;
@@ -809,6 +812,12 @@ ul{
 }
 .featured_item-text{
     display: flex;
+}
+.featured_column-item-big{
+    min-height: 285px;
+    background: #e2e2e2;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 .footer{
     min-height: 555px;
