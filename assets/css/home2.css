@@ -42,6 +42,7 @@
     min-width: 245px;
     height: 60px;   
     font-weight: 500;
+    margin-top: 14px;
 }
 .slider2-btn1:hover{
     border: 2px solid #4f555f;
@@ -53,10 +54,11 @@
     height: 60px;   
     font-weight: 500;
     background: #505b6c;
+    margin-top: 14px;
 }
 .slider2-btn2:hover{
-    background: #0066ff;
-    color: #fff; 
+    background: #0066ff!important;
+    color: #fff!important; 
 }
 .product_home2{
     display: flex;
@@ -113,4 +115,7 @@
     border-radius: 5px;
     padding: 0 30px;
     margin: 30px 38px;
+}
+.dropdown-content,.dropdown_pages{
+    margin-top: 23px;
 }

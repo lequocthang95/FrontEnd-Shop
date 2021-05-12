@@ -38,12 +38,13 @@
     width: 66%;     
 }
 .home4_slide{
+    width: 100%;
     height: 60px;
     margin-top: 80px;
     border: 2px solid #e5e5e5;
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .home4_slide-top,.home4_slide-end{
@@ -53,10 +54,11 @@
     font-size: 12px;
     color: #8f97a2;
     font-weight: 500;
-    padding: 20px 15px;
-    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.home4_slide-top:hover,..home4_slide-end:hover{
+.home4_slide-top:hover,.home4_slide-end:hover{
     color: #232b37;
     border-bottom: 2px solid #232b37;
     cursor: pointer;

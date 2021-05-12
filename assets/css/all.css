@@ -336,9 +336,9 @@ ul{
 }
 .bridge{
     position: absolute;
-    top: -36px;
-    width: 96%;
-    height: 35px;
+    top: -40px;
+    width: 100%;
+    height: 40px;
 }
 .top_menu-link:hover .menu_link-border{
     opacity: 1;
@@ -748,7 +748,7 @@ ul{
     text-transform: uppercase;
     color: #b1b6bd;
     font-size: 12px;
-    margin-right: 20px;
+    margin: 0 10px;
     background: #fff;
 }
 .cart_slide-btn{
