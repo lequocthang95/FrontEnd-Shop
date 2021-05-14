@@ -28,7 +28,7 @@
     margin-left: -273px;
 }
 .home4-btn{
-    min-width: 240px;
+    min-width: 238px;
     height: 60px;
     border-radius: 30px;
 }
@@ -66,4 +66,53 @@
 .slide-active{
     color: #232b37;
     border-bottom: 2px solid #232b37;
+}
+.layout_top{
+    background: #e5e5e5;
+    padding: 200px 0;
+}
+.layout_button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;    
+    padding: 0 20px 0 0;
+    align-items: center;
+}
+.layout-btn1{
+    min-width: 245px;
+    height: 60px;   
+    font-weight: 500;
+    border: 2px solid #d1d2d3;
+    border-radius: 30px;
+}
+.layout-btn2{
+    border: 2px solid #d1d2d3;
+    width: 245px;
+    height: 60px;   
+    font-weight: 500;
+    background: #e5e5e5;
+    color: #767d8a;
+    border-radius: 30px;
+}
+.layout_end-item{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 80px;
+    height: 960px;
+}
+.layout_end-item span{
+    font-size: 300px;
+    line-height: 0.7;
+}
+.off {
+    line-height: 0.8;
+    text-align: center;
+    align-items: center;
+}
+.off span{
+    font-size: 200px;
 }

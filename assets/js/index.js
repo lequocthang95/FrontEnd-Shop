@@ -85,7 +85,7 @@ function showDivs(n) {
  }
  
  function currentContent(n) {
-   showBox(slideN = n);
+    showContent(slideN = n);
  }
  
  function showContent(n) {

@@ -180,6 +180,26 @@
     .layout-btn2{
         margin-top: 8px;
     }
+    .layout_end-item{
+        height: 240px;
+        font-size: 20px;
+    }
+    .layout_end-item span{
+        font-size: 75px;
+    }
+    .off span{
+        font-size: 50px;
+    }
+    .home5_layout-end-text{
+        font-size: 60px;
+    }
+    .home5_slide-end,.home5_slide-top{
+        font-size: 8px;
+        text-transform: capitalize;
+        height: 40px;
+        border-radius: 20px;    
+        max-width: 100px;
+    }
 }
 @media only screen and (max-width: 576px){
     h1{
