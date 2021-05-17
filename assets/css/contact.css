@@ -32,7 +32,6 @@
     width: calc(100%-60px);
     height: 375px;
     background: #eaeaea;
-    margin-left: 60px;
     font-size: 30px;
     color: #2a9cf5;
     text-align: center;
@@ -40,6 +39,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 5px;
 }
 .contact_footer{
     padding: 120px 0px;

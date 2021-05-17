@@ -3,31 +3,34 @@
 }
 .track_order{
     width: 100%;
-    height: 255px;
+    min-height: 255px;
     background: #232b37;
     text-align: center;
-    padding: 50px 65px 60px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .track_order-options{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .option-input{
-    width: 100%;
+    width: 90%;
     height: 70px;
-    padding: 0 260px 0 40px;
     background: #2c3441;
     border: none;
     border-radius: 40px;
-    margin-top: 30px;
+    padding: 0 40px;
 }
 .option-input-btn{
-    width: 260px;
+    width: 30%;
     height: 60px;
     border-radius: 30px;
     position: absolute;
-    bottom: 65px;
-    right: 85px;
+    left: 62.5%;
 }
 .option-input-btn .fas{
     margin-right: 10px;
@@ -41,11 +44,12 @@
     border-radius: 25px;
     border: 1px solid #e5e5e5;
 }
-.table-slider-between,.table-slider-left{
+.table-slider-between,.table-slider-left,.track_table-slider-icon{
     width: 100%;
     display: flex;
     align-items: center;
     border: 2px solid #e5e5e5;
+    height: 50px;
 }
 .table-slider-left{
     border-right: none;
@@ -62,6 +66,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    overflow: hidden;
 }
 .track_table-slider-btn:hover{
     background: #2a9cf5;
@@ -69,11 +74,9 @@
     cursor: pointer;
 }
 .track_table-slider-icon{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    margin-right: 30px;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .track_table-slider-icon .fas{
     margin-left: 30px;
@@ -111,12 +114,13 @@
 }
 .track_footer-item{
     width: 83%;
-    height: 185px;
+    min-height: 185px;
     display: flex;
     border: 2px solid #dedede;
     border-radius: 5px;
     padding: 40px;
     position: relative;
+    margin: 65px 0;
 }
 .right::before,.down::before,.left::before,.up::before{
     position: absolute;

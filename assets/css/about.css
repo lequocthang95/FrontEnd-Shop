@@ -1,20 +1,18 @@
 .about_head{
     min-height: 280px;
-    padding-top: 55px;
-    padding-bottom: 110px;  
+    padding: 100px 0; 
 }
 .about_head-item{
     text-transform: uppercase;
 }
 .about_head-number{
-    position: relative;
     font-size: 60px;
     font-weight: 400;
     color: #232b37;
     line-height: 1;
 }
 .sup{
-    position: absolute;
+  
     font-size: 30px;
     color: #2a9cf5;
     top: 9px;
@@ -29,8 +27,8 @@
     display: flex;
 }
 .about_layout-img,.about_layout-text{
-    width:50%;
-    min-height: 690px;
+    width: 100%;
+    height: 700px;
     background: #dfdfdf;
 }
 .about_layout-text{
@@ -38,6 +36,7 @@
     font-size: 14px;
     color: #b5b4be;
     padding: 120px 0px 120px 100px;
+    height: 700px;
 }
 .about_layout-btn{
     border-radius: 30px;
@@ -46,14 +45,13 @@
     margin-top: 40px;
 }
 .video_btn{
-    width: 700px;
+    min-width: 100%;
     height: 690px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    left: 26.9%;
+    z-index: 1000;
   }
 .play-button {
     width: 70px;

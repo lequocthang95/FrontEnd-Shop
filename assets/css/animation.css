@@ -200,6 +200,16 @@
         border-radius: 20px;    
         max-width: 100px;
     }
+    .track_table-show-item tr td{
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .right,.left,.up,.down{
+        display: none;
+    }
+    .track_footer-item{
+        margin: 10px;
+    }
 }
 @media only screen and (max-width: 576px){
     h1{

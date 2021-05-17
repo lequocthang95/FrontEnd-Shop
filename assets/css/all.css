@@ -83,6 +83,9 @@ ul{
   margin-right: 2px;
   color: #ffd800;
 }
+.top_menu-icon .fas {
+    color: #fff;
+}
 .grid_overlay,.menu_grid,.search_grid,.search_grid-active,.cart_grid-active,.cart_grid,.list_grid,.list_grid-active{
     position: fixed;
     background: rgba(0, 0 ,0 , 0.1);
@@ -302,7 +305,7 @@ ul{
     padding-top: 10px;
 }
 .top_menu-link{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 14px;
     text-decoration: none;
     height: 70%;  
@@ -563,8 +566,7 @@ ul{
     display: flex;
 }
 .menu_icon-cart-number{
-    background-image: url(../image_page/icon-1/01_home-br-cart-number.png);
-    background-repeat: no-repeat;
+    background: #1d85d6;
     margin-top: -7px;
     margin-left: -10px;
     font-size: 12px;
@@ -572,6 +574,7 @@ ul{
     justify-content:center;
     color: #fff;
     font-weight: bold;
+    font-weight: 400;
     padding: 4px;
     padding-top: 2px;
 }
