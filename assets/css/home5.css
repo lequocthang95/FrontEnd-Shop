@@ -3,14 +3,29 @@
     src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap);
     font-size: 16px;
 }
+.selected{
+    background-color: #2a9cf5;
+    color: #fff!important;
+}
+.views-btn, .shop-btn{
+    border-radius: 30px;
+    background-color: #2a9cf5;
+}
+.views-btn:hover, .shop-btn:hover{
+    background-color: transparent;
+    color: #232b37;
+}
 .home5_head {
     background: #fff;   
-    height: 130px;
+    min-height: 130px;
+    display: flex; 
+    align-items: center;
 }
-.brand {
+.home5_brand {
     font-size: 60px;
     color: #232b37;
     font-family: 'Merriweather', serif;
+    display: flex;
 }
 .top_menu-link a {
     font-family: 'Rubik', sans-serif;
@@ -19,18 +34,24 @@
     text-transform: uppercase;
     font-weight: 400;
 }
-.brand-icon{
+.home5_brand-icon{
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin-top: 56px;
+    background: #2a9cf5;
 }
-.top_menu-link{
-    height: 20px;
+.dropdown-content,.dropdown_pages{
+    margin-top: 51px;
+}
+.top_menu-active .dropdown_pages{
+    margin-left: -512px;
 }
 .home5_layout-top{
-    padding: 80px 0;
-    background: #e5e5e5;
+    background-image: url(../image_page/br/home5-1.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 167px;
 }
 .layout-top-btn{
     height: 60px;
@@ -38,32 +59,46 @@
     border-radius: 30px;
     margin-top: -8px;
 }
-.goshop-btn{
-    width: 160px;
-    height: 60px;
-    border-radius: 30px;
-    font-weight: 500;
-    margin-top: -8px;
+.lotus-img{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../image_page/br/home5-2.jpg);
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+.rose-img{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../image_page/br/home5-3.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
 }
 .home5_slide{
-    display: flex;
-    
+    display: flex;  
 }
 .home5_slide-top,.home5_slide-end{
     height: 60px;
     width: 194px;
     border: 2px solid #e5e5e5;
     border-radius: 30px;
-    text-align: center;
-    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #8f97a2;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 .home5_slide-top:hover,.home5_slide-end:hover{
     cursor: pointer;
     background: #2a9cf5;
-    color: #232b37;
+    color: #fff;
 }
 .home5_layout-end{
     margin-top: 230px;
@@ -191,7 +226,7 @@
 }
 .cart_slide-btn:hover{
     background: #2a9cf5;
-    color: red;
+    color: #fff;
 }
 .end_img{
     background: #dfdfdf;

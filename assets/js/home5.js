@@ -14,9 +14,9 @@ function showDivs(n) {
       x[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("orange");
+      dots[i].classList.remove("selected");
     }
-    if (n = 1){ dots[slideN].classList.add("orange")}
+    if (n = 1){ dots[slideN].classList.add("selected")}
     x[slideN].style.display = "flex";
 }
 
@@ -138,8 +138,8 @@ function showItems(n) {
       x[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("orange");
+      dots[i].classList.remove("selected");
     }
-    if (n = 1){ dots[slideN].classList.add("orange")}
+    if (n = 1){ dots[slideN].classList.add("selected")}
     x[slideN].style.display = "flex";
 }

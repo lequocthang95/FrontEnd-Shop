@@ -1,11 +1,14 @@
-.top_menu-icon{
+.top_menu-link a{
     color: #fff;
 }
-.menu_icon-cart-number{
-    background: #1d85d6;
-    height: 20px;
-    border-radius: 50%;
-    font-weight: 400;
+.link_icon{
+    border-color:  #fff transparent transparent transparent;
+}
+.top_menu-link:hover .link_icon{
+    border-color:  #232b37 transparent transparent transparent;
+}
+.top_menu-icon .fas{
+    color: #fff;
 }
 .layout_top{
     background: #e5e5e5;
@@ -73,6 +76,7 @@
     font-weight: 500;
     font-size: 16px;
     text-transform: capitalize;
+    font-family: "Rubik", sans-serif;
 }
 .time-group{
     width: 100%;
@@ -97,9 +101,10 @@
     text-transform: uppercase;
 }
 .offer_item2{
-    height: 475px;
+    background-image: url(../image_page/br/home6-6.jpg);
+    background-repeat: no-repeat;
+    min-height: 470px;
     width: 100%; 
-    background: #e1e1e1;
     margin: 30px 0 80px 0;
     border-radius: 5px;
 }
@@ -125,10 +130,10 @@
     color: #d1d0d0;
     font-size: 12px;
     min-height: 50px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    word-spacing: 5px;
+    letter-spacing: 2px;
 }
 .product_icon-left:hover, .product_icon-right:hover,.product_slide-item:hover{
     color: #fff;
@@ -154,12 +159,22 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #3e4755;
+    background: #ebebeb;
     color: #b1b6bd;
+    border: none;
 }
 .home6_slick-btn2{
     margin-left: 20px;
 }
+.cart_slide-btn{
+    background: #ebebeb;
+    color: #afb6bf;
+}
+.home6_slick-btn1:hover,.home6_slick-btn2:hover,.cart_slide-btn:hover{
+    background: #2a9cf5;
+    color: #fff;
+}
+  
 .slick-btn1, .slick-btn2{
     display: none;
 }
@@ -170,9 +185,10 @@
     font-size: 12px;
     color: #b1b6bd;
     text-transform: uppercase;  
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 10px;
     min-width: 200px;
+    letter-spacing: 2px;
 }
 .home6_slide-item:hover{
     color: #fff;
@@ -187,7 +203,7 @@
 }
 .item_big-img{
     min-height: 560px;
-    background: #f7f7f7;
+    background-image: url(../image_page/br/home6-7.jpg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-top: 30px;
@@ -200,14 +216,13 @@
     align-items: center;
     text-align: center;
     color: #232b37;
-    font-weight: 500;
-    font-size: 30px;
     text-transform: capitalize;
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: "Rubik", sans-serif;
 }
 .big-img{
     width: 100%;
@@ -238,5 +253,13 @@
     height: 50px;
     border-radius: 50%;
     background: #3e4755;
+    color: #afb6bf;
+}
+.home6_slide-btn:hover{
+    background: #2a9cf5;
     color: #fff;
+}
+.featured{
+    font-family: "Rubik", sans-serif; 
+    padding: 45px 0;
 }

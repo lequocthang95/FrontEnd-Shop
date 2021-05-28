@@ -187,9 +187,6 @@
     .layout_end-item span{
         font-size: 75px;
     }
-    .off span{
-        font-size: 50px;
-    }
     .home5_layout-end-text{
         font-size: 60px;
     }
@@ -209,6 +206,15 @@
     }
     .track_footer-item{
         margin: 10px;
+    }
+    .infor_product-img{
+        margin: 0 10px;
+    }
+    .cartpage_head-group{
+        border-bottom: 1px solid #efefef; 
+    }
+    .calc_price-group{
+        margin: 20px 0;
     }
 }
 @media only screen and (max-width: 576px){
