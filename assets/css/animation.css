@@ -105,6 +105,9 @@
     .logo{
         margin: 20px 0;
     }
+    .all_logos{
+        margin:15px;
+    }
 }
 @media only screen and (max-width: 767px){
     .top_menu-active{
@@ -215,6 +218,10 @@
     }
     .calc_price-group{
         margin: 20px 0;
+    }
+    .cart_slide-item{
+        margin: 0 5px;
+        font-size: 8px;
     }
 }
 @media only screen and (max-width: 576px){
