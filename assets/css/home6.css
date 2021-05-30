@@ -263,3 +263,9 @@
     font-family: "Rubik", sans-serif; 
     padding: 45px 0;
 }
+.slick_slide1{
+    display: block;
+}
+.slick_slide2{
+    display: none;
+}

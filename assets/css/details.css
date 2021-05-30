@@ -62,8 +62,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: inherit!important;
+    border-radius: 5px;
     color: #b0b3b8;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+}
+.size_btn:hover{
+    background: #2a9cf5;
+    color: #fff;
 }
 .amount{
     display: flex;
@@ -105,20 +113,33 @@ input[type=number]::-webkit-inner-spin-button {
     background: #eeeeee;
     border-radius: 5px;
 }
+.details-icon:hover{
+    background-color: #2a9cf5;
+    color: #fff;
+    cursor: pointer;
+}
 .details_add-btn{
-    width: 230px;
+    min-width: 230px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #2a9cf5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Rubik", sans-serif;
 }
 .details_add-btn:hover{
-    background: #efefef;
+    background: #232b37;
 }
 .detail_slide-item{
     min-width: 18%;
     min-height: 50px;
-    border-radius: 25px
+    border-radius: 25px;
+    border: 2px solid #f0f0f0;
+    background: #fff;
+    color: #b1b6bd;
 }
 .detail_slide-item:hover{
     background: #efefef;
@@ -150,4 +171,27 @@ td:first-child {
     border: none;
     color: #838b97;
     padding: 6px 0;
+}
+.home6_slick{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slick-btn1, .slick-btn2{
+    display: none;
+}
+.home6_slick-btn1,.home6_slick-btn2{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ebebeb;
+    color: #b1b6bd;
+    border: none;
+}
+.home6_slick-btn2{
+    margin-left: 20px;
+}
+.home6_slick-btn1:hover,.home6_slick-btn2:hover,.cart_slide-btn:hover{
+    background: #2a9cf5;
+    color: #fff;
 }

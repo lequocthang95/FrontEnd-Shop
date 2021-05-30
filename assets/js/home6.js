@@ -10,6 +10,7 @@ $(function () {
         autoplaySpeed: 2000,
     });
 });
+
 var slideIndex = 1;
 showDivs(slideIndex);
 function plusDivs(n) {
@@ -104,7 +105,6 @@ function showDivs(n) {
      if (n = 1 && dots[slideN]) { dots[slideN].classList.add("blue")}
      if (x[slideN]){x[slideN].style.display = "flex";} 
  }
-
  $(function () {
     $('.home6_slick').slick({
         infinite: true,

@@ -50,3 +50,21 @@ function showItems(n) {
   if (n = 1){dots[slideN].classList.add("orange")}
   x[slideN].style.display = "flex";
 }
+$(function () {
+  $('.home6_slick').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="home6_slick-btn1" aria-label="Previous" type="button"><i class="fas fa-angle-left"></i></button>',
+      nextArrow: '<button class="home6_slick-btn2" aria-label="Next" type="button"><i class="fas fa-angle-right"></i></button>',  
+      autoplay: true,
+      autoplaySpeed: 2000,
+  });
+  let x = document.querySelector('.slick-btn1')
+  let y = document.querySelector('.home6_slick-btn1')
+  let z = document.querySelector('.slick-btn2')
+  let k = document.querySelector('.home6_slick-btn2')
+  x.insertAdjacentElement("afterend", y);
+  z.insertAdjacentElement("afterend", k);
+});

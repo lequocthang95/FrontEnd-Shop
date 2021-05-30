@@ -21,21 +21,23 @@ button{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .layout_button{
     display: flex;
 }
-.blue-16-u5{
-    color: #2a9cf5;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 500;
+.submit-btn{
+    min-width:220px;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    background:#2a9cf5;
+    border: transparent;
+    color: #fff;
 }
-.black-60-c5{
+.submit-btn:hover{
+    box-shadow: 0 0 25px 0 rgb(42 156 245 / 50%);
     color: #232b37;
-    font-size: 60px;
-    text-transform: capitalize;
-    font-weight: 500;
 }
 .icon-drop{
     opacity: 1;
@@ -59,18 +61,7 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     outline: none;
 }
-h3{
-    font-size: 50px;
-}
-h4{
-    font-size: 30px;
-}
-h5{
-    font-size: 20px;
-}
-h6{
-    font-size: 18px;
-}
+
 ul{
     list-style: none;
 }
@@ -200,6 +191,7 @@ ul{
 }
 .orange {
     background: #2a9cf5!important;
+    color: #fff!important;
 }
 .blue{
     background: #2a9cf5!important;
@@ -354,7 +346,7 @@ ul{
     margin-left: 1px;
     background:  #2a9cf5;
     bottom: 7px;
-    margin-top: 21px;
+    margin-top: 20px;
 }
 .cart .brand-icon{
     margin-top: 25px;
@@ -991,9 +983,5 @@ ul{
     color: #2a9cf5;
 }
 .footer .brand-icon{
-    margin-top: 25px;
-}
-
-.all_head .brand-icon{
     margin-top: 25px;
 }
