@@ -4,6 +4,7 @@
 .invoice_top{
     min-height: 200px;
     display:  flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 70px;
@@ -20,43 +21,47 @@
 .invoice_inner{
     padding: 70px 70px 60px 70px;;
     background: #f5f5f5;
+    overflow: hidden;
 }
 .invoice_inner-top{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .invoice_inner-top-text{
     font-size: 14px;
     color: #838b97;
     line-height: 1.2;
 }
-.invoice_table{
-    width: 100%;    
-    border: none;
-    margin-top: 40px;
+table{   
+    margin-top: 40px; 
+    border-collapse: collapse;
+    width: 100%;;
 }
-.invoice_table tr:first-child{
-    height: 40px;
-    background: none;
+table p{
+    margin: 0;
+    font-weight: 700;
 }
-.invoice_table th{
+ th{
     font-size: 16px;
-    font-weight: 400!important;
+    font-weight: 700;
     color: #242424;
 }
-.invoice_table tr{
-    height: 80px;
+ tr{
     background: #efefef;
 }
-.invoice_table td{
+ td{
     font-size: 14px;
     font-weight: 400;
     color: #949aa5;
+    padding: 20px 0;
+    min-width: 145px;
 }
-.invoice_table span{ 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+tr:first-child{
+    height: 40px;
+    background: none;
+}
+td:first-child{ 
     padding-left: 35px;
 }
 .phone{
@@ -70,4 +75,22 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    cursor: pointer;
+}
+.phone:hover{
+    color: #323b37;
+}
+@media only screen and (max-width: 767px){
+    td:first-child{ 
+        padding-left: 5px;
+    } 
+    .invoice_top{
+        padding: 0 10px;
+    }
+    .invoice_inner{
+        padding: 10px;
+    }
+    td{
+        min-width: 0;
+    }
 }

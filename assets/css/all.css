@@ -22,6 +22,7 @@ button{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border: none;
 }
 .layout_button{
     display: flex;
@@ -983,5 +984,9 @@ ul{
     color: #2a9cf5;
 }
 .footer .brand-icon{
-    margin-top: 25px;
+    margin-top: 20px;
+}
+.page-name{
+    font-size: 50px;
+    color: #fff;
 }
