@@ -4,19 +4,6 @@ select{
 .product_infor-item a{
     color: #232b37;
 }
-.compare_btn{
-    border-radius: 60px;
-    margin: auto;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    padding: 25px 50px;
-    font-size: 14px;
-    font-weight: 500;
-}
-.compare_btn:hover{
-    background: #e8e8e8;
-    color: #232b37;
-}
 .category{
     padding: 80px 0;
 }
@@ -101,6 +88,7 @@ select{
 }
 .category_slide-infor-icon{
     color: #2a9cf5;
+    cursor: pointer;
 }
 .slide_head{
     display: flex;

@@ -1,0 +1,16 @@
+.compare_btn{
+    height: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.compare_btn:hover{
+    background: #e8e8e8;
+    color: #232b37;
+}

@@ -97,6 +97,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.icon-setup:hover{
+    background: #2a9cf5;
+    color: #fff;
 }
 .seller_product-table{
     width: 100%;
@@ -118,6 +123,10 @@
 }
 .seller_product-table .fas{
     margin-left: 10px;
+    cursor: pointer;
+}
+.seller_product-table .far{
+    cursor: pointer;
 }
 .seller_product-table td{
     font-size: 14px;
@@ -162,6 +171,7 @@
 .board_item-top1,.board_item-top2,.board_item-top3,.board_item-top4{
     position: relative;
     z-index: 0;
+    min-width: 287px;
     height: 155px;
     color: #fff;
     font-size: 50px;
@@ -201,7 +211,6 @@
 }
 .board_display{
     margin-top: 30px;
-    padding-left: 15px;
 }
 .board_display-item{
     height: 365px;
