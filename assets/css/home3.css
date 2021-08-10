@@ -28,7 +28,7 @@
 .header_contacts{
     border: 1px solid #f6795b;
 }
-.contacts_search-input,.contacts_search-btn{
+.contacts_search-input,.contacts_search-btn,.top_header-btn{
     background: #f45832;
     border: 1px solid #f6795b;
 }

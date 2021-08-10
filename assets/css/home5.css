@@ -3,6 +3,12 @@
     src: url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap);
     font-size: 16px;
 }
+.bridge{
+    position: absolute;
+    top: -50px;
+    width:  100px;
+    height: 100px;  
+}
 .selected{
     background-color: #2a9cf5;
     color: #fff!important;
